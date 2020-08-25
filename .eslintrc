@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-trailing-commas",
+    "standard-react"
+  ],
+  "globals": {
+    "graphql": true,
+    "__PATH_PREFIX__": true
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "camelcase": "off",
+    "react/jsx-handler-names": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/jsx-closing-tag-location": "off"
+  }
+}
