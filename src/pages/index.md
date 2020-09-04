@@ -1,6 +1,6 @@
 ---
 templateKey: home-page
-aboutTitle: About Us
+aboutTitle: About Useeee
 title: Gatsby Starter Business
 heading: Lorem ipsum dolor sit amet
 description: >-
