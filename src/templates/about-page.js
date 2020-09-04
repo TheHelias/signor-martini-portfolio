@@ -25,7 +25,7 @@ const AboutPage = ({ data }) => {
 }
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 }
 
 export default AboutPage

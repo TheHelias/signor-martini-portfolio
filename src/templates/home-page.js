@@ -1,15 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { HTMLContent } from '../components/Content'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const { html } = data.markdownRemark
 
   return (
     <Layout>
       <HomePageTemplate
+        aboutTitle={frontmatter.aboutTitle}
+        aboutContent={html}
+        aboutContentComponent={HTMLContent}
         title={frontmatter.title}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
@@ -25,9 +30,9 @@ const HomePage = ({ data }) => {
 HomePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+      frontmatter: PropTypes.object
+    })
+  })
 }
 
 export default HomePage
@@ -35,7 +40,9 @@ export default HomePage
 export const pageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      html
       frontmatter {
+        aboutTitle
         title
         meta_title
         meta_description

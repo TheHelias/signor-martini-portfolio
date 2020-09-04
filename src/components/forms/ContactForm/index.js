@@ -20,8 +20,8 @@ const ContactForm = () => {
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
             'form-name': 'contact',
-            ...values,
-          }),
+            ...values
+          })
         })
           .then(() => {
             navigate('/contact/success')
@@ -38,7 +38,7 @@ const ContactForm = () => {
         touched,
         isSubmitting,
         handleSubmit,
-        handleReset,
+        handleReset
       }) => (<form
         name='contact'
         onSubmit={handleSubmit}
