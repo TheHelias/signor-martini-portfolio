@@ -1,7 +1,13 @@
 ---
 templateKey: home-page
-aboutTitle: About Useeee
-title: Gatsby Starter Business
+aboutTitle: About Us
+services: >-
+  fysdtyictbfidc n bndvtycy7gcyg7dcdcy7gnewcweb587c wec wec67
+  wecewg7cduygewcuywedcuywedbn we bdwe bdfey wdcy7gwedcgyn7dwencnywewcuwec
+  bnwecy67 wecuygwec bn bnwect6g7ecygewu8cwed  wecygu7yuwecuyuiwecwe ncbwecyu7
+  gwey7cy7ewychewc nwegctwectewyngcyniwec nwe yctg7wewctgiwegy7gy7ewcbn 
+  bhwecy7gwey6g7cyewcgyygweecewcew
+title: Studio
 heading: Lorem ipsum dolor sit amet
 description: >-
   Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
@@ -69,7 +75,7 @@ testimonials:
       Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
       dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.
-meta_title: Home | Gatsby Starter Business
+meta_title: Home | Martini Studio
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
