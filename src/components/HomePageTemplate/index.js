@@ -4,6 +4,7 @@ import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 import AboutPageTemplate from '../AboutPageTemplate'
+import { Link } from 'gatsby'
 
 const HomePageTemplate = ({
   aboutTitle,
@@ -13,6 +14,7 @@ const HomePageTemplate = ({
   heading,
   description,
   offerings,
+  services,
   meta_title,
   meta_description,
   testimonials
@@ -51,15 +53,38 @@ const HomePageTemplate = ({
                 <div className='content'>
                   <div>
                     <h3 className='has-text-weight-semibold is-size-2'>
-                      {heading}
+                      Services Offered
                     </h3>
-                    <p>{description}</p>
+                    <div>{services}</div>
                   </div>
-                  <Offerings gridItems={offerings.blurbs} />
-                  <h2 className='has-text-weight-semibold is-size-2'>
+                  {/* <h2 className='has-text-weight-semibold is-size-2'>
                     Testimonials
-                  </h2>
-                  <Testimonials testimonials={testimonials} />
+                    </h2>
+                  <Testimonials testimonials={testimonials} /> */}
+                </div>
+                <Link
+                  className='button is-primary is-outlined is-large is-fullwidth'
+                  to='/contact'
+                >
+                  Get A Service
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='content'>
+                  <div>
+                    <h3 className='has-text-weight-semibold is-size-2'>
+                      My Portfolio
+                    </h3>
+                    <Offerings gridItems={offerings.blurbs} />
+                  </div>
                 </div>
               </div>
             </div>
@@ -79,6 +104,7 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
+  services: PropTypes.string,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array
   }),

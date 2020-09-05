@@ -18,6 +18,7 @@ const HomePagePreview = ({ entry, widgetFor }) => {
       meta_description={entry.getIn(['data', 'meta_description'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
+      services={entry.getIn(['data', 'services'])}
       offerings={{ blurbs }}
       testimonials={testimonials}
     />
