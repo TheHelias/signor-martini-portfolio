@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
-import Testimonials from '../Testimonials'
+// import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 import AboutPageTemplate from '../AboutPageTemplate'
 import { Link } from 'gatsby'
@@ -55,7 +55,14 @@ const HomePageTemplate = ({
                     <h3 className='has-text-weight-semibold is-size-2'>
                       Services Offered
                     </h3>
-                    <div>{services}</div>
+                    {/* <div>{services}</div> */}
+                    <ul>
+                      {services.map(service => (
+                        <li key={service} className='is-size-5'>
+                          {service}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                   {/* <h2 className='has-text-weight-semibold is-size-2'>
                     Testimonials

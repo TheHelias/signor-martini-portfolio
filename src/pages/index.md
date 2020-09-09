@@ -1,12 +1,10 @@
 ---
 templateKey: home-page
 aboutTitle: About Us
-services: >-
-  fysdtyictbfidc n bndvtycy7gcyg7dcdcy7gnewcweb587c wec wec67
-  wecewg7cduygewcuywedcuywedbn we bdwe bdfey wdcy7gwedcgyn7dwencnywewcuwec
-  bnwecy67 wecuygwec bn bnwect6g7ecygewu8cwed  wecygu7yuwecuyuiwecwe ncbwecyu7
-  gwey7cy7ewychewc nwegctwectewyngcyniwec nwe yctg7wewctgiwegy7gy7ewcbn 
-  bhwecy7gwey6g7cyewcgyygweecewcew
+services:
+  - Pellentesque luctus neque id mauris accumsan
+  - nec imperdiet justo eleifend
+  - Sed eget ornare orci
 title: Studio
 heading: Lorem ipsum dolor sit amet
 description: >-

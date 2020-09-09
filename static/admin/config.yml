@@ -7,55 +7,138 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - file: "src/pages/index.md"
-        label: "Home Page"
-        name: "home"
+      - file: 'src/pages/index.md'
+        label: 'Home Page'
+        name: 'home'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
-          - {label: "About Title", name: "aboutTitle", widget: "string"}
-          - {label: "About Body", name: "body", widget: "markdown"}
-          - {label: "Services Body", name: "services", widget: "markdown"}
-          - {label: Title, name: title, widget: string}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
-      - file: "src/pages/pricing/index.md"
-        label: "Pricing Page"
-        name: "pricing"
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'home-page',
+            }
+          - { label: 'About Title', name: 'aboutTitle', widget: 'string' }
+          - { label: 'About Body', name: 'body', widget: 'markdown' }
+          - { label: 'Services', name: 'services', widget: 'list' }
+          - { label: Title, name: title, widget: string }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Description, name: description, widget: string }
+          - {
+              label: Offerings,
+              name: offerings,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Testimonials,
+              name: testimonials,
+              widget: list,
+              fields:
+                [
+                  { label: Quote, name: quote, widget: string },
+                  { label: Author, name: author, widget: string },
+                ],
+            }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
+            }
+      - file: 'src/pages/pricing/index.md'
+        label: 'Pricing Page'
+        name: 'pricing'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pricing-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
-      - file: "src/pages/contact/index.md"
-        label: "Contact Page"
-        name: "contact"
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'pricing-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - {
+              label: Pricing,
+              name: pricing,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: string },
+                  {
+                    label: Plans,
+                    name: plans,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Plan, name: plan, widget: string },
+                        { label: Price, name: price, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
+                        { label: Items, name: items, widget: list },
+                      ],
+                  },
+                ],
+            }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
+            }
+      - file: 'src/pages/contact/index.md'
+        label: 'Contact Page'
+        name: 'contact'
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'contact-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+          - {
+              label: 'Meta Description',
+              name: 'meta_description',
+              widget: 'text',
+            }
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/pages/blog'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Cover", name: "cover", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Meta Title", name: "meta_title", widget: "string"}
-      - {label: "Meta Description", name: "meta_description", widget: "text"}
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'article-page',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Cover', name: 'cover', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Meta Title', name: 'meta_title', widget: 'string' }
+      - { label: 'Meta Description', name: 'meta_description', widget: 'text' }
