@@ -2,6 +2,7 @@ $primary: #663300
 $primary-invert: #fff7ef
 $primary-font-size: 24px
 $navbar-dropdown-background-color: $primary
+$title-color: #D86c70
 
 @import "~bulma"
 
@@ -12,6 +13,12 @@ body,
 #layout-wrapper
   height: 100%
   background: $primary-invert !important
+
+h1, h2, h3, h4, h5, h6
+  color: $title-color !important
+
+p, li
+  font-size: $primary-font-size
 
 #layout-wrapper
   width: 100%
@@ -37,7 +44,7 @@ nav
 
 .section
   color: $primary
-  h1, h2, h3, strong
+  strong
     color: $primary 
 .content .taglist
   list-style: none
@@ -59,13 +66,9 @@ nav
 
 .hero
   background-color: $primary-invert
-  h1
-    color: $primary
 
 .hero.is-fullheight
   background-color: $primary-invert
-  h1
-    color: $primary 
 
 .portfolio--item
   box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
