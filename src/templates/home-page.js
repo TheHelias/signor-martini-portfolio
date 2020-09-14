@@ -16,6 +16,8 @@ const HomePage = ({ data }) => {
         aboutContent={html}
         aboutContentComponent={HTMLContent}
         title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
+        summary={frontmatter.summary}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         heading={frontmatter.heading}
@@ -45,6 +47,8 @@ export const pageQuery = graphql`
       frontmatter {
         aboutTitle
         title
+        subtitle
+        summary
         meta_title
         meta_description
         heading

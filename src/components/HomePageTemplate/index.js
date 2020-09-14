@@ -1,16 +1,20 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
+import { FaChevronDown } from 'react-icons/fa'
+
+import AboutPageTemplate from '../AboutPageTemplate'
 import Offerings from '../Offerings'
 // import Testimonials from '../Testimonials'
-import PropTypes from 'prop-types'
-import AboutPageTemplate from '../AboutPageTemplate'
-import { Link } from 'gatsby'
 
 const HomePageTemplate = ({
   aboutTitle,
   aboutContent,
   aboutContentComponent,
   title,
+  subtitle,
+  summary,
   heading,
   description,
   offerings,
@@ -25,19 +29,25 @@ const HomePageTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-bold is-medium'>
+      <section className='hero is-fullheight is-bold is-medium'>
         <div className='hero-body'>
           <div className='container'>
             <div className='columns'>
               <div className='column is-6'>
                 <div className='section'>
                   <h1 className='title  is-size-1 has-text-weight-bold'>
-                    Akande Kunle {title}
+                    {title}
                   </h1>
+                  <p className='subtitle'>{subtitle}</p>
+                  <p className='hero--summary'>{summary}</p>
+                  <button class='button is-large is-primary hero--button'>
+                    <span>Know More</span>
+                    <FaChevronDown className='hero--button__icon' />
+                  </button>
                 </div>
               </div>
-              <div className='column is-6'>
-                <img src='/img/hero-image.jpg' />
+              <div className='column is-6 hero--image'>
+                <img className='hero--image' src='/img/hero-image.jpg' />
               </div>
             </div>
           </div>
@@ -60,7 +70,7 @@ const HomePageTemplate = ({
                     </h3>
                     {/* <div>{services}</div> */}
                     <ul>
-                      {services.map(service => (
+                      {services.map((service) => (
                         <li key={service} className='is-size-5'>
                           {service}
                         </li>
@@ -110,6 +120,8 @@ HomePageTemplate.propTypes = {
   aboutContent: PropTypes.string,
   aboutContentComponent: PropTypes.func,
   title: PropTypes.string,
+  subtitle: PropTypes.string,
+  summary: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
   heading: PropTypes.string,

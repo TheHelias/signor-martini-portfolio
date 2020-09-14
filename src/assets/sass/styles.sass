@@ -1,6 +1,7 @@
 $primary: #663300
 $primary-invert: #fff7ef
 $primary-font-size: 24px
+$primary-border-radius: 12px
 $navbar-dropdown-background-color: $primary
 $title-color: #D86c70
 
@@ -19,6 +20,7 @@ h1, h2, h3, h4, h5, h6
 
 p, li
   font-size: $primary-font-size
+  color: $primary !important
 
 #layout-wrapper
   width: 100%
@@ -42,10 +44,6 @@ nav
   .navbar--right--items
     margin-left: 50px  
 
-.section
-  color: $primary
-  strong
-    color: $primary 
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -66,10 +64,24 @@ nav
 
 .hero
   background-color: $primary-invert
+  .subtitle
+    font-size: 32px
 
 // .hero--grid 
 //   display: grid
 //   grid-template-columns: 50% 50%
+
+.hero--summary
+  margin-bottom: 30px 
+
+.hero--button
+  border-radius: $primary-border-radius !important
+
+.hero--button__icon
+  margin: 5px 0 0 20px 
+
+.hero--image
+  border-radius: $primary-border-radius
 
 .portfolio--item
   box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
