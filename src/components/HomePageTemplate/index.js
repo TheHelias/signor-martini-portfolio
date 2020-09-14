@@ -25,16 +25,19 @@ const HomePageTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-fullheight is-bold is-medium'>
+      <section className='hero is-bold is-medium'>
         <div className='hero-body'>
           <div className='container'>
             <div className='columns'>
-              <div className='column is-10 is-offset-1'>
+              <div className='column is-6'>
                 <div className='section'>
                   <h1 className='title  is-size-1 has-text-weight-bold'>
                     Akande Kunle {title}
                   </h1>
                 </div>
+              </div>
+              <div className='column is-6'>
+                <img src='/img/hero-image.jpg' />
               </div>
             </div>
           </div>
