@@ -12,7 +12,6 @@ const HomePage = ({ data }) => {
   return (
     <Layout>
       <HomePageTemplate
-        aboutTitle={frontmatter.aboutTitle}
         aboutContent={html}
         aboutContentComponent={HTMLContent}
         title={frontmatter.title}
@@ -45,7 +44,6 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        aboutTitle
         title
         subtitle
         summary

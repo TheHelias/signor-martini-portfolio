@@ -11,7 +11,6 @@ const HomePagePreview = ({ entry, widgetFor }) => {
 
   return (
     <HomePageTemplate
-      aboutTitle={entry.getIn(['data', 'aboutTitle'])}
       aboutContent={widgetFor('body')}
       title={entry.getIn(['data', 'title'])}
       subtitle={entry.getIn(['data', 'subtitle'])}

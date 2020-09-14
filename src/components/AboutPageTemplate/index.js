@@ -2,7 +2,7 @@ import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
 
-const AboutPageTemplate = ({ title, content, contentComponent }) => {
+const AboutPageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -12,7 +12,7 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <h1 className='title is-size-2'>{title}</h1>
+                <h1 className='title is-size-2'>About Me</h1>
                 <PageContent className='content' content={content} />
               </div>
             </div>
@@ -24,7 +24,6 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
 }
 
 AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 }

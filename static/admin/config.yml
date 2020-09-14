@@ -20,7 +20,6 @@ collections:
               widget: 'hidden',
               default: 'home-page',
             }
-          - { label: 'About Title', name: 'aboutTitle', widget: 'string' }
           - { label: 'About Body', name: 'body', widget: 'markdown' }
           - { label: 'Services', name: 'services', widget: 'list' }
           - { label: Title, name: title, widget: string }

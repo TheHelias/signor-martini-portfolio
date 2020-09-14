@@ -27,19 +27,20 @@ export default class BlogPage extends Component {
     const { group, index, first, last } = pageContext
     const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
     const nextUrl = (index + 1).toString() + '/'
+    console.log(this.props)
 
     const websiteSchemaOrgJSONLD = {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
       url: config.siteUrl,
       name: config.siteTitle,
-      alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+      alternateName: config.siteTitleAlt ? config.siteTitleAlt : ''
     }
 
     return (
       <Layout>
         <Helmet>
-          <title>Blog | Gatsby Starter Business</title>
+          <title>Blog | Signor Martini</title>
           {/* Schema.org tags */}
           <script type='application/ld+json'>
             {JSON.stringify(websiteSchemaOrgJSONLD)}

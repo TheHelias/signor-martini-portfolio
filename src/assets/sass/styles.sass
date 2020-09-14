@@ -4,6 +4,7 @@ $primary-font-size: 24px
 $primary-border-radius: 12px
 $navbar-dropdown-background-color: $primary
 $title-color: #D86c70
+$column-gap: 2rem
 
 @import "~bulma"
 
@@ -12,15 +13,16 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper,
 #layout-wrapper
+  scroll-behavior: smooth
   height: 100%
   background: $primary-invert !important
 
 h1, h2, h3, h4, h5, h6
   color: $title-color !important
 
-p, li
+p, li, strong
   font-size: $primary-font-size
-  color: $primary !important
+  color: $primary
 
 #layout-wrapper
   width: 100%
@@ -83,17 +85,22 @@ nav
 .hero--image
   border-radius: $primary-border-radius
 
-.portfolio--item
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
-  margin-top: 50px
-// .portfolio--item:nth-child(even):hover
-//   box-shadow: 10px 5px 15px rgba(0, 0, 0, .5)
-// .portfolio--item:nth-child(odd):hover
-//   box-shadow: -10px 5px 15px rgba(0, 0, 0, .5)    
+.portfolio--item > section
+  padding: 1rem
+  box-shadow: 0 5px 10px rgba(0,0,0,.05)
+  border: 1px solid rgba(0,0,0,.08)
+  border-radius: $primary-border-radius
+  transition: box-shadow .3s linear
+  &:hover
+    box-shadow: 0 30px 60px rgba(0,0,0,.1)
+    border: 1px solid rgba(0,0,0,.12)
+ 
 .portfolio--item__image
   position: relative
+  border-radius: $primary-border-radius
 
 .portfolio--item__image--overlay
+  border-radius: $primary-border-radius
   background-color: rgba(0, 0, 0, 0.5)
   position: absolute
   width: 100%

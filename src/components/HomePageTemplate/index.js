@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
+import { navigate } from '@reach/router'
 import { Link } from 'gatsby'
 import { FaChevronDown } from 'react-icons/fa'
 
@@ -9,7 +10,6 @@ import Offerings from '../Offerings'
 // import Testimonials from '../Testimonials'
 
 const HomePageTemplate = ({
-  aboutTitle,
   aboutContent,
   aboutContentComponent,
   title,
@@ -23,6 +23,10 @@ const HomePageTemplate = ({
   meta_description,
   testimonials
 }) => {
+  const aboutLink = () => {
+    navigate('#about')
+  }
+
   return (
     <div>
       <Helmet>
@@ -40,7 +44,10 @@ const HomePageTemplate = ({
                   </h1>
                   <p className='subtitle'>{subtitle}</p>
                   <p className='hero--summary'>{summary}</p>
-                  <button class='button is-large is-primary hero--button'>
+                  <button
+                    onClick={aboutLink}
+                    class='button is-large is-primary hero--button'
+                  >
                     <span>Know More</span>
                     <FaChevronDown className='hero--button__icon' />
                   </button>
@@ -53,8 +60,8 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
+      <span id='about' />
       <AboutPageTemplate
-        title={aboutTitle}
         content={aboutContent}
         contentComponent={aboutContentComponent}
       />
@@ -65,13 +72,10 @@ const HomePageTemplate = ({
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div>
-                    <h3 className='has-text-weight-semibold is-size-2'>
-                      Services Offered
-                    </h3>
-                    {/* <div>{services}</div> */}
+                    <h1 className='title is-size-2'> What do I do?</h1>
                     <ul>
                       {services.map((service) => (
-                        <li key={service} className='is-size-5'>
+                        <li key={service} className='is-size-3'>
                           {service}
                         </li>
                       ))}
@@ -82,10 +86,7 @@ const HomePageTemplate = ({
                     </h2>
                   <Testimonials testimonials={testimonials} /> */}
                 </div>
-                <Link
-                  className='button is-primary is-outlined is-large is-fullwidth'
-                  to='/contact'
-                >
+                <Link className='button is-primary is-large' to='/contact'>
                   Get A Service
                 </Link>
               </div>
@@ -100,10 +101,26 @@ const HomePageTemplate = ({
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div>
-                    <h3 className='has-text-weight-semibold is-size-2'>
-                      My Portfolio
-                    </h3>
+                    <h1 className='title is-size-2'>My Portfolio</h1>
                     <Offerings gridItems={offerings.blurbs} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='content'>
+                  <div>
+                    <h1 className='title is-size-2'>Latest Posts</h1>
+                    <Link className='button is-primary is-large' to='/blog'>
+                      See More
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -116,7 +133,6 @@ const HomePageTemplate = ({
 }
 
 HomePageTemplate.propTypes = {
-  aboutTitle: PropTypes.string.isRequired,
   aboutContent: PropTypes.string,
   aboutContentComponent: PropTypes.func,
   title: PropTypes.string,

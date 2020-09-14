@@ -32,9 +32,9 @@ Pricing.propTypes = {
       plan: PropTypes.string,
       price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       description: PropTypes.string,
-      items: PropTypes.array,
+      items: PropTypes.array
     })
-  ),
+  )
 }
 
 export default Pricing
