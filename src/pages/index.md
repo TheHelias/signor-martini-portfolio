@@ -19,7 +19,7 @@ offerings:
     - image: /img/coffee.png
       text: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      video: ye6JssTdnvw
+      video: dO_MZgjNtmk
     - image: /img/coffee-gear.png
       text: |
         Fusce semper turpis sed tortor consectetur condimentum. 
