@@ -56,6 +56,7 @@ export const pageQuery = graphql`
           blurbs {
             image
             text
+            video
           }
         }
         testimonials {
