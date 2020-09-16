@@ -13,7 +13,7 @@ module.exports = {
   userTwitter: 'signor_martini',
   userLocation: 'Ibadan, Nigeria',
   userDescription: '',
-  copyright: 'Copyright © Gatsby Starter Business 2018-2019. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
+  copyright: 'Copyright © Martini Akande 2020. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#D86c70', // Used for setting manifest and progress theme colors.
   backgroundColor: '#fff7ef' // Used for setting manifest background color.
 }
