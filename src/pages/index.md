@@ -19,11 +19,11 @@ offerings:
     - image: /img/coffee.png
       text: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      video: JRWox-i6aAk
+      video: ye6JssTdnvw
     - image: /img/coffee-gear.png
       text: |
         Fusce semper turpis sed tortor consectetur condimentum. 
-      video: XQOpeJ8YHrE
+      video: ye6JssTdnvw
     - image: /img/tutorials.png
       text: |
         Sed in consequat leo, sit amet ullamcorper lacus.
@@ -32,7 +32,7 @@ offerings:
       text: >
         Vestibulum libero lectus, dignissim eget magna sit amet, malesuada
         tincidunt mi.
-      video: YrLk4vdY28Q
+      video: ye6JssTdnvw
 testimonials:
   - author: Vaibhav Sharma
     quote: >-
