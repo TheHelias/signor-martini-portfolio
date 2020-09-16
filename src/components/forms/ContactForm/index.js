@@ -5,7 +5,7 @@ import validationSchema from './validationSchema'
 
 const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&')
 }
 
@@ -15,7 +15,8 @@ const ContactForm = () => {
       initialValues={{ name: '', email: '', message: '' }}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
-        fetch("/?no-cache=1", {                                 //eslint-disable-line
+        fetch('/?no-cache=1', {
+          //eslint-disable-line
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
@@ -27,9 +28,9 @@ const ContactForm = () => {
             navigate('/contact/success')
             setSubmitting(false)
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error)
-            alert("Error: Please Try Again!");                            //eslint-disable-line
+            alert('Error: Please Try Again!') //eslint-disable-line
             setSubmitting(false)
           })
       }}
@@ -39,46 +40,82 @@ const ContactForm = () => {
         isSubmitting,
         handleSubmit,
         handleReset
-      }) => (<form
-        name='contact'
-        onSubmit={handleSubmit}
-        onReset={handleReset}
-        data-netlify='true'
-        data-netlify-honeypot='bot-field'
-      >
-        <div className='field'>
-          <label className='label'>Name</label>
-          <div className='control'>
-            <Field className='input' type='text' placeholder='Full Name' name='name' id='name' />
+      }) => (
+        <form
+          name='contact'
+          onSubmit={handleSubmit}
+          onReset={handleReset}
+          data-netlify='true'
+          data-netlify-honeypot='bot-field'
+          className='contact--form'
+        >
+          <div className='field'>
+            <label className='label'>Name</label>
+            <div className='control'>
+              <Field
+                className='input'
+                type='text'
+                placeholder='Full Name'
+                name='name'
+                id='name'
+              />
+            </div>
+            {touched.name && errors.name && (
+              <small className='has-text-danger'>{errors.name}</small>
+            )}
           </div>
-          {touched.name && errors.name && <small className='has-text-danger'>{errors.name}</small>}
-        </div>
 
-        <div className='field'>
-          <label className='label'>Email</label>
-          <div className='control'>
-            <Field className='input' type='email' placeholder='Email' name='email' id='email' />
+          <div className='field'>
+            <label className='label'>Email</label>
+            <div className='control'>
+              <Field
+                className='input'
+                type='email'
+                placeholder='Email'
+                name='email'
+                id='email'
+              />
+            </div>
+            {touched.email && errors.email && (
+              <small className='has-text-danger'>{errors.email}</small>
+            )}
           </div>
-          {touched.email && errors.email && <small className='has-text-danger'>{errors.email}</small>}
-        </div>
 
-        <div className='field'>
-          <label className='label'>Message</label>
-          <div className='control'>
-            <Field className='textarea' component='textarea' placeholder='Message' name='message' id='message' rows='6' />
+          <div className='field'>
+            <label className='label'>Message</label>
+            <div className='control'>
+              <Field
+                className='textarea'
+                component='textarea'
+                placeholder='Message'
+                name='message'
+                id='message'
+                rows='6'
+              />
+            </div>
+            {touched.message && errors.message && (
+              <small className='has-text-danger'>{errors.message}</small>
+            )}
           </div>
-          {touched.message && errors.message && <small className='has-text-danger'>{errors.message}</small>}
-        </div>
 
-        <div className='field is-grouped is-pulled-right'>
-          <div className='control'>
-            <button className='button' type='reset'>Clear</button>
+          <div className='field is-grouped is-pulled-right'>
+            <div className='control'>
+              <button className='button' type='reset'>
+                Clear
+              </button>
+            </div>
+            <div className='control'>
+              <button
+                className='button is-primary'
+                type='submit'
+                disabled={isSubmitting}
+              >
+                Submit
+              </button>
+            </div>
           </div>
-          <div className='control'>
-            <button className='button is-primary' type='submit' disabled={isSubmitting}>Submit</button>
-          </div>
-        </div>
-      </form>)}
+        </form>
+      )}
     />
   )
 }

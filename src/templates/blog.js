@@ -27,7 +27,6 @@ export default class BlogPage extends Component {
     const { group, index, first, last } = pageContext
     const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
     const nextUrl = (index + 1).toString() + '/'
-    console.log(this.props)
 
     const websiteSchemaOrgJSONLD = {
       '@context': 'http://schema.org',
@@ -40,19 +39,19 @@ export default class BlogPage extends Component {
     return (
       <Layout>
         <Helmet>
-          <title>Blog | Signor Martini</title>
+          <title>Blog | Martini Akande</title>
           {/* Schema.org tags */}
           <script type='application/ld+json'>
             {JSON.stringify(websiteSchemaOrgJSONLD)}
           </script>
         </Helmet>
-        <section className='hero is-primary is-bold'>
+        <section className='hero is-bold'>
           <div className='hero-body'>
             <div className='container'>
               <div className='columns'>
                 <div className='column is-10 is-offset-1'>
                   <div className='section'>
-                    <h1 className='title'>
+                    <h1 className='title is-size-1 has-text-weight-bold'>
                       Blog
                     </h1>
                   </div>

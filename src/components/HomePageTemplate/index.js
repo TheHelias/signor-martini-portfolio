@@ -118,7 +118,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className='section section--gradient'>
+      {/* <section className='section section--gradient'>
         <div className='container'>
           <div className='section'>
             <div className='columns'>
@@ -135,7 +135,7 @@ const HomePageTemplate = ({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
