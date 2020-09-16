@@ -2,6 +2,7 @@ $primary: #663300
 $primary-invert: #fff7ef
 $primary-font-size: 24px
 $primary-border-radius: 12px
+$primary-border-color: 1px solid rgba(0,0,0,.08)
 $navbar-dropdown-background-color: $primary
 $title-color: #D86c70
 $column-gap: 2rem
@@ -98,11 +99,17 @@ nav
     background: $title-color
     border-radius: $primary-border-radius
 
+.services--section
+  width: 100% 
+  margin: auto auto !important
+  .services--section__item
+    border: $primary-border-color
+
 .portfolio--item > section
   padding: 1rem
   cursor: pointer
   box-shadow: 0 5px 10px rgba(0,0,0,.05)
-  border: 1px solid rgba(0,0,0,.08)
+  border: $primary-border-color
   border-radius: $primary-border-radius
   transition: box-shadow .3s linear
   &:hover

@@ -72,13 +72,22 @@ const HomePageTemplate = ({
                 <div className='content'>
                   <div>
                     <h1 className='title is-size-2'> What do I do?</h1>
-                    <ul>
+                    <div
+                      className='columns is-multiline services--section'
+                    >
                       {services.map((service) => (
-                        <li key={service} className='is-size-3'>
-                          {service}
-                        </li>
+                        <div
+                          key={service.plan}
+                          className='column is-4 services--section__item'
+                        >
+                          <section className='section'>
+                            <p className='is-size-3 has-text-weight-bold has-text-centered'>
+                              {service}
+                            </p>
+                          </section>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                   {/* <h2 className='has-text-weight-semibold is-size-2'>
                     Testimonials
