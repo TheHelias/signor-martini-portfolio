@@ -1,19 +1,19 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Business', // Site title.
-  siteTitleAlt: 'Business', // Alternative site title for SEO.
+  siteTitle: 'Martini Akande Website', // Site title.
+  siteTitleAlt: 'Martini Akande Portfolio and Blog', // Alternative site title for SEO.
   siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://gatsby-starter-business.netlify.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://martiniakande.com/', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
-  siteDescription: 'Leverage Gatsby Business Starter for your Business.', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'Martini Akande portfolio website and blog', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml',
   siteFBAppID: '', // FB Application ID for using app insights
   googleTagManagerID: '', // GTM tracking ID.
   disqusShortname: 'gatsby-business-starter', // Disqus shortname.
-  userName: 'Vaibhav Sharma',
-  userTwitter: 'vaibhaved',
-  userLocation: 'Delhi NCR, India',
+  userName: 'Martini Akande',
+  userTwitter: 'signor_martini',
+  userLocation: 'Ibadan, Nigeria',
   userDescription: '',
   copyright: 'Copyright © Gatsby Starter Business 2018-2019. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
-  themeColor: '#00d1b2', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#ffffff', // Used for setting manifest background color.
+  themeColor: '#D86c70', // Used for setting manifest and progress theme colors.
+  backgroundColor: '#fff7ef' // Used for setting manifest background color.
 }
