@@ -87,8 +87,20 @@ nav
 .hero--image
   border-radius: $primary-border-radius
 
+.about--section
+  height: 100vh
+  padding-top: 100px
+  h1, h2, h3, h4, h5
+    color: #ffe4db !important
+  p, strong, li
+    color: $primary-invert !important
+  .about--section__content
+    background: $title-color
+    border-radius: $primary-border-radius
+
 .portfolio--item > section
   padding: 1rem
+  cursor: pointer
   box-shadow: 0 5px 10px rgba(0,0,0,.05)
   border: 1px solid rgba(0,0,0,.08)
   border-radius: $primary-border-radius
@@ -119,4 +131,17 @@ nav
   background: transparent
   color: #fff
   font-size: 80px
+
+.portfolio--item__video-modal
+  background: rgba(0, 0, 0, 0.3)
+  display: flex
+  align-items: center
+  justify-content: center
+
+.portfolio--item__video-modal__content
+  max-width: 80%;
+  background: white
+  padding: 3rem
+  border-radius: $primary-border-radius  
+
 @import "~bulma"

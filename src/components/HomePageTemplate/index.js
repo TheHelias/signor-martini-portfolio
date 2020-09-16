@@ -60,7 +60,6 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <span id='about' />
       <AboutPageTemplate
         content={aboutContent}
         contentComponent={aboutContentComponent}

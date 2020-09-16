@@ -6,9 +6,9 @@ const AboutPageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div>
+    <div id='about' className='about--section'>
       <section className='section section--gradient'>
-        <div className='container'>
+        <div className='container about--section__content'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
