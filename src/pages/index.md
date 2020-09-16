@@ -5,9 +5,11 @@ services:
   - Video Editing
   - Sound Mixing
   - Color Grading
-title: Signor Martini
+title: Akande Martini
 subtitle: Filmmaker
-summary: I am an Englishman in New York, I am alien, I am a legal alien, I am an English Man in New York
+summary: >-
+  I am an Englishman in New York, I am alien, I am a legal alien, I am an
+  English Man in New York
 heading: Lorem ipsum dolor sit amet
 description: >-
   Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
@@ -15,15 +17,15 @@ description: >-
 offerings:
   blurbs:
     - image: /img/coffee.png
-      text: >
+      text: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       video: JRWox-i6aAk
     - image: /img/coffee-gear.png
-      text: >
+      text: |
         Fusce semper turpis sed tortor consectetur condimentum. 
       video: XQOpeJ8YHrE
     - image: /img/tutorials.png
-      text: >
+      text: |
         Sed in consequat leo, sit amet ullamcorper lacus.
       video: ye6JssTdnvw
     - image: /img/meeting-space.png
@@ -42,7 +44,7 @@ testimonials:
       Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
       dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.
-meta_title: Home | Martini Studio
+meta_title: Home | Martini Akande
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
