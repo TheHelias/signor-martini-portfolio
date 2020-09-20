@@ -15,8 +15,6 @@ const HomePageTemplate = ({
   title,
   subtitle,
   summary,
-  heading,
-  description,
   offerings,
   services,
   meta_title,
