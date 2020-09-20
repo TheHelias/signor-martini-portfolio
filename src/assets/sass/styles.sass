@@ -1,6 +1,8 @@
 $primary: #663300
 $primary-invert: #fff7ef
 $primary-font-size: 24px
+$primary-font-size-mobile: 20px
+$title-font-size-mobile: 36px
 $primary-border-radius: 12px
 $primary-border-color: 1px solid rgba(0,0,0,.08)
 $navbar-dropdown-background-color: $primary
@@ -74,6 +76,7 @@ nav
   background-color: $primary-invert
   .subtitle
     font-size: 32px
+    color: $primary
 
 // .hero--grid 
 //   display: grid
@@ -160,4 +163,44 @@ nav
 .contact--form  
   label, input
     color: $primary !important
+
+.mobile--hero
+  display: none !important 
+
+@media screen and (max-width: 768px)
+  h1.title.is-size-2
+    font-size: 36px !important
+
+  nav
+    min-height: 10px !important
+
+  .section
+    padding: 3rem 1rem !important   
+
+  .content h2
+    font-size: 1.5rem
+    
+  .mobile--hero
+    display: block !important
+    background: rgba(0, 0, 0, 0) url('/img/hero-image.jpg') no-repeat scroll center top
+
+  .mobile--hero > .section
+    padding-top: 60px !important
+    background: rgba(255, 247, 239, 0.5)
+
+  p, li, strong, span
+    font-size: $primary-font-size-mobile
+
+  .desktop--hero
+    display: none !important
+
+  .hero .subtitle
+    font-size: 28px
+
+  .about--section
+    padding-top: 0
+
+  .about--content
+    padding-top: 0 !important
+    padding-bottom: 0 !important
 @import "~bulma"

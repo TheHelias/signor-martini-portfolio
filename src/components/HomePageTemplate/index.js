@@ -31,7 +31,7 @@ const HomePageTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-fullheight is-bold is-medium'>
+      <section className='hero is-fullheight desktop--hero'>
         <div className='hero-body'>
           <div className='container'>
             <div className='columns'>
@@ -56,6 +56,22 @@ const HomePageTemplate = ({
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className='hero mobile--hero'>
+        <div className='section'>
+          <h1 className='title  is-size-2-mobile has-text-weight-bold'>
+            {title}
+          </h1>
+          <p className='subtitle'>{subtitle}</p>
+          <p className='hero--summary'>{summary}</p>
+          <button
+            onClick={aboutLink}
+            class='button is-large is-primary hero--button'
+          >
+            <span>Know More</span>
+            <FaChevronDown className='hero--button__icon' />
+          </button>
         </div>
       </section>
       <AboutPageTemplate

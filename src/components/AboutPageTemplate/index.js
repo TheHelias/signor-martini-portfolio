@@ -11,7 +11,7 @@ const AboutPageTemplate = ({ content, contentComponent }) => {
         <div className='container about--section__content'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
-              <div className='section'>
+              <div className='section about--content'>
                 <h1 className='title is-size-2'>About Me</h1>
                 <PageContent className='content' content={content} />
               </div>
