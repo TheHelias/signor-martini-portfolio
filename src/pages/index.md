@@ -1,19 +1,15 @@
 ---
 templateKey: home-page
-services:
-  - Post Production
-  - Video Editing
-  - Sound Mixing
-  - Color Grading
 title: Akande Martini
 subtitle: Filmmaker
 summary: >-
   I am an Englishman in New York, I am alien, I am a legal alien, I am an
   English Man in New York
-heading: Lorem ipsum dolor sit amet
-description: >-
-  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-  adipisci velit...
+services:
+  - Post Production
+  - Video Editing
+  - Sound Mixing
+  - Color Grading
 offerings:
   blurbs:
     - image: /img/coffee.png
@@ -23,7 +19,7 @@ offerings:
     - image: /img/coffee-gear.png
       text: |
         Fusce semper turpis sed tortor consectetur condimentum. 
-      video: ye6JssTdnvw
+      video: IPhJ9zcHJ40
     - image: /img/tutorials.png
       text: |
         Sed in consequat leo, sit amet ullamcorper lacus.
