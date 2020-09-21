@@ -1,8 +1,8 @@
 $primary: #663300
 $primary-invert: #fff7ef
 $primary-font-size: 24px
-$primary-font-size-mobile: 20px
-$title-font-size-mobile: 36px
+$primary-font-size-mobile: 1rem
+$title-font-size-mobile: 2rem
 $primary-border-radius: 12px
 $primary-border-color: 1px solid rgba(0,0,0,.08)
 $navbar-dropdown-background-color: $primary
@@ -20,6 +20,7 @@ body,
 #layout-wrapper
   scroll-behavior: smooth
   height: 100%
+  text-align: justify
   background: $primary-invert !important
 
 h1, h2, h3, h4, h5, h6
@@ -53,6 +54,8 @@ nav
       color: white !important
   .navbar--right--items
     margin-left: 50px  
+  .navbar-item--active
+    color: white !important
 
 .content .taglist
   list-style: none
@@ -77,10 +80,6 @@ nav
   .subtitle
     font-size: 32px
     color: $primary
-
-// .hero--grid 
-//   display: grid
-//   grid-template-columns: 50% 50%
 
 .hero--summary
   margin-bottom: 30px 
@@ -108,6 +107,8 @@ nav
 .services--section
   width: 100% 
   margin: auto auto !important
+  .button
+    border-radius: $primary-border-radius !important
   .services--section__item
     border: $primary-border-color
 
@@ -169,20 +170,28 @@ nav
 
 @media screen and (max-width: 768px)
   h1.title.is-size-2
-    font-size: 36px !important
+    font-size: 2rem !important
 
   nav
     min-height: 10px !important
+    font-size: $primary-font-size-mobile
+    .navbar--right--items
+      margin-left: 0 
 
+  .navbar-menu
+    background: $primary !important
   .section
     padding: 3rem 1rem !important   
 
   .content h2
-    font-size: 1.5rem
-    
+    font-size: 1.25rem !important
+
   .mobile--hero
     display: block !important
     background: rgba(0, 0, 0, 0) url('/img/hero-image.jpg') no-repeat scroll center top
+    .button
+      padding-top: 0
+      padding-bottom: 0
 
   .mobile--hero > .section
     padding-top: 60px !important
@@ -195,12 +204,16 @@ nav
     display: none !important
 
   .hero .subtitle
-    font-size: 28px
+    font-size: 1.5rem
 
-  .about--section
-    padding-top: 0
-
-  .about--content
+  .about--content, .about--section, .portfolio--section, .services--section 
     padding-top: 0 !important
     padding-bottom: 0 !important
+
+  .portfolio--section > .container  > .section
+    padding-top: 1rem !important
+
+  #services .button
+    // padding: 1rem
+    font-size: $primary-font-size-mobile !important
 @import "~bulma"

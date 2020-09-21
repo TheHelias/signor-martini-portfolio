@@ -22,7 +22,7 @@ const HomePageTemplate = ({
   testimonials
 }) => {
   const aboutLink = () => {
-    navigate('#about')
+    navigate('/#about')
   }
 
   return (
@@ -78,14 +78,14 @@ const HomePageTemplate = ({
         content={aboutContent}
         contentComponent={aboutContentComponent}
       />
-      <section className='section section--gradient'>
+      <section id='services' className='section section--gradient services--section'>
         <div className='container'>
           <div className='section'>
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div>
-                    <h1 className='title is-size-2'> What do I do?</h1>
+                    <h1 className='title is-size-2'> Services</h1>
                     <div
                       className='columns is-multiline services--section'
                     >
@@ -95,7 +95,7 @@ const HomePageTemplate = ({
                           className='column is-4 services--section__item'
                         >
                           <section className='section'>
-                            <p className='is-size-3 has-text-weight-bold has-text-centered'>
+                            <p className='is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered'>
                               {service}
                             </p>
                           </section>
@@ -116,14 +116,14 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className='section section--gradient'>
+      <section id='portfolio' className='section section--gradient portfolio--section'>
         <div className='container'>
           <div className='section'>
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div>
-                    <h1 className='title is-size-2'>My Portfolio</h1>
+                    <h1 className='title is-size-2'>Portfolio</h1>
                     <Offerings gridItems={offerings.blurbs} />
                   </div>
                 </div>
