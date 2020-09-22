@@ -95,7 +95,7 @@ const HomePageTemplate = ({
                           className='column is-4 services--section__item'
                         >
                           <section className='section'>
-                            <p className='is-size-3 is-size-4-mobile has-text-weight-bold has-text-centered'>
+                            <p className='is-size-3 is-size-4-mobile has-text-centered'>
                               {service}
                             </p>
                           </section>

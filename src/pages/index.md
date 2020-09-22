@@ -10,6 +10,9 @@ services:
   - Video Editing
   - Sound Mixing
   - Color Grading
+  - Color Grading
+  - Color Grading
+  - Color Grading
 offerings:
   blurbs:
     - image: /img/coffee.png
