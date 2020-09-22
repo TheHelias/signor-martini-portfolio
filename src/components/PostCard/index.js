@@ -9,7 +9,6 @@ const PostCard = ({ posts }) => {
         .map(({ node: post }) => (
           <div
             className='content post--card'
-            style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
             key={post.id}
           >
             <h3>
