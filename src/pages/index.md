@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
-title: Akande Martini
-subtitle: Filmmaker
+title: Martini Akande
+subtitle: 'Film Editor '
 summary: >-
   I am an Englishman in New York, I am alien, I am a legal alien, I am an
   English Man in New York
