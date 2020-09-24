@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik, Field } from 'formik'
 import { navigate } from 'gatsby-link'
-import validationSchema from './validationSchema'
+import * as Yup from 'yup'
 
 const encode = (data) => {
   return Object.keys(data)
@@ -9,10 +9,21 @@ const encode = (data) => {
     .join('&')
 }
 
-const ContactForm = () => {
+const ContactForm = ({ services }) => {
+  const validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .min(2, 'Too Short!')
+      .max(50, 'Too Long!')
+      .required('Name is Required!'),
+    email: Yup.string()
+      .email('Enter a Valid Email!')
+      .required('Email is Required!'),
+    message: Yup.string().required('Message is Required!'),
+    service: Yup.string().oneOf(services, 'Invalid').required('Required')
+  })
   return (
     <Formik
-      initialValues={{ name: '', email: '', message: '' }}
+      initialValues={{ name: '', email: '', message: '', service: '' }}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
         fetch('/?no-cache=1', {
@@ -64,7 +75,6 @@ const ContactForm = () => {
               <small className='has-text-danger'>{errors.name}</small>
             )}
           </div>
-
           <div className='field'>
             <label className='label'>Email</label>
             <div className='control'>
@@ -80,7 +90,25 @@ const ContactForm = () => {
               <small className='has-text-danger'>{errors.email}</small>
             )}
           </div>
-
+          <div className='field'>
+            <label className='label'>What Service Do You Want?</label>
+            <div className='control'>
+              <Field
+                name='service'
+                id='service'
+                className='input'
+                component='select'
+              >
+                <option />
+                {services.map((service) => (
+                  <option key={service} value={service}>{service}</option>
+                ))}
+              </Field>
+            </div>
+            {touched.service && errors.service && (
+              <small className='has-text-danger'>{errors.service}</small>
+            )}
+          </div>
           <div className='field'>
             <label className='label'>Message</label>
             <div className='control'>

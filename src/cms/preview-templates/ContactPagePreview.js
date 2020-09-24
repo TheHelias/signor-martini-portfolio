@@ -9,15 +9,16 @@ const ContactPagePreview = ({ entry, getAsset }) => {
       subtitle={entry.getIn(['data', 'subtitle'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
+      services={entry.getIn(['data', 'services'])}
     />
   )
 }
 
 ContactPagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func,
+    getIn: PropTypes.func
   }),
-  getAsset: PropTypes.func,
+  getAsset: PropTypes.func
 }
 
 export default ContactPagePreview

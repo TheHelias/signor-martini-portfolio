@@ -79,6 +79,7 @@ collections:
               name: 'meta_description',
               widget: 'text',
             }
+          - { label: 'Services', name: 'services', widget: 'list' }
   - name: 'blog'
     label: 'Blog'
     folder: 'src/pages/blog'
