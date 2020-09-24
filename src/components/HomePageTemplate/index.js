@@ -59,7 +59,13 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className='hero mobile--hero'>
+      <section
+        className='hero mobile--hero'
+        style={{
+          background: `rgba(0, 0, 0, 0) url(${heroImage}) no-repeat scroll center top`,
+          backgroundSize: '100%'
+        }}
+      >
         <div className='section'>
           <h1 className='title  is-size-2-mobile has-text-weight-bold'>
             {title}
@@ -79,7 +85,10 @@ const HomePageTemplate = ({
         content={aboutContent}
         contentComponent={aboutContentComponent}
       />
-      <section id='services' className='section section--gradient services--section'>
+      <section
+        id='services'
+        className='section section--gradient services--section'
+      >
         <div className='container'>
           <div className='section'>
             <div className='columns'>
@@ -87,9 +96,7 @@ const HomePageTemplate = ({
                 <div className='content'>
                   <div>
                     <h1 className='title is-size-2'> Services</h1>
-                    <div
-                      className='columns is-multiline services--section'
-                    >
+                    <div className='columns is-multiline services--section'>
                       {services.map((service) => (
                         <div
                           key={service.plan}
@@ -117,7 +124,10 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section id='portfolio' className='section section--gradient portfolio--section'>
+      <section
+        id='portfolio'
+        className='section section--gradient portfolio--section'
+      >
         <div className='container'>
           <div className='section'>
             <div className='columns'>
