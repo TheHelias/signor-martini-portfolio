@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-business",
+  "name": "martini-akande",
   "version": "2.1.2",
-  "description": "Gatsby Business Website Starter",
+  "description": "Martini Akande Portfolio and Blog",
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
@@ -12,8 +12,8 @@
     "lint:fix": "eslint --ext js,jsx --ignore-path .gitignore . --fix",
     "clean": "rm -rf public/ .cache/"
   },
-  "repository": "https://github.com/v4iv/gatsby-starter-business",
-  "author": "Vaibhav Sharma <vaibhavsharmaatwork@gmail.com>",
+  "repository": "https://github.com/TheHelias/signor-martini-portfolio",
+  "author": "Toluwalase Akande <akandetoluwalase@gmail.com>",
   "license": "MIT",
   "private": false,
   "remarkConfig": {
