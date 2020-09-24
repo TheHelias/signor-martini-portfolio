@@ -1,18 +1,17 @@
 ---
 templateKey: home-page
-title: Akande Martini
-subtitle: Filmmaker
+title: Martini Akande
+subtitle: 'Film Editor '
 summary: >-
   I am an Englishman in New York, I am alien, I am a legal alien, I am an
   English Man in New York
 services:
-  - Post Production
+  - Film Editing
+  - Colour Grading
   - Video Editing
-  - Sound Mixing
-  - Color Grading
-  - Color Grading
-  - Color Grading
-  - Color Grading
+  - Sound Editing
+  - Post Production Consulting
+  - Editorial Training
 offerings:
   blurbs:
     - image: /img/coffee.png
