@@ -7,7 +7,7 @@ import { FaChevronDown } from 'react-icons/fa'
 
 import AboutPageTemplate from '../AboutPageTemplate'
 import Offerings from '../Offerings'
-// import Testimonials from '../Testimonials'
+import Testimonials from '../Testimonials'
 
 const HomePageTemplate = ({
   aboutContent,
@@ -111,10 +111,6 @@ const HomePageTemplate = ({
                       ))}
                     </div>
                   </div>
-                  {/* <h2 className='has-text-weight-semibold is-size-2'>
-                    Testimonials
-                    </h2>
-                  <Testimonials testimonials={testimonials} /> */}
                 </div>
                 <Link className='button is-primary is-large' to='/contact'>
                   Get A Service
@@ -137,6 +133,12 @@ const HomePageTemplate = ({
                     <h1 className='title is-size-2'>Portfolio</h1>
                     <Offerings gridItems={offerings.blurbs} />
                   </div>
+                </div>
+                <div style={{ margin: '160px auto' }}>
+                  <h1 className='title is-size-2 mt-3'>
+                    Testimonials
+                  </h1>
+                  <Testimonials testimonials={testimonials} />
                 </div>
               </div>
             </div>
