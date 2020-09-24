@@ -15,6 +15,7 @@ const HomePagePreview = ({ entry, widgetFor }) => {
       title={entry.getIn(['data', 'title'])}
       subtitle={entry.getIn(['data', 'subtitle'])}
       summary={entry.getIn(['data', 'summary'])}
+      heroImage={entry.getIn(['data', 'heroImage'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
       heading={entry.getIn(['data', 'heading'])}

@@ -17,6 +17,7 @@ const HomePage = ({ data }) => {
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
         summary={frontmatter.summary}
+        heroImage={frontmatter.heroImage}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         services={frontmatter.services}
@@ -45,6 +46,7 @@ export const pageQuery = graphql`
         title
         subtitle
         summary
+        heroImage
         meta_title
         meta_description
         services

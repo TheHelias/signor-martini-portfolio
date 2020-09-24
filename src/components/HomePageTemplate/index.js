@@ -15,6 +15,7 @@ const HomePageTemplate = ({
   title,
   subtitle,
   summary,
+  heroImage,
   offerings,
   services,
   meta_title,
@@ -52,7 +53,7 @@ const HomePageTemplate = ({
                 </div>
               </div>
               <div className='column is-6 hero--image'>
-                <img className='hero--image' src='/img/hero-image.jpg' />
+                <img className='hero--image' src={heroImage} />
               </div>
             </div>
           </div>
