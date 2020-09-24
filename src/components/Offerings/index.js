@@ -11,7 +11,8 @@ function Offerings ({ gridItems }) {
       {gridItems.map((item) => (
         <div key={item.image} className='column is-6 portfolio--item'>
           <section
-            className='section' onClick={() => {
+            className='section'
+            onClick={() => {
               setVideoID(item.video)
               setIsOpen(true)
             }}
@@ -31,11 +32,15 @@ function Offerings ({ gridItems }) {
             closeOnClick
             className='portfolio--item__video-modal'
           >
-            <div
-              className='portfolio--item__video-modal__content'
-            >
-              <iframe
+            <div className='portfolio--item__video-modal__content'>
+              {/* <iframe
                 src={`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&playlist=${videoID}&loop=1`}
+              /> */}
+              <iframe
+                src={`https://player.vimeo.com/video/${videoID}`}
+                frameborder='0'
+                allow='autoplay; fullscreen'
+                allowfullscreen
               />
             </div>
           </Overlay>

@@ -18,20 +18,20 @@ offerings:
     - image: /img/coffee.png
       text: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      video: dO_MZgjNtmk
+      video: 458191979
     - image: /img/coffee-gear.png
       text: |
         Fusce semper turpis sed tortor consectetur condimentum. 
-      video: IPhJ9zcHJ40
+      video: 458191979
     - image: /img/tutorials.png
       text: |
         Sed in consequat leo, sit amet ullamcorper lacus.
-      video: ye6JssTdnvw
+      video: 458191979
     - image: /img/meeting-space.png
       text: >
         Vestibulum libero lectus, dignissim eget magna sit amet, malesuada
         tincidunt mi.
-      video: ye6JssTdnvw
+      video: 458191979
 testimonials:
   - author: Vaibhav Sharma
     quote: >-
