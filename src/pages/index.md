@@ -22,16 +22,16 @@ offerings:
     - image: /img/coffee-gear.png
       text: |
         Fusce semper turpis sed tortor consectetur condimentum. 
-      video: 458191979
+      video: 449860608
     - image: /img/tutorials.png
       text: |
         Sed in consequat leo, sit amet ullamcorper lacus.
-      video: 458191979
+      video: 451425215
     - image: /img/meeting-space.png
       text: >
         Vestibulum libero lectus, dignissim eget magna sit amet, malesuada
         tincidunt mi.
-      video: 458191979
+      video: 449857481
 testimonials:
   - author: Vaibhav Sharma
     quote: >-
