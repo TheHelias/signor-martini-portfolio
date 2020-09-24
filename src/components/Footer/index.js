@@ -1,38 +1,38 @@
 import React from 'react'
-import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube, FaVimeoV } from 'react-icons/fa'
+import { FaLinkedinIn, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube, FaVimeoV } from 'react-icons/fa'
 
 import config from '../../../config'
 
 const socialMedia = [
   {
-    name: 'facebook',
-    link: 'https://github.com/cobidev/gatsby-simplefolio',
-    icon: <FaFacebookF />
-  },
-  {
     name: 'instagram',
-    link: 'https://github.com/cobidev/gatsby-simplefolio',
+    link: 'https://www.instagram.com/signor_martini',
     icon: <FaInstagram />
   },
   {
     name: 'twitter',
-    link: 'https://github.com/cobidev/gatsby-simplefolio',
+    link: 'https://twitter.com/signor_martini',
     icon: <FaTwitter />
   },
   {
     name: 'whatsapp',
-    link: 'https://github.com/cobidev/gatsby-simplefolio',
+    link: 'https://wa.link/ocavzf',
     icon: <FaWhatsapp />
   },
   {
+    name: 'vimeo',
+    link: 'https://vimeo.com/user95280234',
+    icon: <FaVimeoV />
+  },
+  {
     name: 'youtube',
-    link: 'https://github.com/cobidev/gatsby-simplefolio',
+    link: 'https://www.youtube.com/channel/UCAbq7qbYzK8WoBgrpPHh8CQ',
     icon: <FaYoutube />
   },
   {
-    name: 'vimeo',
-    link: 'https://github.com/cobidev/gatsby-simplefolio',
-    icon: <FaVimeoV />
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/martini-olakunle-akande-b64b41154/',
+    icon: <FaLinkedinIn />
   }
 ]
 
