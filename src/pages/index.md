@@ -5,7 +5,7 @@ subtitle: 'Film Editor '
 summary: >-
   I am an Englishman in New York, I am alien, I am a legal alien, I am an
   English Man in New York
-heroImage: /img/20200929_105754.jpg
+heroImage: /img/20200929_105847.jpg
 services:
   - Film Editing
   - Colour Grading
