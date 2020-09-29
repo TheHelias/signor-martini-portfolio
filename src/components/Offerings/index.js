@@ -19,7 +19,7 @@ function Offerings ({ gridItems }) {
           >
             <div className='portfolio--item__image'>
               <p className='has-text-centered'>
-                <img alt='' src={item.image} />
+                <img alt='video thumbnail' src={item.image} />
               </p>
               <div className='portfolio--item__image--overlay' />
               <FaPlay className='portfolio--item__image--play-icon' />

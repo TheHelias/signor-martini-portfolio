@@ -53,7 +53,7 @@ const HomePageTemplate = ({
                 </div>
               </div>
               <div className='column is-6 hero--image'>
-                <img className='hero--image' src={heroImage} />
+                <img alt='hero section image' className='hero--image' src={heroImage} />
               </div>
             </div>
           </div>
