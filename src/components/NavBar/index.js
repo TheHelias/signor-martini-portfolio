@@ -43,6 +43,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
                 isActive ? 'is-active' : ''
               }`}
               data-target='navMenu'
+              aria-label='menu button'
               onClick={toggleNavbar}
             >
               <span />
