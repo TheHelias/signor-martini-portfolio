@@ -41,6 +41,7 @@ p, li, strong
 iframe
   height: 600px !important 
   width: 1067px !important
+
 nav
   background-color: $primary !important
   min-height: 80px !important
@@ -56,6 +57,11 @@ nav
     margin-left: 50px  
   .navbar-item--active
     color: white !important
+
+.navbar-menu.is-active
+  background: $primary !important
+  .navbar--right--items
+    margin-left: 0
 
 .content .taglist
   list-style: none
@@ -188,12 +194,8 @@ footer
 
   nav
     min-height: 10px !important
-    font-size: $primary-font-size-mobile
-    .navbar--right--items
-      margin-left: 0 
+    font-size: $primary-font-size-mobile 
 
-  .navbar-menu
-    background: $primary !important
   .section
     padding: 3rem 1rem !important   
 
