@@ -8,6 +8,7 @@
         url('GTWalsheimPro-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
         url('GTWalsheimPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -32,6 +34,7 @@
         url('GTWalsheimPro-ThinOblique.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +47,7 @@
         url('GTWalsheimPro-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -56,6 +60,7 @@
         url('GTWalsheimPro-BoldOblique.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,6 +73,7 @@
         url('GTWalsheimPro-UltraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -80,6 +86,7 @@
         url('GTWalsheimPro-UltraBoldOblique.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -92,6 +99,7 @@
         url('GTWalsheimPro-MediumOblique.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -104,6 +112,7 @@
         url('GTWalsheimPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -116,6 +125,7 @@
         url('GTWalsheimPro-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -128,6 +138,7 @@
         url('GTWalsheimPro-RegularOblique.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -140,6 +151,7 @@
         url('GTWalsheimPro-LightOblique.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -152,6 +164,7 @@
         url('GTWalsheimPro-UltraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -164,6 +177,7 @@
         url('GTWalsheimPro-UltraLightOblique.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -176,6 +190,7 @@
         url('GTWalsheimPro-BlackOblique.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -188,6 +203,7 @@
         url('GTWalsheimPro-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -200,6 +216,7 @@
         url('GTWalsheimPro-CondensedUltraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -212,6 +229,7 @@
         url('GTWalsheimPro-CondensedLight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -224,6 +242,7 @@
         url('GTWalsheimPro-CondensedBoldOblique.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -236,6 +255,7 @@
         url('GTWalsheimPro-CondensedLightOblique.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -248,6 +268,7 @@
         url('GTWalsheimPro-CondensedThin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -260,6 +281,7 @@
         url('GTWalsheimPro-CondensedUltraLightOblique.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -272,6 +294,7 @@
         url('GTWalsheimPro-CondensedMedium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -284,6 +307,7 @@
         url('GTWalsheimPro-CondensedBlackOblique.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -296,6 +320,7 @@
         url('GTWalsheimPro-CondensedRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -308,6 +333,7 @@
         url('GTWalsheimPro-CondensedThinOblique.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -320,6 +346,7 @@
         url('GTWalsheimPro-CondensedBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -332,6 +359,7 @@
         url('GTWalsheimPro-CondensedRegularOblique.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -344,6 +372,7 @@
         url('GTWalsheimPro-CondensedUltraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -356,6 +385,7 @@
         url('GTWalsheimPro-CondensedUltraBoldOblique.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -368,6 +398,7 @@
         url('GTWalsheimPro-CondensedMediumOblique.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -380,5 +411,6 @@
         url('GTWalsheimPro-CondensedBlack.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
