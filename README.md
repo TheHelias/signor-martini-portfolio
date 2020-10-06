@@ -18,7 +18,6 @@ https://martiniakande.com
 
 ## :snail: TODO
 * Improve accessibility 
-* Show latest blog posts on homepage
 
 ## Prerequisite
 * Node

@@ -8,6 +8,7 @@ import { FaChevronDown } from 'react-icons/fa'
 import AboutPageTemplate from '../AboutPageTemplate'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
+import LatestPosts from '../LatestPosts'
 
 const HomePageTemplate = ({
   aboutContent,
@@ -135,34 +136,23 @@ const HomePageTemplate = ({
                   </div>
                 </div>
                 <div style={{ margin: '160px auto' }}>
-                  <h1 className='title is-size-2 mt-3'>
+                  <h1 className='title is-size-2'>
                     Testimonials
                   </h1>
                   <Testimonials testimonials={testimonials} />
+                </div>
+                <div>
+                  <h1 className='title is-size-2'>Latest Posts</h1>
+                  <LatestPosts count={2} />
+                  <Link className='button is-primary is-large' to='/blog'>
+                      See More
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <section className='section section--gradient'>
-        <div className='container'>
-          <div className='section'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='content'>
-                  <div>
-                    <h1 className='title is-size-2'>Latest Posts</h1>
-                    <Link className='button is-primary is-large' to='/blog'>
-                      See More
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   )
 }

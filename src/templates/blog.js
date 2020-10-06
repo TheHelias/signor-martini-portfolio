@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import config from '../../config'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
+
+import config from '../../config'
 import PostCard from '../components/PostCard'
 import Layout from '../components/Layout'
 
@@ -27,7 +28,6 @@ export default class BlogPage extends Component {
     const { group, index, first, last } = pageContext
     const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
     const nextUrl = (index + 1).toString() + '/'
-
     const websiteSchemaOrgJSONLD = {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
