@@ -1,11 +1,10 @@
 ---
 templateKey: home-page
 title: Martini Akande
-subtitle: 'Film Editor '
-summary: >-
-  I am an Englishman in New York, I am alien, I am a legal alien, I am an
+subtitle: "Film Editor "
+summary: I am an Englishman in New York, I am alien, I am a legal alien, I am an
   English Man in New York
-heroImage: /img/film-reel-film-strips-camcorder-blue-background-with-copy-space-writing-text_23-2148188156.jpg
+heroImage: /img/2472580.jpg
 services:
   - Film Editing
   - Colour Grading
@@ -34,21 +33,18 @@ offerings:
       video: 449857481
 testimonials:
   - author: Vaibhav Sharma
-    quote: >-
-      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
+    quote: "Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
       diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-      ligula. 
+      ligula. "
   - author: Subarashi San
-    quote: >-
-      Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
+    quote: Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
       dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.
 meta_title: Home | Martini Akande
-meta_description: >-
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-  venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
-  consectetur purus sit amet fermentum.
+meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
+  nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
+  quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
+  mattis consectetur purus sit amet fermentum.
 ---
 ## Lorem ipsum dolor sit amet, consectetuer
 
