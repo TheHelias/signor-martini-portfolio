@@ -1,10 +1,9 @@
 ---
-templateKey: 'contact-page'
+templateKey: contact-page
 title: Contact Me
-subtitle: Let's do business, fill the form and submit
+subtitle: I'd like to work with you, kindly fill the form and submit
 meta_title: Contact Me | Martini Akande
-meta_description: >-
-  Let's do business, fill the form and submit
+meta_description: I'd like to work with you, kindly fill the form and submit
 services:
   - Film Editing
   - Colour Grading
