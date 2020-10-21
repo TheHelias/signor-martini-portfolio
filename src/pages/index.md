@@ -2,8 +2,8 @@
 templateKey: home-page
 title: Martini Akande
 subtitle: "Film Editor "
-summary: I am an Englishman in New York, I am alien, I am a legal alien, I am an
-  English Man in New York
+summary: I am an Englishman in New York, I am ahlien, I am a legal alien, I am
+  an English Man in New York
 heroImage: /img/2472580.jpg
 services:
   - Film Editing
