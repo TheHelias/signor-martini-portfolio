@@ -16,6 +16,9 @@ offerings:
     - image: /img/dd_1.4.1.jpg
       text: FUPA - A short film edited and produced by me
       video: 451425217
+    - image: /img/cc_1.1.2.jpg
+      text: HEAL - A short film edited by me
+      video: 95280234
 testimonials:
   - author: Vaibhav Sharma
     quote: >-
