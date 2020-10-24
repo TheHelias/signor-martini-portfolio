@@ -1,8 +1,8 @@
 ---
 templateKey: home-page
 title: Martini Akande
-subtitle: "Film // Video Editor "
-summary: I'm a Mechanic, a Collaborator and an Artist
+subtitle: 'Film // Video Editor '
+summary: 'I''m a Mechanic, a Collaborator and an Artist'
 heroImage: /img/2472580.jpg
 services:
   - Film Editing
@@ -20,43 +20,38 @@ offerings:
       text: HEAL - A short film edited by me
       video: 454258801
     - image: /img/still_1.13.2.png
-      text: TVC for IBEDC, A Power distribution company based in Ibadan, Nigeria.
+      text: 'TVC for IBEDC, A Power distribution company based in Ibadan, Nigeria.'
       video: 449857481
     - image: /img/ibadan-lofi-soulblacksheep.00_00_01_13.still001h.jpg
       text: IN IBADAN(Feature Film)
       video: 452827978
     - image: /img/capture.jpg
-      text: The Gentleman, A Spec AD for Segun Ajose Photography.
+      text: 'The Gentleman, A Spec AD for Segun Ajose Photography.'
       video: 449860608
 testimonials:
   - author: Vaibhav Sharma
-    quote: "Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
+    quote: >-
+      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
       diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-      ligula. "
+      ligula. 
   - author: Subarashi San
-    quote: Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
+    quote: >-
+      Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
       dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.
 meta_title: Home | Martini Akande
-meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
-  nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
-  quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
-  mattis consectetur purus sit amet fermentum.
+meta_description: >-
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+  ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+  venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
+  consectetur purus sit amet fermentum.
 ---
-## Lorem ipsum dolor sit amet, consectetuer
+## Hi, I'm Martini Akande, yes Martini is my real name(inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor and Post Production Consultant.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa 
-quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+## 
 
-##In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+## I have over 4 years Post Production experience creating Commercials, TVs, Films, Music Videos, Documentaries, Web Series etc. I'm a Mechanic - I join cuts together to make them work as a unit, I'm a collaborator - I work with other professionals like Cinematographers and Sound Composers, I'm an Artist - I bring the Director or Client's Vision to life. I love telling stories, I believe every visual content must tell a story and I put this in every Cut, every Frame, every Note.
 
-Nullam dictum felis eu pede mollis 
-pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
-Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra 
-quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. 
-Etiam ultricies nisi vel augue.  Nam eget dui. _Etiam rhoncus_. Maecenas 
-tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. 
+## 
 
-**Etiam ultricies nisi vel augue!**
+## Thanks for visiting my website. Please take a look at some of my work and do not hesitate to contact me if you have any questions or wish to get in touch with me.
