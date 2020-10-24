@@ -1,8 +1,8 @@
 ---
 templateKey: home-page
 title: Martini Akande
-subtitle: 'Film Editor '
-summary: 'I''m a Mechanic, a Collaborator and an Artist'
+subtitle: "Film // Video Editor "
+summary: I'm a Mechanic, a Collaborator and an Artist
 heroImage: /img/2472580.jpg
 services:
   - Film Editing
@@ -20,31 +20,28 @@ offerings:
       text: HEAL - A short film edited by me
       video: 454258801
     - image: /img/still_1.13.2.png
-      text: 'TVC for IBEDC, A Power distribution company based in Ibadan, Nigeria.'
+      text: TVC for IBEDC, A Power distribution company based in Ibadan, Nigeria.
       video: 449857481
     - image: /img/ibadan-lofi-soulblacksheep.00_00_01_13.still001h.jpg
       text: IN IBADAN(Feature Film)
       video: 452827978
     - image: /img/capture.jpg
-      text: 'The Gentleman, A Spec AD for Segun Ajose Photography.'
+      text: The Gentleman, A Spec AD for Segun Ajose Photography.
       video: 449860608
 testimonials:
   - author: Vaibhav Sharma
-    quote: >-
-      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
+    quote: "Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
       diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-      ligula. 
+      ligula. "
   - author: Subarashi San
-    quote: >-
-      Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
+    quote: Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
       dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.
 meta_title: Home | Martini Akande
-meta_description: >-
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-  venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
-  consectetur purus sit amet fermentum.
+meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
+  nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
+  quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
+  mattis consectetur purus sit amet fermentum.
 ---
 ## Lorem ipsum dolor sit amet, consectetuer
 
