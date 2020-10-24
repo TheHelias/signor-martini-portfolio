@@ -2,9 +2,7 @@
 templateKey: home-page
 title: Martini Akande
 subtitle: "Film Editor "
-summary: I'm a Mechanic - I put pieces(cuts) together, a Collaborator - I work
-  with other film professionals, and an Artist - I capture my client's vision to
-  tell a story.
+summary: I'm a Mechanic, a Collaborator and an Artist
 heroImage: /img/20201024_081734.png
 services:
   - Film Editing
