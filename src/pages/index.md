@@ -25,6 +25,9 @@ offerings:
     - image: /img/ibadan-lofi-soulblacksheep.00_00_01_13.still001h.jpg
       text: IN IBADAN(Feature Film)
       video: 452827978
+    - image: /img/capture.jpg
+      text: 'The Gentleman, A Spec AD for Segun Ajose Photography.'
+      video: 449860608
 testimonials:
   - author: Vaibhav Sharma
     quote: >-
