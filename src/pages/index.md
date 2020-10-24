@@ -57,8 +57,8 @@ meta_description: >-
 
 ## 
 
-## I have over 4 years Post Production experience creating Commercials, TVs, Films, Music Videos, Documentaries, Web Series etc. I'm a Mechanic - I join cuts together to make them work as a unit, I'm a collaborator - I work with other professionals like Cinematographers and Sound Composers, I'm an Artist - I bring the Director or Client's Vision to life. I love telling stories, I believe every visual content must tell a story and I put this in every Cut, every Frame, every Note.
+I have over 4 years Post Production experience creating Commercials, TVs, Films, Music Videos, Documentaries, Web Series etc. I'm a Mechanic - I join cuts together to make them work as a unit, I'm a collaborator - I work with other professionals like Cinematographers and Sound Composers, I'm an Artist - I bring the Director or Client's Vision to life. I love telling stories, I believe every visual content must tell a story and I put this in every Cut, every Frame, every Note.
 
-## 
 
-## Thanks for visiting my website. Please take a look at some of my work and do not hesitate to contact me if you have any questions or wish to get in touch with me.
+
+Thanks for visiting my website. Please take a look at some of my work and do not hesitate to contact me if you have any questions or wish to get in touch with me.
