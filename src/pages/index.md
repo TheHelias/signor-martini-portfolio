@@ -19,6 +19,12 @@ offerings:
     - image: /img/cc_1.1.2.jpg
       text: HEAL - A short film edited by me
       video: 95280234
+    - image: /img/still_1.13.2.png
+      text: 'TVC for IBEDC, A Power distribution company based in Ibadan, Nigeria.'
+      video: 449857481
+    - image: /img/ibadan-lofi-soulblacksheep.00_00_01_13.still001h.jpg
+      text: IN IBADAN(Feature Film)
+      video: 452827978
 testimonials:
   - author: Vaibhav Sharma
     quote: >-
