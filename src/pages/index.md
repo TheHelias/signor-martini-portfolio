@@ -29,11 +29,18 @@ offerings:
       text: 'The Gentleman, A Spec AD for Segun Ajose Photography.'
       video: 449860608
 testimonials:
-  - author: Vaibhav Sharma
+  - author: 'Segun Ajose, Segun Ajose Photography'
     quote: >-
-      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed
-      diam luctus pretium.  Sed quis egestas libero. Vestibulum nec venenatis
-      ligula. 
+      Martini is my go-to guy when it comes to video editing and coloring.
+      Martini and I have been working together for about two years, and it’s
+      been a very great partnership. He has helped improve how I shoot and how I
+      tell stories through videography. He has also edited over 30 individual
+      videos for me, each coming with their own unique creative touch. He is
+      enjoyable to work with and delivers on time.   I think one of his greatest
+      attributes is listening to what you want in your edits and then giving you
+      a perfect result. I recommend Martini 100 times over, you can trust that
+      whatever work you give him; big or small, he would put his whole heart in
+      making sure it’s the best it could ever be.
   - author: Subarashi San
     quote: >-
       Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
