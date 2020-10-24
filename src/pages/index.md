@@ -4,7 +4,7 @@ title: Martini Akande
 subtitle: "Film Editor "
 summary: I am an Englishman in New York, I am ahlien, I am a legal alien, I am
   an English Man in New York
-heroImage: /img/2472580.jpg
+heroImage: /img/20201024_080124.jpg
 services:
   - Film Editing
   - Colour Grading
