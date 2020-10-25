@@ -3,7 +3,7 @@ import { navigate } from '@reach/router'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import SearchBox from '../SearchBox'
 
-const NavBar = ({ toggleNavbar, isActive }) => {
+const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
   const aboutLink = () => {
     navigate('/#about')
   }
@@ -59,19 +59,28 @@ const NavBar = ({ toggleNavbar, isActive }) => {
               <SearchBox searchIndex={data.siteSearchIndex.index} />
               <a
                 className='navbar-item navbar--right--items'
-                onClick={aboutLink}
+                onClick={() => {
+                  aboutLink()
+                  closeNavbar()
+                }}
               >
                 About
               </a>
               <a
                 className='navbar-item navbar--right--items'
-                onClick={servicesLink}
+                onClick={() => {
+                  servicesLink()
+                  closeNavbar()
+                }}
               >
                 Services
               </a>
               <a
                 className='navbar-item navbar--right--items'
-                onClick={portfolioLink}
+                onClick={() => {
+                  portfolioLink()
+                  closeNavbar()
+                }}
               >
                 Portfolio
               </a>
@@ -79,6 +88,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
                 activeClassName='navbar-item--active'
                 className='navbar-item navbar--right--items'
                 to='/blog'
+                onClick={closeNavbar}
               >
                 Blog
               </Link>
@@ -86,6 +96,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
                 activeClassName='navbar-item--active'
                 className='navbar-item navbar--right--items'
                 to='/contact'
+                onClick={closeNavbar}
               >
                 Contact Me
               </Link>

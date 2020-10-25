@@ -10,10 +10,15 @@ class Layout extends Component {
     super(props)
     this.state = { isActive: false }
     this.toggleNavbar = this.toggleNavbar.bind(this)
+    this.closeNavbar = this.closeNavbar.bind(this)
   }
 
   toggleNavbar () {
     this.setState({ isActive: !this.state.isActive })
+  }
+
+  closeNavbar () {
+    this.setState({ isActive: false })
   }
 
   render () {
@@ -23,7 +28,7 @@ class Layout extends Component {
           <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
         </Helmet>
-        <NavBar isActive={this.state.isActive} toggleNavbar={() => this.toggleNavbar()} />
+        <NavBar isActive={this.state.isActive} closeNavbar={this.closeNavbar} toggleNavbar={this.toggleNavbar} />
         <div id='content-wrapper'>
           {this.props.children}
         </div>
