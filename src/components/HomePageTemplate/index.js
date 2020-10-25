@@ -54,7 +54,11 @@ const HomePageTemplate = ({
                 </div>
               </div>
               <div className='column is-6 hero--image'>
-                <img alt='hero section image' className='hero--image' src={heroImage} />
+                <img
+                  alt='hero section image'
+                  className='hero--image'
+                  src={heroImage}
+                />
               </div>
             </div>
           </div>
@@ -135,17 +139,24 @@ const HomePageTemplate = ({
                     <Offerings gridItems={offerings.blurbs} />
                   </div>
                 </div>
+                <a
+                  className='button is-primary is-large'
+                  href='https://vimeo.com/user95280234'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='see more'
+                >
+                  See More
+                </a>
                 <div style={{ margin: '160px auto' }}>
-                  <h1 className='title is-size-2'>
-                    Testimonials
-                  </h1>
+                  <h1 className='title is-size-2'>Testimonials</h1>
                   <Testimonials testimonials={testimonials} />
                 </div>
                 <div>
                   <h1 className='title is-size-2'>Latest Posts</h1>
                   <LatestPosts count={2} />
                   <Link className='button is-primary is-large' to='/blog'>
-                      See More
+                    See More
                   </Link>
                 </div>
               </div>
