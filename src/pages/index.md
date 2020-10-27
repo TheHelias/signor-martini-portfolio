@@ -25,9 +25,6 @@ offerings:
     - image: /img/ibadan-lofi-soulblacksheep.00_00_01_13.still001h.jpg
       text: IN IBADAN(Feature Film)
       video: 452827978
-    - image: /img/capture.jpg
-      text: The Gentleman, A Spec AD for Segun Ajose Photography.
-      video: 449860608
 testimonials:
   - author: Segun Ajose, Segun Ajose Photography
     quote: Martini is my go-to guy when it comes to video editing and coloring.
@@ -40,10 +37,10 @@ testimonials:
       a perfect result. I recommend Martini 100 times over, you can trust that
       whatever work you give him; big or small, he would put his whole heart in
       making sure it’s the best it could ever be.
-  - author: Subarashi San
-    quote: Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
-      dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit.
+  - author: "Taiwo Egunjobi, Founder: Filmkaku, ContentDocks"
+    quote: "Martini is a quick learner and has quickly become one of the fastest
+      rising film editors and production consultants. He's an important resource
+      to have on your team. "
 meta_title: Home | Martini Akande
 meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
   nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
