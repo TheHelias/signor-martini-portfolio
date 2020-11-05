@@ -3,7 +3,7 @@ templateKey: home-page
 title: Martini Akande
 subtitle: "Film // Video Editor "
 summary: I'm a Mechanic, a Collaborator and an Artist
-heroImage: /img/2472580.jpg
+heroImage: /img/landing_page.jpg
 services:
   - Film Editing
   - Colour Grading
