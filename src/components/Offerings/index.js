@@ -38,9 +38,9 @@ function Offerings ({ gridItems }) {
               /> */}
               <iframe
                 src={`https://player.vimeo.com/video/${videoID}`}
-                frameborder='0'
+                frameBorder='0'
                 allow='autoplay; fullscreen'
-                allowfullscreen
+                allowFullScreen
               />
             </div>
           </Overlay>
@@ -55,7 +55,7 @@ Offerings.propTypes = {
     PropTypes.shape({
       image: PropTypes.string,
       text: PropTypes.string,
-      video: PropTypes.string
+      video: PropTypes.number
     })
   )
 }

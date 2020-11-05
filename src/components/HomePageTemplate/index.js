@@ -46,7 +46,7 @@ const HomePageTemplate = ({
                   <p className='hero--summary'>{summary}</p>
                   <button
                     onClick={aboutLink}
-                    class='button is-large is-primary hero--button'
+                    className='button is-large is-primary hero--button'
                   >
                     <span>Know More</span>
                     <FaChevronDown className='hero--button__icon' />
@@ -79,7 +79,7 @@ const HomePageTemplate = ({
           <p className='hero--summary'>{summary}</p>
           <button
             onClick={aboutLink}
-            class='button is-large is-primary hero--button'
+            className='button is-large is-primary hero--button'
           >
             <span>Know More</span>
             <FaChevronDown className='hero--button__icon' />
@@ -104,7 +104,7 @@ const HomePageTemplate = ({
                     <div className='columns is-multiline services--section'>
                       {services.map((service) => (
                         <div
-                          key={service.plan}
+                          key={service}
                           className='column is-4 services--section__item'
                         >
                           <section className='section'>
@@ -178,7 +178,7 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  services: PropTypes.string,
+  services: PropTypes.array,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array
   }),
