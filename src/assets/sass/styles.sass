@@ -203,13 +203,17 @@ footer
     font-size: 1.25rem !important
 
   .mobile--hero
-    display: block !important
+    display: flex !important
+    justify-content: center !important
+    text-align: center
+    height: 100vh
+    .title
+      font-style: italic
     .button
       padding-top: 0
       padding-bottom: 0
 
   .mobile--hero > .section
-    padding-top: 60px !important
     background: rgba(255, 247, 239, 0.5)
 
   p, li, strong, span
@@ -218,8 +222,8 @@ footer
   .desktop--hero
     display: none !important
 
-  .hero .title, .hero .subtitle, .hero .hero--summary
-    color: $primary-invert !important
+  // .hero .title, .hero .subtitle, .hero .hero--summary
+  //   color: $primary-invert !important
 
   .hero .subtitle
     font-size: 1.5rem

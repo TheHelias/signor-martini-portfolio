@@ -66,10 +66,10 @@ const HomePageTemplate = ({
       </section>
       <section
         className='hero mobile--hero'
-        style={{
-          background: `rgba(0, 0, 0, 0) url(${heroImage}) no-repeat scroll center top`,
-          backgroundSize: '100%'
-        }}
+        // style={{
+        //   background: `rgba(0, 0, 0, 0) url(${heroImage}) no-repeat scroll center top`,
+        //   backgroundSize: '100%'
+        // }}
       >
         <div className='section'>
           <h1 className='title  is-size-2-mobile has-text-weight-bold'>
