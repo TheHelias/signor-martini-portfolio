@@ -36,7 +36,7 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
               activeClassName='navbar-item--active'
               className='navbar-item'
             >
-              <strong>Martini Akande</strong>
+              <img alt='logo' src='/img/logo.png' />
             </Link>
             <button
               className={`button is-primary navbar-burger ${
