@@ -18,9 +18,7 @@ function Offerings ({ gridItems }) {
             }}
           >
             <div className='portfolio--item__image'>
-              <p className='has-text-centered'>
-                <img alt='video thumbnail' src={item.image} />
-              </p>
+              <img alt='video thumbnail' src={item.image} />
               <div className='portfolio--item__image--overlay' />
               <FaPlay className='portfolio--item__image--play-icon' />
             </div>
