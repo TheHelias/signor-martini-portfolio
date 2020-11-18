@@ -168,8 +168,26 @@ nav
   background: $primary-invert
   border-radius: $primary-border-radius
 
-.post--card a
-  color: $title-color
+.posts
+  display: grid
+  grid-template-columns: auto auto 
+
+.post--card
+  margin-right: 40px
+  border: $primary-border-color
+  border-radius: $primary-border-radius
+  padding: 2em 2em
+  .post--card__header
+    display: grid
+    grid-template-columns: 30% 70%
+    align-items: center
+    div
+      margin-right: 20px
+      img
+        border-radius: $primary-border-radius
+  &:hover
+    box-shadow: 0 30px 60px rgba(0,0,0,.1)
+    border: 1px solid rgba(0,0,0,.12)
 
 .contact--form  
   label, input
@@ -184,10 +202,6 @@ footer
   a
     margin: 0 10px  
 
-.post--card
-  border: $primary-border-color
-  border-radius: $primary-border-radius
-  padding: 2em 4em
 
 @media screen and (max-width: 768px)
   iframe
@@ -241,6 +255,14 @@ footer
     // padding: 1rem
     font-size: $primary-font-size-mobile !important
 
+  .posts
+    display: grid
+    grid-template-columns: auto 
+
   .post--card
     padding: 1em 1em 
+    margin: 0 0 20px 
+    .post--card__header
+      display: grid
+      grid-template-columns: auto
 @import "~bulma"

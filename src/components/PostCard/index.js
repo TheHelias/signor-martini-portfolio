@@ -3,30 +3,27 @@ import { Link } from 'gatsby'
 
 const PostCard = ({ posts }) => {
   return (
-    <div className='container'>
+    <div className='container posts'>
       {posts
         .filter((post) => post.node.frontmatter.templateKey === 'article-page')
         .map(({ node: post }) => (
-          <div
-            className='content post--card'
-            key={post.id}
-          >
-            <h3>
-              <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-              <span> &bull; </span>
-              <small className='has-text-primary'>
-                {post.frontmatter.date}
-              </small>
-            </h3>
-            <p>
-              {post.excerpt}
-              <br />
-              <br />
-              <Link className='button is-small' to={post.fields.slug}>
-                Keep Reading →
-              </Link>
-            </p>
-          </div>
+          <Link to={post.fields.slug} key={post.id}>
+            <div className='content post--card'>
+              <div className='post--card__header'>
+                <div>
+                  <img src={post.frontmatter.cover} alt='featured image' />
+                </div>
+                <h3>
+                  {post.frontmatter.title}
+                  <span> &bull; </span>
+                  <small className='has-text-primary'>
+                    {post.frontmatter.date}
+                  </small>
+                </h3>
+              </div>
+              <p>{post.excerpt}</p>
+            </div>
+          </Link>
         ))}
     </div>
   )

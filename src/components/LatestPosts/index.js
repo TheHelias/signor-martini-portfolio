@@ -8,30 +8,27 @@ function LatestPosts ({ data, count }) {
     posts = posts.slice(0, count)
   }
   return (
-    <div className='container'>
+    <div className='container posts'>
       {posts
         .filter((post) => post.node.frontmatter.templateKey === 'article-page')
         .map(({ node: post }) => (
-          <div
-            className='content post--card'
-            key={post.id}
-          >
-            <h3>
-              <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
-              <span> &bull; </span>
-              <small className='has-text-primary'>
-                {post.frontmatter.date}
-              </small>
-            </h3>
-            <p>
-              {post.excerpt}
-              <br />
-              <br />
-              <Link className='button is-small' to={`blog/${post.frontmatter.slug}`}>
-                                Keep Reading →
-              </Link>
-            </p>
-          </div>
+          <Link to={post.fields.slug} key={post.id}>
+            <div className='content post--card'>
+              <div className='post--card__header'>
+                <div>
+                  <img src={post.frontmatter.cover} alt='featured image' />
+                </div>
+                <h3>
+                  {post.frontmatter.title}
+                  <span> &bull; </span>
+                  <small className='has-text-primary'>
+                    {post.frontmatter.date}
+                  </small>
+                </h3>
+              </div>
+              <p>{post.excerpt}</p>
+            </div>
+          </Link>
         ))}
     </div>
   )
@@ -56,11 +53,12 @@ export default ({ count }) => (
           ) {
             edges {
               node {
-                excerpt(pruneLength: 400)
+                excerpt(pruneLength: 250)
                 id
+                fields { slug }
                 frontmatter {
+                  cover
                   title
-                  slug
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                 }
