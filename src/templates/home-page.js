@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+
 import { HTMLContent } from '../components/Content'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'

@@ -1,12 +1,9 @@
-import React from 'react'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import React, { useEffect, useRef, useState } from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { navigate } from '@reach/router'
 import { Link } from 'gatsby'
 import { FaChevronDown } from 'react-icons/fa'
-import Slider from 'react-slick'
 
 import AboutPageTemplate from '../AboutPageTemplate'
 import Offerings from '../Offerings'
@@ -30,16 +27,53 @@ const HomePageTemplate = ({
     navigate('/#about')
   }
 
-  // const settings = {
-  //   dots: true,
-  //   fade: true,
-  //   autoplay: true,
-  //   speed: 2000,
-  //   autoplaySpeed: 2000,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // }
+  const [image, setImage] = useState(0)
+  const [mobileImage, setMobileImage] = useState(0)
+
+  const images = [
+    '/img/1.jpg',
+    '/img/2.jpg',
+    '/img/3.jpg',
+    '/img/4.jpg',
+    '/img/5.jpg'
+  ]
+
+  const mobileImages = [
+    '/img/mobile1.png',
+    '/img/mobile2.png',
+    '/img/mobile3.png'
+  ]
+
+  const useInterval = (callback, delay) => {
+    const savedCallback = useRef()
+
+    useEffect(() => {
+      savedCallback.current = callback
+    })
+
+    useEffect(() => {
+      function tick () {
+        savedCallback.current()
+      }
+
+      const id = setInterval(tick, delay)
+      return () => clearInterval(id)
+    }, [delay])
+  }
+
+  useInterval(() => {
+    if (image >= images.length - 1) {
+      setImage(0)
+    } else {
+      setImage(image + 1)
+    }
+
+    if (mobileImage >= mobileImages.length - 1) {
+      setMobileImage(0)
+    } else {
+      setMobileImage(mobileImage + 1)
+    }
+  }, 5000)
 
   return (
     <div>
@@ -48,37 +82,17 @@ const HomePageTemplate = ({
         <meta name='description' content={meta_description} />
       </Helmet>
       <section className='hero is-fullheight desktop--hero'>
-        {/* <Slider {...settings} className='hero--slide'> */}
         <div className='hero--image'>
           <picture>
-            <source media='(min-width: 500px)' srcset={heroImage} />
+            <source media='(min-width: 500px)' srcset={images[image]} />
             <img
               alt='hero section image'
-              src='/img/mobile1.png'
+              src={mobileImages[mobileImage]}
             />
           </picture>
         </div>
-        <div className='hero--image'>
-          <picture>
-            <source media='(min-width: 500px)' srcset={heroImage} />
-            <img
-              alt='hero section image'
-              src='/img/mobile1.png'
-            />
-          </picture>
-        </div>
-        <div className='hero--image'>
-          <picture>
-            <source media='(min-width: 500px)' srcset={heroImage} />
-            <img
-              alt='hero section image'
-              src='/img/mobile1.png'
-            />
-          </picture>
-        </div>
-        {/* </Slider> */}
         <div className='overlay' />
-        <div className='section hero__content'>
+        <div className='hero__content'>
           <h1 className='title  is-size-1 has-text-weight-bold'>
             {title}
           </h1>
