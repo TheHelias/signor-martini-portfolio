@@ -85,11 +85,15 @@ nav
     border-radius: $primary-border-radius !important
 .hero
   background-color: $primary-invert
+  position: relative
   background-color: #fff7ef
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23663300' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")
   .subtitle
     font-size: 32px
     color: $primary
+
+.hero__content
+  z-index: 2
 
 .hero--summary
   margin-bottom: 30px 
@@ -97,8 +101,27 @@ nav
 .hero--button__icon
   margin: 5px 0 0 20px 
 
+// .hero--slide
+  position: absolute !important
+  overflow: hidden
+  height: 100%
+  max-width: 100%
+  
 .hero--image
-  border-radius: $primary-border-radius
+  position: absolute
+  overflow: hidden
+  height: 100%
+  max-width: 100%
+
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+  opacity: 0.5
+  background-color: #3c3a39
 
 .about--section
   min-height: 100vh
@@ -220,14 +243,14 @@ footer
   .content h2
     font-size: 1.25rem !important
 
-  .mobile--hero
-    display: flex !important
-    justify-content: center !important
-    text-align: center
-    height: 100vh
-    .button
-      padding-top: 0
-      padding-bottom: 0
+  // .mobile--hero
+  //   display: flex !important
+  //   justify-content: center !important
+  //   text-align: center
+  //   height: 100vh
+  //   .button
+  //     padding-top: 0
+  //     padding-bottom: 0
 
   .mobile--hero > .section
     background: rgba(255, 247, 239, 0.5)
@@ -235,12 +258,19 @@ footer
   p, li, strong, span
     font-size: $primary-font-size-mobile
 
-  .desktop--hero
-    display: none !important
+  // .desktop--hero
+  //   display: none !important
 
   // .hero .title, .hero .subtitle, .hero .hero--summary
   //   color: $primary-invert !important
 
+  .hero--image
+    picture
+      img
+        // width: auto !important
+        height: 100% !important
+        max-width: none !important
+      
   .hero .subtitle
     font-size: 1.5rem
 

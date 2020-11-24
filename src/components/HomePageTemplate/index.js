@@ -1,9 +1,12 @@
 import React from 'react'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { navigate } from '@reach/router'
 import { Link } from 'gatsby'
 import { FaChevronDown } from 'react-icons/fa'
+import Slider from 'react-slick'
 
 import AboutPageTemplate from '../AboutPageTemplate'
 import Offerings from '../Offerings'
@@ -27,6 +30,17 @@ const HomePageTemplate = ({
     navigate('/#about')
   }
 
+  // const settings = {
+  //   dots: true,
+  //   fade: true,
+  //   autoplay: true,
+  //   speed: 2000,
+  //   autoplaySpeed: 2000,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1
+  // }
+
   return (
     <div>
       <Helmet>
@@ -34,37 +48,53 @@ const HomePageTemplate = ({
         <meta name='description' content={meta_description} />
       </Helmet>
       <section className='hero is-fullheight desktop--hero'>
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='columns'>
-              <div className='column is-6'>
-                <div className='section'>
-                  <h1 className='title  is-size-1 has-text-weight-bold'>
-                    {title}
-                  </h1>
-                  <p className='subtitle'>{subtitle}</p>
-                  <p className='hero--summary'>{summary}</p>
-                  <button
-                    onClick={aboutLink}
-                    className='button is-large is-primary hero--button'
-                  >
-                    <span>Know More</span>
-                    <FaChevronDown className='hero--button__icon' />
-                  </button>
-                </div>
-              </div>
-              <div className='column is-6 hero--image'>
-                <img
-                  alt='hero section image'
-                  className='hero--image'
-                  src={heroImage}
-                />
-              </div>
-            </div>
-          </div>
+        {/* <Slider {...settings} className='hero--slide'> */}
+        <div className='hero--image'>
+          <picture>
+            <source media='(min-width: 500px)' srcset={heroImage} />
+            <img
+              alt='hero section image'
+              src='/img/mobile1.png'
+            />
+          </picture>
+        </div>
+        <div className='hero--image'>
+          <picture>
+            <source media='(min-width: 500px)' srcset={heroImage} />
+            <img
+              alt='hero section image'
+              src='/img/mobile1.png'
+            />
+          </picture>
+        </div>
+        <div className='hero--image'>
+          <picture>
+            <source media='(min-width: 500px)' srcset={heroImage} />
+            <img
+              alt='hero section image'
+              src='/img/mobile1.png'
+            />
+          </picture>
+        </div>
+        {/* </Slider> */}
+        <div className='overlay' />
+        <div className='section hero__content'>
+          <h1 className='title  is-size-1 has-text-weight-bold'>
+            {title}
+          </h1>
+          <p className='subtitle'>{subtitle}</p>
+          <p className='hero--summary'>{summary}</p>
+          <button
+            onClick={aboutLink}
+            className='button is-large is-primary hero--button'
+          >
+            <span>Know More</span>
+            <FaChevronDown className='hero--button__icon' />
+          </button>
         </div>
       </section>
-      <section
+
+      {/* <section
         className='hero mobile--hero'
         // style={{
         //   background: `rgba(0, 0, 0, 0) url(${heroImage}) no-repeat scroll center top`,
@@ -85,7 +115,7 @@ const HomePageTemplate = ({
             <FaChevronDown className='hero--button__icon' />
           </button>
         </div>
-      </section>
+      </section> */}
       <AboutPageTemplate
         content={aboutContent}
         contentComponent={aboutContentComponent}
