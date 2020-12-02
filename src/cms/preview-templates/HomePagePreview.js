@@ -9,6 +9,12 @@ const HomePagePreview = ({ entry, widgetFor }) => {
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
 
+  const entryHeroImages = entry.getIn(['data', 'heroImages'])
+  const heroImages = entryHeroImages ? entryHeroImages.toJS() : []
+
+  const entryMobileHeroImages = entry.getIn(['data', 'mobileHeroImages'])
+  const mobileHeroImages = entryMobileHeroImages ? entryMobileHeroImages.toJS() : []
+
   return (
     <HomePageTemplate
       aboutContent={widgetFor('body')}
@@ -23,6 +29,8 @@ const HomePagePreview = ({ entry, widgetFor }) => {
       services={entry.getIn(['data', 'services'])}
       offerings={{ blurbs }}
       testimonials={testimonials}
+      heroImages={heroImages}
+      mobileHeroImages={mobileHeroImages}
     />
   )
 }

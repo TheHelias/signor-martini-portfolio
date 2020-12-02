@@ -23,11 +23,22 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Sub Title, name: subtitle, widget: string }
           - { label: Summary, name: summary, widget: string }
-          - { label: Hero Image, name: heroImage, widget: image }
+          - {
+              label: Hero Images,
+              name: heroImages,
+              widget: object,
+              fields: [label: Image, name: image, widget: image],
+            }
+             - {
+              label: Mobile Hero Images,
+              name: mobileHeroImages,
+              widget: object,
+              fields: [label: Image, name: image, widget: image],
+            }
           - { label: 'About Body', name: 'body', widget: 'markdown' }
           - { label: 'Services', name: 'services', widget: 'list' }
           - {
-              label: Offerings,
+              label: Portfolio,
               name: offerings,
               widget: object,
               fields:

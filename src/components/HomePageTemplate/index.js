@@ -16,11 +16,12 @@ const HomePageTemplate = ({
   title,
   subtitle,
   summary,
-  heroImage,
   offerings,
   services,
   meta_title,
   meta_description,
+  heroImages,
+  mobileHeroImages,
   testimonials
 }) => {
   const aboutLink = () => {
@@ -30,19 +31,9 @@ const HomePageTemplate = ({
   const [image, setImage] = useState(0)
   const [mobileImage, setMobileImage] = useState(0)
 
-  const images = [
-    '/img/1.jpg',
-    '/img/2.jpg',
-    '/img/3.jpg',
-    '/img/4.jpg',
-    '/img/5.jpg'
-  ]
+  const images = heroImages
 
-  const mobileImages = [
-    '/img/mobile1.png',
-    '/img/mobile2.png',
-    '/img/mobile3.png'
-  ]
+  const mobileImages = mobileHeroImages
 
   const useInterval = (callback, delay) => {
     const savedCallback = useRef()
@@ -245,7 +236,9 @@ HomePageTemplate.propTypes = {
   offerings: PropTypes.shape({
     blurbs: PropTypes.array
   }),
-  testimonials: PropTypes.array
+  heroImages: PropTypes.array,
+  testimonials: PropTypes.array,
+  mobileHeroImages: PropTypes.array
 }
 
 export default HomePageTemplate
