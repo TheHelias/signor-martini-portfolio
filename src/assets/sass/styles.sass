@@ -131,7 +131,9 @@ nav
 
 .about--section
   min-height: 100vh
-  padding-top: 100px
+  display: flex
+  justify-content: center
+  align-items: center
   h1, h2, h3, h4, h5
     color: #ffe4db !important
   p, strong, li
@@ -232,7 +234,31 @@ footer
     margin: 0 10px  
 
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1024px)
+  .desktop--hero
+    display: none !important
+
+  .mobile--hero
+    display: flex !important
+    justify-content: center !important
+    text-align: center
+    height: 100vh
+    .button
+      padding-top: 0
+      padding-bottom: 0
+
+  .posts
+    display: grid
+    grid-template-columns: auto 
+
+  .post--card
+    padding: 1em 1em 
+    margin: 0 0 20px 
+    .post--card__header
+      display: grid
+      grid-template-columns: auto
+
+@media screen and (max-width: 500px)
   iframe
     height: 400px !important
 
@@ -249,33 +275,20 @@ footer
   .content h2
     font-size: 1.25rem !important
 
-  // .mobile--hero
-  //   display: flex !important
-  //   justify-content: center !important
-  //   text-align: center
-  //   height: 100vh
-  //   .button
-  //     padding-top: 0
-  //     padding-bottom: 0
-
-  .mobile--hero > .section
-    background: rgba(255, 247, 239, 0.5)
+  // .mobile--hero > .section
+  //   background: rgba(255, 247, 239, 0.5)
 
   p, li, strong, span
     font-size: $primary-font-size-mobile
-
-  // .desktop--hero
-  //   display: none !important
 
   // .hero .title, .hero .subtitle, .hero .hero--summary
   //   color: $primary-invert !important
 
   .hero--image
-    picture
-      img
-        // width: auto !important
-        height: 100% !important
-        max-width: none !important
+    img
+      // width: auto !important
+      height: 100% !important
+      max-width: none !important
       
   .hero .subtitle
     font-size: 1.5rem
@@ -291,14 +304,4 @@ footer
     // padding: 1rem
     font-size: $primary-font-size-mobile !important
 
-  .posts
-    display: grid
-    grid-template-columns: auto 
-
-  .post--card
-    padding: 1em 1em 
-    margin: 0 0 20px 
-    .post--card__header
-      display: grid
-      grid-template-columns: auto
 @import "~bulma"

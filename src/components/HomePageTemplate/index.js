@@ -83,13 +83,33 @@ const HomePageTemplate = ({
       </Helmet>
       <section className='hero is-fullheight desktop--hero'>
         <div className='hero--image'>
-          <picture>
-            <source media='(min-width: 500px)' srcset={images[image]} />
-            <img
-              alt='hero section image'
-              src={mobileImages[mobileImage]}
-            />
-          </picture>
+          <img
+            alt='hero section image'
+            src={images[image]}
+          />
+          <div className='overlay' />
+        </div>
+        <div className='hero__content'>
+          <h1 className='title  is-size-1 has-text-weight-bold'>
+            {title}
+          </h1>
+          <p className='subtitle'>{subtitle}</p>
+          <p className='hero--summary'>{summary}</p>
+          <button
+            onClick={aboutLink}
+            className='button is-large is-primary hero--button'
+          >
+            <span>Know More</span>
+            <FaChevronDown className='hero--button__icon' />
+          </button>
+        </div>
+      </section>
+      <section className='hero is-fullheight mobile--hero'>
+        <div className='hero--image'>
+          <img
+            alt='hero section image'
+            src={mobileImages[mobileImage]}
+          />
         </div>
         <div className='overlay' />
         <div className='hero__content'>
@@ -107,9 +127,8 @@ const HomePageTemplate = ({
           </button>
         </div>
       </section>
-
       {/* <section
-        className='hero mobile--hero'
+        className='hero '
         // style={{
         //   background: `rgba(0, 0, 0, 0) url(${heroImage}) no-repeat scroll center top`,
         //   backgroundSize: '100%'
