@@ -78,8 +78,8 @@ const HomePageTemplate = ({
             alt='hero section image'
             src={images[image].image}
           />
-          <div className='overlay' />
         </div>
+        <div className='overlay' />
         <div className='hero__content'>
           <h1 className='title  is-size-1 has-text-weight-bold'>
             {title}
