@@ -48,8 +48,12 @@ export const pageQuery = graphql`
         title
         subtitle
         summary
-        heroImages
-        mobileHeroImages
+        heroImages {
+          image
+        }
+        mobileHeroImages {
+          image
+        }
         meta_title
         meta_description
         services

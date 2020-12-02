@@ -4,15 +4,15 @@ title: Martini Akande
 subtitle: "Film // Video Editor "
 summary: I'm a Mechanic, a Collaborator and an Artist
 heroImages:
-  - '/img/1.jpg'
-  - '/img/2.jpg'
-  - '/img/3.jpg'
-  - '/img/4.jpg'
-  - '/img/5.jpg'
+  - image: /img/1.jpg
+  - image: /img/2.jpg
+  - image: /img/3.jpg
+  - image: /img/4.jpg
+  - image: /img/5.jpg
 mobileHeroImages:
-  - '/img/mobile1.png'
-  - '/img/mobile2.png'
-  - '/img/mobile3.png'
+  - image: /img/mobile1.png
+  - image: /img/mobile2.png
+  - image: /img/mobile3.png
 services:
   - Film Editing
   - Colour Grading

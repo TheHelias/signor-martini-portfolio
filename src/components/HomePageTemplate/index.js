@@ -76,7 +76,7 @@ const HomePageTemplate = ({
         <div className='hero--image'>
           <img
             alt='hero section image'
-            src={images[image]}
+            src={images[image].image}
           />
           <div className='overlay' />
         </div>
@@ -99,7 +99,7 @@ const HomePageTemplate = ({
         <div className='hero--image'>
           <img
             alt='hero section image'
-            src={mobileImages[mobileImage]}
+            src={mobileImages[mobileImage].image}
           />
         </div>
         <div className='overlay' />
