@@ -13,7 +13,7 @@ const ContactPage = ({ data }) => {
         subtitle={frontmatter.subtitle}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
-        services={frontmatter.services}
+        services={frontmatter.contactServices}
       />
     </Layout>
   )
