@@ -15,17 +15,17 @@ mobileHeroImages:
   - image: /img/whatsapp-image-2020-12-22-at-18.20.04.jpeg
 summary: I'm a Mechanic, a Collaborator and an Artist
 services:
-  - image: /img/dd_1.4.1.jpg
+  - image: /img/5051624481586787252.svg
     text: Film Editing
-  - image: /img/dd_1.4.1.jpg
+  - image: /img/10424989031555931400.svg
     text: Colour Grading
-  - image: /img/dd_1.4.1.jpg
+  - image: /img/13140849211595452843.svg
     text: Video Editing
-  - image: /img/dd_1.4.1.jpg
+  - image: /img/17983649771595501283.svg
     text: Sound Editing
-  - image: /img/dd_1.4.1.jpg
+  - image: /img/9466153201595156178.svg
     text: Post-Production Consulting
-  - image: /img/dd_1.4.1.jpg
+  - image: /img/14288320751582885796.svg
     text: Editorial Training
 offerings:
   blurbs:
