@@ -148,8 +148,9 @@ nav
 .services--section
   width: 100% 
   margin: auto auto !important
-  // .services--section__item
-  //   border: $primary-border-color
+  .services--section__item
+    img
+      width: 100% 
 
 #portfolio .button
   margin-top: 30px
@@ -311,13 +312,16 @@ footer
   .portfolio--section > .container  > .section
     padding-top: 1rem !important
 
-  .services--section__item
-    padding: 0 !important
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    text-align: center
+  .services--section
+    .services--section__item
+      padding: 0 !important
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      text-align: center
+      img
+        width: 50% 
   #services .button
     // padding: 1rem
     font-size: $primary-font-size-mobile !important
