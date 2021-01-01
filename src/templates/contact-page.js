@@ -37,7 +37,7 @@ export const contactPageQuery = graphql`
         subtitle
         meta_title
         meta_description
-        services
+        contactServices
       }
     }
   }

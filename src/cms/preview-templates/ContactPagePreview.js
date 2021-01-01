@@ -9,7 +9,7 @@ const ContactPagePreview = ({ entry, getAsset }) => {
       subtitle={entry.getIn(['data', 'subtitle'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
-      services={entry.getIn(['data', 'services'])}
+      contactServices={entry.getIn(['data', 'contactServices'])}
     />
   )
 }

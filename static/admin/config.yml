@@ -40,7 +40,16 @@ collections:
             }
           - { label: Summary, name: summary, widget: string }
           - { label: 'About Body', name: 'body', widget: 'markdown' }
-          - { label: 'Services', name: 'services', widget: 'list' }
+          - {
+              label: 'Services', 
+              name: 'services', 
+              widget: list,
+              fields: 
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: text },
+                ]
+            }
           - {
               label: Portfolio,
               name: offerings,
@@ -94,7 +103,7 @@ collections:
               name: 'meta_description',
               widget: 'text',
             }
-          - { label: 'Services', name: 'services', widget: 'list' }
+          - { label: 'Services', name: 'contactServices', widget: 'list' }
   - name: 'blog'
     label: 'Blog'
     folder: 'src/pages/blog'

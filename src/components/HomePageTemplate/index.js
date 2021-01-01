@@ -104,7 +104,7 @@ const HomePageTemplate = ({
         </div>
         <div className='overlay' />
         <div className='hero__content'>
-          <h1 className='title  is-size-1 has-text-weight-bold'>
+          <h1 className='title  is-size-2 has-text-weight-bold'>
             {title}
           </h1>
           <p className='subtitle'>{subtitle}</p>
@@ -159,11 +159,12 @@ const HomePageTemplate = ({
                       {services.map((service) => (
                         <div
                           key={service}
-                          className='column is-4 services--section__item'
+                          className='column is-4'
                         >
-                          <section className='section'>
-                            <p className='is-size-3 is-size-4-mobile has-text-centered'>
-                              {service}
+                          <section className='section services--section__item'>
+                            <img alt='logo' src={service.image} />
+                            <p className='is-size-3 is-size-4-mobile'>
+                              {service.text}
                             </p>
                           </section>
                         </div>

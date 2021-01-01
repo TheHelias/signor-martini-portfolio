@@ -56,7 +56,10 @@ export const pageQuery = graphql`
         }
         meta_title
         meta_description
-        services
+        services {
+          image
+          text
+        }
         offerings {
           blurbs {
             image

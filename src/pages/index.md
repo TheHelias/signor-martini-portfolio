@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
-title: Martini Akande
-subtitle: "Film // Video Editor "
+title: MARTINI AKANDE
+subtitle: "EDITOR | PRODUCER | FILMMAKER "
 heroImages:
   - image: /img/1.jpg
   - image: /img/2.jpg
@@ -15,12 +15,18 @@ mobileHeroImages:
   - image: /img/whatsapp-image-2020-12-22-at-18.20.04.jpeg
 summary: I'm a Mechanic, a Collaborator and an Artist
 services:
-  - Film Editing
-  - Colour Grading
-  - Video Editing
-  - Sound Editing
-  - Post Production Consulting
-  - Editorial Training
+  - image: /img/dd_1.4.1.jpg
+    text: Film Editing
+  - image: /img/dd_1.4.1.jpg
+    text: Colour Grading
+  - image: /img/dd_1.4.1.jpg
+    text: Video Editing
+  - image: /img/dd_1.4.1.jpg
+    text: Sound Editing
+  - image: /img/dd_1.4.1.jpg
+    text: Post-Production Consulting
+  - image: /img/dd_1.4.1.jpg
+    text: Editorial Training
 offerings:
   blurbs:
     - image: /img/dd_1.4.1.jpg

@@ -20,7 +20,7 @@ body,
 #layout-wrapper
   scroll-behavior: smooth
   height: 100%
-  text-align: justify
+  // text-align: justify
   background: $primary-invert !important
 
 h1, h2, h3, h4, h5, h6
@@ -87,8 +87,11 @@ nav
   background-color: $primary-invert
   position: relative
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23663300' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")
+  .title
+    letter-spacing: 2px
   .subtitle
     font-size: 32px
+    letter-spacing: 2px
 
 .hero__content
   h1, p
@@ -145,8 +148,8 @@ nav
 .services--section
   width: 100% 
   margin: auto auto !important
-  .services--section__item
-    border: $primary-border-color
+  // .services--section__item
+  //   border: $primary-border-color
 
 #portfolio .button
   margin-top: 30px
@@ -297,7 +300,9 @@ footer
       max-width: none !important
       
   .hero .subtitle
-    font-size: 1.5rem
+    font-size: 1rem
+    margin: -1em 0 2em !important
+
 
   .about--content, .about--section, .portfolio--section, .services--section 
     padding-top: 0 !important
@@ -306,6 +311,13 @@ footer
   .portfolio--section > .container  > .section
     padding-top: 1rem !important
 
+  .services--section__item
+    padding: 0 !important
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
   #services .button
     // padding: 1rem
     font-size: $primary-font-size-mobile !important
