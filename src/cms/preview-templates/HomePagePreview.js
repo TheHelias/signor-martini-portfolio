@@ -9,6 +9,9 @@ const HomePagePreview = ({ entry, widgetFor }) => {
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
 
+  const entryServices = entry.getIn(['data', 'services'])
+  const services = entryServices ? entryServices.toJS() : []
+
   const entryHeroImages = entry.getIn(['data', 'heroImages'])
   const heroImages = entryHeroImages ? entryHeroImages.toJS() : []
 
@@ -25,7 +28,7 @@ const HomePagePreview = ({ entry, widgetFor }) => {
       meta_description={entry.getIn(['data', 'meta_description'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
-      services={entry.getIn(['data', 'services'])}
+      services={services}
       offerings={{ blurbs }}
       testimonials={testimonials}
       heroImages={heroImages}

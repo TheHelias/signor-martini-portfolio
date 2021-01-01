@@ -41,8 +41,8 @@ collections:
           - { label: Summary, name: summary, widget: string }
           - { label: 'About Body', name: 'body', widget: 'markdown' }
           - {
-              label: 'Services', 
-              name: 'services', 
+              label: Services, 
+              name: services, 
               widget: list,
               fields: 
                 [
