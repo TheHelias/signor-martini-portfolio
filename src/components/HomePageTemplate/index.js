@@ -162,7 +162,7 @@ const HomePageTemplate = ({
                           className='column is-4'
                         >
                           <section className='section services--section__item'>
-                            <img alt='logo' src={service.image} />
+                            <img alt='service' src={service.image} />
                             <p className='is-size-3 is-size-4-mobile'>
                               {service.text}
                             </p>

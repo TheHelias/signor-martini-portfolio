@@ -19,9 +19,7 @@ body,
 #gatsby-focus-wrapper,
 #layout-wrapper
   scroll-behavior: smooth
-  height: 100%
-  // text-align: justify
-  overflow-x: hidden
+  height: 100%  
   background: $primary-invert !important
 
 h1, h2, h3, h4, h5, h6
@@ -50,12 +48,13 @@ nav
   padding-right: 2%
   box-shadow: 0 2px 0 0 rgba(0,0,0,.24)
   font-size: $primary-font-size
+  max-width: 100%
   a
     color: #ffe4db !important
     &:hover
       color: white !important
   .navbar--right--items
-    margin-left: 50px  
+    margin-left: 1%  
   .navbar-item--active
     color: white !important
 
@@ -240,6 +239,9 @@ footer
 
 
 @media screen and (max-width: 1024px)
+  body
+    overflow-x: hidden
+    
   .desktop--hero
     display: none !important
 
