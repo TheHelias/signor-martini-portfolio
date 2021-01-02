@@ -27,7 +27,7 @@ services:
     text: Editorial Training
 offerings:
   blurbs:
-    - image: /img/landing_page.jpg
+    - image: /img/dd_1.4.1.jpg
       text: FUPA - A short film edited and produced by me
       video: 451425217
     - image: /img/cc_1.1.2.jpg
