@@ -146,7 +146,7 @@ const HomePageTemplate = ({
       />
       <section
         id='services'
-        className='section section--gradient services--section'
+        className='section section--gradient'
       >
         <div className='container'>
           <div className='section'>
