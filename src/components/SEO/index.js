@@ -17,8 +17,8 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
         item: {
           '@id': config.siteUrl,
           name: 'Home',
-          image: config.siteUrl + '/icons/icon-512x512.png',
-        },
+          image: config.siteUrl + '/icons/icon-512x512.png'
+        }
       },
       {
         '@type': 'ListItem',
@@ -26,10 +26,10 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
         item: {
           '@id': postURL,
           name: title,
-          image,
-        },
-      },
-    ],
+          image
+        }
+      }
+    ]
   }
 
   const blogPostingSchemaOrgJSONLD = {
@@ -41,15 +41,15 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
     headline: title,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': postURL,
+      '@id': postURL
     },
     author: {
       '@type': 'Person',
-      name: config.userName,
+      name: config.userName
     },
     image: {
       '@type': 'ImageObject',
-      url: image,
+      url: image
     },
     datePublished: date,
     dateModified: date,
@@ -58,14 +58,14 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
       name: config.siteTitle,
       logo: {
         '@type': 'ImageObject',
-        url: config.siteUrl + '/icons/icon-512x512.png',
-      },
+        url: config.siteUrl + '/icons/icon-512x512.png'
+      }
     },
-    description: meta_desc,
+    description: meta_desc
   }
 
   return (
-    <Helmet>
+    <Helmet defer={false}>
       <title>{meta_title}</title>
       {/* General tags */}
       <meta name='description' content={meta_desc} />

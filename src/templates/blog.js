@@ -38,7 +38,7 @@ export default class BlogPage extends Component {
 
     return (
       <Layout>
-        <Helmet>
+        <Helmet defer={false}>
           <title>Blog | Martini Akande</title>
           {/* Schema.org tags */}
           <script type='application/ld+json'>

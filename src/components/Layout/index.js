@@ -25,7 +25,7 @@ class Layout extends Component {
   render () {
     return (
       <div id='layout-wrapper'>
-        <Helmet>
+        <Helmet defer={false}>
           <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
         </Helmet>

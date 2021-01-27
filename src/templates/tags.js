@@ -23,7 +23,7 @@ class TagRoute extends Component {
     return (
       <Layout>
         <section className='section'>
-          <Helmet title={`${tag} | ${title}`} />
+          <Helmet title={`${tag} | ${title}`} defer={false} />
           <div className='container content'>
             <div className='columns'>
               <div

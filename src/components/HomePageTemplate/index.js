@@ -68,7 +68,7 @@ const HomePageTemplate = ({
 
   return (
     <div>
-      <Helmet>
+      <Helmet defer={false}>
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
