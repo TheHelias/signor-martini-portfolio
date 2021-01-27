@@ -25,7 +25,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "bulma": "^0.7.5",
     "formik": "^1.5.8",
-    "gatsby": "^2.15.15",
+    "gatsby": "^2.31.1",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-feed": "^2.3.12",
     "gatsby-plugin-google-tagmanager": "^2.1.9",
@@ -59,8 +59,6 @@
     "react-icons": "^3.11.0",
     "react-portal-overlay": "^1.0.1",
     "react-share": "^3.0.1",
-    "react-slick": "^0.27.13",
-    "slick-carousel": "^1.8.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "yup": "^0.27.0"
   },
