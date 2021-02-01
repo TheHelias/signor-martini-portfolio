@@ -1,14 +1,14 @@
 import React from 'react'
 import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
 
 const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } }
 }) => (
   <Layout>
-    <Helmet title={`Tags | ${title}`} defer={false} />
+    <SEO title={`Tags | ${title}`} />
     <section className='hero is-primary is-bold is-medium'>
       <div className='hero-body'>
         <div className='container'>

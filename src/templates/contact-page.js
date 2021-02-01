@@ -3,16 +3,20 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import ContactPageTemplate from '../components/ContactPageTemplate'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 const ContactPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
     <Layout>
+      <SEO
+        meta_title={frontmatter.meta_title}
+        meta_desc={frontmatter.meta_description}
+        slug='/contact-page'
+      />
       <ContactPageTemplate
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
-        meta_title={frontmatter.meta_title}
-        meta_description={frontmatter.meta_description}
         services={frontmatter.contactServices}
       />
     </Layout>

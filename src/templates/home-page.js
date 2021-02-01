@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import { HTMLContent } from '../components/Content'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -12,6 +13,11 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO
+        meta_title={frontmatter.meta_title}
+        meta_description={frontmatter.meta_description}
+        slug=''
+      />
       <HomePageTemplate
         aboutContent={html}
         aboutContentComponent={HTMLContent}
@@ -20,8 +26,6 @@ const HomePage = ({ data }) => {
         summary={frontmatter.summary}
         heroImages={frontmatter.heroImages}
         mobileHeroImages={frontmatter.mobileHeroImages}
-        meta_title={frontmatter.meta_title}
-        meta_description={frontmatter.meta_description}
         services={frontmatter.services}
         offerings={frontmatter.offerings}
         testimonials={frontmatter.testimonials}

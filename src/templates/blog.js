@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
 import config from '../../config'
 import PostCard from '../components/PostCard'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
-const PaginationLink = props => {
+const PaginationLink = (props) => {
   if (!props.test) {
     return (
       <Link to={`/blog/${props.url}`} className='button is-rounded'>
@@ -38,13 +38,11 @@ export default class BlogPage extends Component {
 
     return (
       <Layout>
-        <Helmet defer={false}>
-          <title>Blog | Martini Akande</title>
-          {/* Schema.org tags */}
-          <script type='application/ld+json'>
-            {JSON.stringify(websiteSchemaOrgJSONLD)}
-          </script>
-        </Helmet>
+        <SEO
+          title='Blog | Martini Akande'
+          websiteSchemaOrgJSONLD={websiteSchemaOrgJSONLD}
+          slug='/blog'
+        />
         <section className='hero is-bold'>
           <div className='hero-body'>
             <div className='container'>
@@ -64,7 +62,11 @@ export default class BlogPage extends Component {
           <PostCard posts={group} />
           <section className='section'>
             <div className='buttons is-centered'>
-              <PaginationLink test={first} url={previousUrl} text='Previous Page' />
+              <PaginationLink
+                test={first}
+                url={previousUrl}
+                text='Previous Page'
+              />
               <PaginationLink test={last} url={nextUrl} text='Next Page' />
             </div>
           </section>

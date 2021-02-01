@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 class TagRoute extends Component {
   render () {
@@ -22,8 +22,8 @@ class TagRoute extends Component {
 
     return (
       <Layout>
+        <SEO title={`${tag} | ${title}`} />
         <section className='section'>
-          <Helmet title={`${tag} | ${title}`} defer={false} />
           <div className='container content'>
             <div className='columns'>
               <div

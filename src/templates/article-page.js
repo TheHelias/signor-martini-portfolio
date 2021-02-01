@@ -12,15 +12,16 @@ const ArticlePage = ({ data }) => {
   const { markdownRemark: post } = data
   return (
     <Layout>
+      <SE0
+        title={post.frontmatter.title}
+        meta_title={post.frontmatter.meta_title}
+        meta_desc={post.frontmatter.meta_description}
+        og_type='article'
+        cover={post.frontmatter.cover}
+        slug={post.fields.slug}
+        date={post.frontmatter.date}
+      />
       <section className='section'>
-        <SE0
-          title={post.frontmatter.title}
-          meta_title={post.frontmatter.meta_title}
-          meta_desc={post.frontmatter.meta_description}
-          cover={post.frontmatter.cover}
-          slug={post.fields.slug}
-          date={post.frontmatter.date}
-        />
         <div className='container content'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
@@ -53,8 +54,8 @@ const ArticlePage = ({ data }) => {
 
 ArticlePage.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+    markdownRemark: PropTypes.object
+  })
 }
 
 export default ArticlePage

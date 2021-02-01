@@ -1,11 +1,28 @@
 import React from 'react'
-import config from '../../../config'
 import Helmet from 'react-helmet'
 
-const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
-  const postURL = config.siteUrl + slug
-  const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-  const image = config.siteUrl + realPrefix + cover
+import config from '../../../config'
+
+const SEO = ({
+  title,
+  lang,
+  meta,
+  meta_title,
+  meta_desc,
+  og_type,
+  cover,
+  slug,
+  date,
+  websiteSchemaOrgJSONLD
+}) => {
+  const URL = slug ? `${config.siteUrl}/${slug}` : config.siteUrl
+  const canonical = slug ? `${config.siteUrl}/${slug}` : null
+
+  // const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+  // console.log(realPrefix) Not needed
+  const image = cover
+    ? config.siteUrl + cover
+    : config.siteUrl + '/icons/icon-512x512.png'
 
   const breadcrumbSchemaOrgJSONLD = {
     '@context': 'http://schema.org',
@@ -24,7 +41,7 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
         '@type': 'ListItem',
         position: 2,
         item: {
-          '@id': postURL,
+          '@id': URL,
           name: title,
           image
         }
@@ -35,13 +52,13 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
   const blogPostingSchemaOrgJSONLD = {
     '@context': 'http://schema.org',
     '@type': 'BlogPosting',
-    url: postURL,
+    url: URL,
     name: title,
     alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
     headline: title,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': postURL
+      '@id': URL
     },
     author: {
       '@type': 'Person',
@@ -63,41 +80,112 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
     },
     description: meta_desc
   }
+  const metaDescription = meta_desc || config.siteDescription
+  const metaTitle = meta_title || title || config.siteTitle
 
   return (
-    <Helmet defer={false}>
-      <title>{meta_title}</title>
-      {/* General tags */}
-      <meta name='description' content={meta_desc} />
-      <meta name='image' content={cover} />
-      {/* Schema.org tags */}
+    <Helmet
+      htmlAttributes={{
+        lang
+      }}
+      title={metaTitle}
+      titleTemplate={`%s | ${config.siteTitle}`}
+      link={
+        canonical
+          ? [
+            {
+              rel: 'canonical',
+              href: canonical
+            }
+          ]
+          : []
+      }
+      defer={false}
+      meta={[
+        {
+          name: 'description',
+          content: metaDescription
+        },
+        {
+          name: 'keywords',
+          content: config.keywords.join(', ')
+        },
+        {
+          name: 'image',
+          content: image
+        },
+        {
+          property: 'og:title',
+          content: metaTitle
+        },
+        {
+          property: 'og:description',
+          content: metaDescription
+        },
+        {
+          property: 'og:type',
+          content: og_type || 'website'
+        },
+        {
+          property: 'og:image',
+          content: image
+        },
+        {
+          property: 'og:image:width',
+          content: '1200px'
+        },
+        {
+          property: 'og:image:height',
+          content: '630px'
+        },
+        {
+          property: 'og:url',
+          content: URL
+        },
+        {
+          property: 'fb:app_id',
+          content: config.siteFBAppID ? config.siteFBAppID : ''
+        },
+        {
+          name: 'twitter:image',
+          content: image
+        },
+        {
+          name: 'twitter:creator',
+          content: config.userTwitter
+        },
+        {
+          name: 'twitter:title',
+          content: metaTitle
+        },
+        {
+          name: 'twitter:description',
+          content: metaDescription
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        }
+      ].concat(meta)}
+    >
       <script type='application/ld+json'>
         {JSON.stringify(breadcrumbSchemaOrgJSONLD)}
       </script>
       <script type='application/ld+json'>
         {JSON.stringify(blogPostingSchemaOrgJSONLD)}
       </script>
-      {/* OpenGraph tags */}
-      <meta property='og:url' content={postURL} />
-      <meta property='og:type' content='article' />
-      <meta property='og:title' content={title} />
-      <meta property='og:description' content={meta_desc} />
-      <meta property='og:image' content={image} />
-      <meta
-        property='fb:app_id'
-        content={config.siteFBAppID ? config.siteFBAppID : ''}
-      />
-      {/* Twitter Card tags */}
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta
-        name='twitter:creator'
-        content={config.userTwitter ? config.userTwitter : ''}
-      />
-      <meta name='twitter:title' content={title} />
-      <meta name='twitter:description' content={meta_desc} />
-      <meta name='twitter:image' content={image} />
+      {websiteSchemaOrgJSONLD ? (
+        <script type='application/ld+json'>
+          {JSON.stringify(websiteSchemaOrgJSONLD)}
+        </script>
+      ) : null}
     </Helmet>
   )
 }
 
-export default SE0
+SEO.defaultProps = {
+  lang: 'en',
+  meta: []
+}
+
+export default SEO

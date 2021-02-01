@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { navigate } from '@reach/router'
 import { Link } from 'gatsby'
@@ -18,8 +17,6 @@ const HomePageTemplate = ({
   summary,
   offerings,
   services,
-  meta_title,
-  meta_description,
   heroImages,
   mobileHeroImages,
   testimonials
@@ -68,10 +65,6 @@ const HomePageTemplate = ({
 
   return (
     <div>
-      <Helmet defer={false}>
-        <title>{meta_title}</title>
-        <meta name='description' content={meta_description} />
-      </Helmet>
       <section className='hero is-fullheight desktop--hero'>
         <div className='hero--image'>
           <img

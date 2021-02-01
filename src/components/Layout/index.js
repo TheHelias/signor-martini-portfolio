@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import Helmet from 'react-helmet'
 
 import '../../assets/sass/styles.sass'
-import config from '../../../config'
 import NavBar from '../NavBar'
 import Footer from '../Footer'
 
@@ -25,10 +23,6 @@ class Layout extends Component {
   render () {
     return (
       <div id='layout-wrapper'>
-        <Helmet defer={false}>
-          <title>{config.siteTitle}</title>
-          <meta name='description' content={config.siteDescription} />
-        </Helmet>
         <NavBar isActive={this.state.isActive} closeNavbar={this.closeNavbar} toggleNavbar={this.toggleNavbar} />
         <div id='content-wrapper'>
           {this.props.children}

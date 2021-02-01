@@ -7,10 +7,8 @@ const ArticleTemplate = ({
   content,
   contentComponent,
   cover,
-  meta_title,
-  meta_desc,
   tags,
-  title,
+  title
 }) => {
   const PostContent = contentComponent || Content
   return (
@@ -20,12 +18,12 @@ const ArticleTemplate = ({
       </h1>
       <img src={cover} alt={title} />
       <PostContent content={content} />
-      <div style={{ marginTop: `4rem` }}>
+      <div style={{ marginTop: '4rem' }}>
         <h4>Tags</h4>
         <ul className='taglist'>
           {(tags && tags.length)
             ? tags.map(tag => (
-              <li key={tag + `tag`}>
+              <li key={tag + 'tag'}>
                 <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
               </li>
             ))

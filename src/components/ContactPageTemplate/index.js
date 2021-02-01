@@ -6,16 +6,10 @@ import { ContactForm } from '../forms'
 const ContactPageTemplate = ({
   title,
   subtitle,
-  meta_title,
-  meta_description,
   services
 }) => {
   return (
     <div>
-      <Helmet defer={false}>
-        <title>{meta_title}</title>
-        <meta name='description' content={meta_description} />
-      </Helmet>
       <section className='hero is-bold'>
         <div className='hero-body'>
           <div className='container'>
