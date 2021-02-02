@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import config from '../../../config'
+import favicon from '../../assets/img/favicon.ico'
 
 const SEO = ({
   title,
@@ -168,18 +169,19 @@ const SEO = ({
         }
       ].concat(meta)}
     >
-      <script type='application/ld+json'>
-        {JSON.stringify(breadcrumbSchemaOrgJSONLD)}
-      </script>
-      <script type='application/ld+json'>
-        {JSON.stringify(blogPostingSchemaOrgJSONLD)}
-      </script>
-      {websiteSchemaOrgJSONLD ? (
-        <script type='application/ld+json'>
-          {JSON.stringify(websiteSchemaOrgJSONLD)}
-        </script>
-      ) : null}
+      <link rel='shortcut icon' href={favicon} />
     </Helmet>
+  // <script type='application/ld+json'>
+  //   {JSON.stringify(breadcrumbSchemaOrgJSONLD)}
+  // </script>
+  // <script type='application/ld+json'>
+  //   {JSON.stringify(blogPostingSchemaOrgJSONLD)}
+  // </script>
+  // {websiteSchemaOrgJSONLD ? (
+  //   <script type='application/ld+json'>
+  //     {JSON.stringify(websiteSchemaOrgJSONLD)}
+  //   </script>
+  // ) : null}
   )
 }
 
