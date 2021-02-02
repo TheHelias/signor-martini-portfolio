@@ -28,6 +28,7 @@
     "gatsby": "^2.15.15",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-feed": "^2.3.12",
+    "gatsby-plugin-google-gtag": "^2.7.0",
     "gatsby-plugin-google-tagmanager": "^2.1.9",
     "gatsby-plugin-manifest": "^2.2.16",
     "gatsby-plugin-netlify": "^2.1.13",

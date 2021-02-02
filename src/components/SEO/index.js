@@ -170,18 +170,18 @@ const SEO = ({
       ].concat(meta)}
     >
       <link rel='shortcut icon' href={favicon} />
+      <script type='application/ld+json'>
+        {JSON.stringify(breadcrumbSchemaOrgJSONLD)}
+      </script>
+      <script type='application/ld+json'>
+        {JSON.stringify(blogPostingSchemaOrgJSONLD)}
+      </script>
+      {websiteSchemaOrgJSONLD ? (
+        <script type='application/ld+json'>
+          {JSON.stringify(websiteSchemaOrgJSONLD)}
+        </script>
+      ) : null}
     </Helmet>
-  // <script type='application/ld+json'>
-  //   {JSON.stringify(breadcrumbSchemaOrgJSONLD)}
-  // </script>
-  // <script type='application/ld+json'>
-  //   {JSON.stringify(blogPostingSchemaOrgJSONLD)}
-  // </script>
-  // {websiteSchemaOrgJSONLD ? (
-  //   <script type='application/ld+json'>
-  //     {JSON.stringify(websiteSchemaOrgJSONLD)}
-  //   </script>
-  // ) : null}
   )
 }
 

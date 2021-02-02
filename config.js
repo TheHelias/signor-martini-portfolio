@@ -8,6 +8,7 @@ module.exports = {
   keywords: ['Martini', 'Akande', 'Filmaking', 'Filmaker', 'Portfolio', 'Blog'],
   // siteFBAppID: '',
   googleTagManagerID: 'GTM-NTN6WT3',
+  GA_TRACKING_ID: 'G-831DJTY2YP',
   disqusShortname: 'martiniakande',
   userName: 'Martini Akande',
   userTwitter: 'signor_martini',
