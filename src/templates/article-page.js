@@ -3,16 +3,16 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { HTMLContent } from '../components/Content'
 import ArticleTemplate from '../components/ArticleTemplate'
-import SE0 from '../components/SEO'
 import Share from '../components/Share'
 import Disqus from '../components/Disqus'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 const ArticlePage = ({ data }) => {
   const { markdownRemark: post } = data
   return (
     <Layout>
-      <SE0
+      <SEO
         title={post.frontmatter.title}
         meta_title={post.frontmatter.meta_title}
         meta_desc={post.frontmatter.meta_description}

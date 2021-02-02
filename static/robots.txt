@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: */admin/
-Disallow: */tags/
-
+Disallow: 
 sitemap: https://martiniakande.com/sitemap.xml
