@@ -18,7 +18,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        indentedSyntax: true
+      }
+    },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-web-font-loader',
@@ -93,13 +98,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: config.googleTagManagerID,
-        includeInDevelopment: false
-      }
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
@@ -155,9 +153,9 @@ module.exports = {
               const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
               return ctx.query.allMarkdownRemark.edges
                 .filter(
-                  edge => edge.node.frontmatter.templateKey === 'article-page'
+                  (edge) => edge.node.frontmatter.templateKey === 'article-page'
                 )
-                .map(edge => ({
+                .map((edge) => ({
                   categories: edge.node.frontmatter.tags,
                   date: edge.node.frontmatter.date,
                   title: edge.node.frontmatter.title,
@@ -207,9 +205,9 @@ module.exports = {
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
-            title: node => node.frontmatter.title,
-            tags: node => node.frontmatter.tags,
-            slug: node => node.fields.slug
+            title: (node) => node.frontmatter.title,
+            tags: (node) => node.frontmatter.tags,
+            slug: (node) => node.fields.slug
           }
         }
       }
