@@ -7,7 +7,7 @@ module.exports = {
   siteRss: '/rss.xml',
   keywords: ['Martini', 'Akande', 'Filmaking', 'Filmaker', 'Portfolio', 'Blog'],
   // siteFBAppID: '',
-  googleTagManagerID: '',
+  googleTagManagerID: 'GTM-NTN6WT3',
   disqusShortname: 'martiniakande',
   userName: 'Martini Akande',
   userTwitter: 'signor_martini',
