@@ -58,7 +58,7 @@ testimonials:
 meta_title: Home | Martini Akande
 meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
   nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
-  quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
+  quam venenatis vestibulum. Sved posuere consectetur est at lobortis. Cras
   mattis consectetur purus sit amet fermentum.
 ---
 Hi, I'm Martini Akande, yes Martini is my real name(inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor and Post Production Consultant.
