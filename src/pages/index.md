@@ -3,16 +3,13 @@ templateKey: home-page
 title: MARTINI AKANDE
 subtitle: "EDITOR | PRODUCER | FILMMAKER "
 heroImages:
-  - image: /img/1.jpg
-  - image: /img/2.jpg
-  - image: /img/3.jpg
-  - image: /img/4.jpg
-  - image: /img/5.jpg
+  - image: /img/crushed-roses_1.1.1.jpg
+  - image: /img/crushed-roses_1.12.1.jpg
+  - image: /img/r2b.jpg
 mobileHeroImages:
   - image: /img/whatsapp-image-2020-12-22-at-18.18.23.jpeg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25-1-.jpeg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25.jpeg
-  - image: /img/whatsapp-image-2020-12-22-at-18.20.04.jpeg
 summary: I'm a Mechanic, a Collaborator and an Artist
 services:
   - image: /img/13140849211595452843.svg
