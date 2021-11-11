@@ -3,16 +3,13 @@ templateKey: home-page
 title: MARTINI AKANDE
 subtitle: "EDITOR | PRODUCER | FILMMAKER "
 heroImages:
-  - image: /img/1.jpg
-  - image: /img/2.jpg
-  - image: /img/3.jpg
-  - image: /img/4.jpg
-  - image: /img/5.jpg
+  - image: /img/crushed-roses_1.1.1.jpg
+  - image: /img/crushed-roses_1.12.1.jpg
+  - image: /img/r2b.jpg
 mobileHeroImages:
   - image: /img/whatsapp-image-2020-12-22-at-18.18.23.jpeg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25-1-.jpeg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25.jpeg
-  - image: /img/whatsapp-image-2020-12-22-at-18.20.04.jpeg
 summary: I'm a Mechanic, a Collaborator and an Artist
 services:
   - image: /img/13140849211595452843.svg
@@ -58,7 +55,7 @@ testimonials:
 meta_title: Home | Martini Akande
 meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
   nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
-  quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
+  quam venenatis vestibulum. Sved posuere consectetur est at lobortis. Cras
   mattis consectetur purus sit amet fermentum.
 ---
 Hi, I'm Martini Akande, yes Martini is my real name(inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor and Post Production Consultant.
