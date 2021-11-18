@@ -4,9 +4,9 @@ title: MARTINI AKANDE
 subtitle: "EDITOR | PRODUCER | FILMMAKER "
 heroImages:
   - image: /img/untitled_3.47.1.jpg
-  - image: /img/crushed-roses_1.12.1.jpg
   - image: /img/crushed-roses_1.1.1.jpg
   - image: /img/untitled_3.15.1.jpg
+  - image: /img/nneka.jpg
 mobileHeroImages:
   - image: /img/whatsapp-image-2020-12-22-at-18.18.23.jpeg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25-1-.jpeg
