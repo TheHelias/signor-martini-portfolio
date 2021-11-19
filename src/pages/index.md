@@ -59,8 +59,16 @@ meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
   quam venenatis vestibulum. Sved posuere consectetur est at lobortis. Cras
   mattis consectetur purus sit amet fermentum.
 ---
-Hi, I'm Martini Akande, yes Martini is my real name(inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor and Post Production Consultant.
+Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post Production Consultant.
 
-I have over 4 years Post Production experience creating Commercials, TVs, Films, Music Videos, Documentaries, Web Series etc. I'm a Mechanic - I join cuts together to make them work as a unit, I'm a collaborator - I work with other professionals like Cinematographers and Sound Composers, I'm an Artist - I bring the Director or Client's Vision to life. I love telling stories, I believe every visual content must tell a story and I put this in every Cut, every Frame, every Note.
+I have over 4 years post production experience creating commercials, TVs, films, music videos, documentaries, web series etc. 
 
-Thanks for visiting my website. Please take a look at some of my work and do not hesitate to contact me if you have any questions or wish to get in touch with
+I'm a Mechanic: I join cuts together to make them work as a unit. 
+
+I'm a Collaborator: I work with other professionals like cinematographers and sound composers. 
+
+I'm an Artist: I bring the director's or client's vision to life. 
+
+I love telling stories. I believe every visual content must tell a story and I put this in every cut, every frame, every note.
+
+Thanks for visiting my website. Please, take a look at some of my work and do not hesitate to contact me if you have any questions or wish to get in touch with me.
