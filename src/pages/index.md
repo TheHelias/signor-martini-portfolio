@@ -8,10 +8,10 @@ heroImages:
   - image: /img/untitled_3.15.1.jpg
   - image: /img/nneka.jpg
 mobileHeroImages:
-  - image: /img/whatsapp-image-2020-12-22-at-18.18.25-1-.jpeg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25.jpeg
-  - image: /img/tdela_3.138.1.jpg
   - image: /img/faultlines.jpg
+  - image: /img/tdela-de.jpg
+  - image: /img/whatsapp-image-2020-12-22-at-18.18.25-1-.jpeg
 summary: I'm a Mechanic, a Collaborator and an Artist
 services:
   - image: /img/13140849211595452843.svg
