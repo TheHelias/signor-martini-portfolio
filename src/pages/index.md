@@ -18,8 +18,6 @@ services:
     text: Film Editing
   - image: /img/10424989031555931400.svg
     text: Colour Grading
-  - image: /img/17983649771595501283.svg
-    text: Sound Editing
   - image: /img/9466153201595156178.svg
     text: Post-Production Consulting
   - image: /img/14288320751582885796.svg
