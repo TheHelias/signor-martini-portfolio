@@ -1,9 +1,9 @@
 ---
 templateKey: article-page
-title: Buying  A Laptop For Video Edting - What is important?
-slug: Buying  A Laptop For Video Edting - What is important?
+title: Buying  A Laptop For Professional Video Edting - What is important?
+slug: Buying  A Laptop For Professional Video Editing - What is important?
 date: 2022-02-16T17:27:19.126Z
-cover: /img/cc_1.1.2.jpg
+cover: /img/laptop.jpg
 tags:
   - Videoediting
 meta_title: Buying  A Laptop For Video Edting - What is important?
@@ -27,7 +27,7 @@ A graphics card or board holds together the components of a GPU, "graphics card"
 
 Whereas, the dedicated GPU has its own memory (VRAM) for image processing, which means that it works faster than an integrated graphics card.
 
-Kindly note that the minimum GPU memory for video editing is 2GB; if you'll be editing on a software like Davinci Resolve I'll advise you start from 4GB.
+There are two major GPU companies, NVIDIA and AMD. In my experience, NVIDIA cards are more compatible with video editing softwires Kindly note that the minimum GPU memory for video editing is 2GB; if you'll be editing on a software like Davinci Resolve I'll advise you start from 4GB.
 
 ### RAM (Random Access Memory)
 
@@ -43,5 +43,7 @@ The storage factor is most times the least talked about when it comes to choosin
 There are two kinds of storage to consider for video editing: HDD and SDD. While there are many options to choose from as far as external storage is concerned, it is best to stick with one that ensures sufficiency.
 The SDD (Solid State Drive) is a newer and faster version of the HDD (Hard Disk Drive), so it is highly recommended because it makes video editing smoother and faster.
 However, because it is quite expensive and can be a bit of a challenge, especially where budget is a concern, it is okay to work with the HDD instead. It might not be the fastest, but it functions well enough. 
+
+
 
 Contrary to what most people think, the brand of a laptop does not determine whether or not it is good enough for video editing. Whether it is HP or Dell, if they do not contain the above specifications in the right measure, then you might not enjoy editing while using them. There's always a budget constraint so its okay to be working with a particular price range, however, it is best to know these specifications, then factor them into your budget.
