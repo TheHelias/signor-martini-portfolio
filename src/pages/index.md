@@ -55,10 +55,12 @@ testimonials:
       rising film editors and production consultants. He's an important resource
       to have on your team. "
 meta_title: Home | Martini Akande
-meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
-  nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
-  quam venenatis vestibulum. Sved posuere consectetur est at lobortis. Cras
-  mattis consectetur purus sit amet fermentum.
+meta_description: >-
+  I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post
+  Production Consultant.
+
+
+  Post Production Nollywood Davinci Resolve Blackmagic Film Editing Premiere Pro Colour Grading
 ---
 Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post Production Consultant.
 
