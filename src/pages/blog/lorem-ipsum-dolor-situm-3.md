@@ -7,7 +7,7 @@ cover: /img/cc_1.1.2.jpg
 tags:
   - lorem
   - ipsum
-meta_title: Lorem Ipsum Dolor Situm
+meta_title: Buying  A Laptop For Video Edting - What is important?
 meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
   nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
   quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
