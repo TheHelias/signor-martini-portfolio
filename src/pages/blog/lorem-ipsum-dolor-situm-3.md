@@ -13,17 +13,14 @@ meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
   quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
   mattis consectetur purus sit amet fermentum.
 ---
-WHAT TO CONSIDER WHEN BUYING A LAPTOP FOR VIDEO EDITING (Detailed Guide)
-Many young people trying to get into video editing today ask questions like, "What brand of laptop should I get?" "What factors do I look out for?" 
-There are also video editors who still find it challenging to edit on the go because they do not have the right laptop.
-If you fall in either of these two categories, this article has been put together just for you.
-In this article, we will be exploring the factors to consider when buying a laptop for video editing. It is also important to note that the brand of a laptop is not significant in this regard; specifications are what matters.
-That said, the specifications to consider are CPU, GPU, RAM, and Storage. 
-Let’s get into the details!
+Young people trying to get into video editing today ask me questions like, "What brand of laptop should I get?" "What factors do I look out for?" There are also video editors who still find it challenging to edit on the go because they do not have the right laptop. If you fall in either of these two categories, this article has been put together just for you.
+In this article, we will be exploring the factors to consider when buying a laptop for video editing. It is also important to note that the brand of the laptop is not significant in this regard; specifications are what matters. That said, the most important specifications to consider are CPU, GPU, RAM, and Storage.  Let’s get into the details!
 
-CPU (Central Processing Unit)
-The CPU is commonly called the heart of the computer. It contains cores which help it to process information. Simply put, cores equal speed. The speed with which a laptop will run depends on the number of cores contained in that laptop. 
-This also means that having more cores would enable you to edit videos faster. Ensure that the CPU in the laptop you intend to get for video editing is a Quad-Core Processor, that is, contains 4 cores. When compared to a Dual Core Processor, the former is faster and smoother.
+# CPU (Central Processing Unit)
+The CPU is commonly called the heart of the computer and that is why it is the first and the most important thing to consider. It contains cores which helps it to process information. Simply put, cores equal speed. The speed with which a laptop will run depends on the number of cores contained in that laptop. 
+This also means that having more cores would enable you to edit videos faster. Ensure that the CPU in the laptop you intend to get for video editing is a Quad-Core Processor at least, that is, contains 4 cores. When compared to a Dual Core Processor, the former is faster and it ensures a smoother playback.
+
+
 
 GPU (Graphics Processing Unit)
 Every laptop comes with 2 types of graphics card: integrated graphics or discrete graphics. These graphics cards are known as the GPU. 
