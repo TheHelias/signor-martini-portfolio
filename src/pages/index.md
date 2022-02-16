@@ -26,18 +26,18 @@ services:
     text: Editorial Training
 offerings:
   blurbs:
-    - image: /img/5eb43b45-00a3-485c-b31c-77b512729ba1.jpg
-      text: FUPA - A short film edited and produced by me
-      video: 451425217
-    - image: /img/untitled_2.21.1.jpg
-      video: 656939317
-      text: Feature documentary film edited by me
-    - image: /img/cc_1.1.2.jpg
-      text: HEAL - A short film edited by me
-      video: 454258801
     - image: /img/nneka11.jpg
       text: Nneka The Pretty Serpent - Feature film edited by me
       video: 657088300
+    - image: /img/untitled_2.21.1.jpg
+      video: 656939317
+      text: Feature documentary film edited by me
+    - image: /img/5eb43b45-00a3-485c-b31c-77b512729ba1.jpg
+      text: FUPA - A short film edited and produced by me
+      video: 451425217
+    - video: 659626627
+      image: /img/faultlines_3.1.jpg
+      text: FAULTLINES - Feature film edited by me
 testimonials:
   - author: Segun Ajose, Segun Ajose Photography
     quote: Martini is my go-to guy when it comes to video editing and coloring.
