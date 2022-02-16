@@ -1,6 +1,6 @@
 ---
 templateKey: article-page
-title: Buying  A Laptop For Professional Video Edting - What is important?
+title: Buying  A Laptop For Professional Video Editing - What is important?
 slug: Video editing laptop
 date: 2022-02-16T17:27:19.126Z
 cover: /img/laptop.jpg
