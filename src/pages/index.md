@@ -29,18 +29,15 @@ offerings:
     - image: /img/5eb43b45-00a3-485c-b31c-77b512729ba1.jpg
       text: FUPA - A short film edited and produced by me
       video: 451425217
-    - image: /img/cc_1.1.2.jpg
-      text: HEAL - A short film edited by me
-      video: 454258801
-    - image: /img/still_1.13.2.png
-      text: TVC for IBEDC, A Power distribution company based in Ibadan, Nigeria.
-      video: 449857481
     - image: /img/untitled_2.21.1.jpg
       video: 656939317
       text: gg
-    - image: /img/ibadan-lofi-soulblacksheep.00_00_01_13.still001h.jpg
-      text: IN IBADAN(Feature Film)
-      video: 452827978
+    - image: /img/cc_1.1.2.jpg
+      text: HEAL - A short film edited by me
+      video: 454258801
+    - image: /img/nneka11.jpg
+      text: Nneka The Pretty Serpent - Feature film edited by me
+      video: 657088300
 testimonials:
   - author: Segun Ajose, Segun Ajose Photography
     quote: Martini is my go-to guy when it comes to video editing and coloring.
