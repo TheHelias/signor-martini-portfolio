@@ -31,7 +31,7 @@ offerings:
       video: 451425217
     - image: /img/untitled_2.21.1.jpg
       video: 656939317
-      text: gg
+      text: Feature documentary film edited by me
     - image: /img/cc_1.1.2.jpg
       text: HEAL - A short film edited by me
       video: 454258801
