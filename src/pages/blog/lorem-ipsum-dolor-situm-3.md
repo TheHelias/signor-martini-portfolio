@@ -2,7 +2,7 @@
 templateKey: article-page
 title: Buying  A Laptop For Video Edting - What is important?
 slug: Buying  A Laptop For Video Edting - What is important?
-date: 2022-02-16T17:16:36.481Z
+date: 2022-02-16T17:27:19.126Z
 cover: /img/cc_1.1.2.jpg
 tags:
   - Videoediting
