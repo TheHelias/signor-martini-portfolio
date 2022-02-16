@@ -1,13 +1,13 @@
 ---
 templateKey: article-page
 title: Buying  A Laptop For Professional Video Editing - What is important?
-slug: Video editing laptop
+slug: video-editing-laptop
 date: 2022-02-16T17:27:19.126Z
 cover: /img/laptop.jpg
 tags:
   - Videoediting
 meta_title: Buying  A Laptop For Video Edting - What is important?
-meta_description: Buying  A Laptop For Video Edting - What is
+meta_description: Buying  A Laptop For Video Editing - What is
   important?   integrated graphics card  and dedicated graphics card
 ---
 Folks trying to get into video editing today ask me questions like, "What brand of laptop should I get?" "What factors do I look out for?" and the most common one - "MAC or windows laptop?" There are also video editors who still find it challenging to edit on the go because they do not have the right laptop. If you fall in either of these two categories, this article has been put together just for you.
