@@ -62,7 +62,7 @@ meta_description: >-
 
   Post Production Nollywood Davinci Resolve Blackmagic Film Editing Premiere Pro Colour Grading
 ---
-Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post Production Consultant.
+Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, and Post Production Consultant.
 
 I have over 5 years post production experience creating commercials, TVs, films, music videos, documentaries, web series etc. 
 
