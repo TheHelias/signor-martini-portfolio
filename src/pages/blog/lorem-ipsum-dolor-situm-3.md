@@ -44,6 +44,4 @@ There are two kinds of storage to consider for video editing: HDD and SDD. While
 The SDD (Solid State Drive) is a newer and faster version of the HDD (Hard Disk Drive), so it is highly recommended because it makes video editing smoother and faster.
 However, because it is quite expensive and can be a bit of a challenge, especially where budget is a concern, it is okay to work with the HDD instead. It might not be the fastest, but it functions well enough. 
 
-
-
 Contrary to what most people think, the brand of a laptop does not determine whether or not it is good enough for video editing. Whether it is HP or Dell, if they do not contain the above specifications in the right measure, then you might not enjoy editing while using them. There's always a budget constraint so its okay to be working with a particular price range, however, it is best to know these specifications, then factor them into your budget.
