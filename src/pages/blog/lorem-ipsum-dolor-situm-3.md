@@ -27,7 +27,7 @@ A graphics card or board holds together the components of a GPU, "graphics card"
 
 Whereas, the dedicated GPU has its own memory (VRAM) for image processing, which means that it works faster than an integrated graphics card.
 
-There are two major GPU companies, NVIDIA and AMD. In my experience, NVIDIA cards are more compatible with video editing softwares Kindly note that the minimum GPU memory for video editing is 2GB; if you'll be editing on a software like Davinci Resolve I'll advise you start from 4GB.
+There are two major GPU companies, NVIDIA and AMD. In my experience, NVIDIA cards are more compatible with video editing softwares. Kindly note that the minimum GPU memory for video editing is 2GB. If you'll be editing on a software like Davinci Resolve, I'll advise you start from 4GB.
 
 ### RAM (Random Access Memory)
 
