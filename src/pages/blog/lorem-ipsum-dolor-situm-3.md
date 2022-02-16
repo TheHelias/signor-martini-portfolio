@@ -20,10 +20,13 @@ In this article, we will be exploring the factors to consider when buying a lapt
 The CPU is commonly called the heart of the computer and that is why it is the first and the most important thing to consider. It contains cores which helps it to process information. Simply put, cores equal speed. The speed with which a laptop will run depends on the number of cores contained in that laptop. 
 This also means that having more cores would enable you to edit videos faster. Ensure that the CPU in the laptop you intend to get for video editing is a Quad-Core Processor at least, that is, contains 4 cores. When compared to a Dual Core Processor, the former is faster and it ensures a smoother playback.
 
+## GPU (Graphics Processing Unit)
 
+## As the name implies, GPUs are specifically designed to handle the graphics workload on your laptop.
 
-GPU (Graphics Processing Unit)
-Every laptop comes with 2 types of graphics card: integrated graphics or discrete graphics. These graphics cards are known as the GPU. 
+## A graphics card or board holds together the components of a GPU, "graphics card" and "GPU" can be used interchangeably. There are 2 types of graphics cards: **integrated graphics card** and **dedicated graphics card**. 
+
+## 
 With video editing, we recommend a laptop that contains a discrete GPU, rather than an integrated GPU. This is because an integrated GPU does not have its own memory and storage- VRAM (Video Random Access Memory), it shares memory with the CPU on a laptop.
 Whereas, the discrete GPU has its own memory (VRAM) for imagery processing, which means that it works faster than an integrated graphics card. 
 Speaking of, kindly note that the minimum GPU for video editing is 2GB; not more, not less.
