@@ -5,8 +5,7 @@ slug: Buying  A Laptop For Video Edting - What is important?
 date: 2022-02-16T15:47:43.524Z
 cover: /img/cc_1.1.2.jpg
 tags:
-  - lorem
-  - ipsum
+  - Videoediting
 meta_title: Buying  A Laptop For Video Edting - What is important?
 meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
   nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
@@ -28,22 +27,21 @@ The CPU is commonly called the heart of the computer and that is why it is the f
 ## A graphics card or board holds together the components of a GPU, "graphics card" and "GPU" can be used interchangeably. There are 2 types of graphics cards: **integrated graphics card** and **dedicated graphics card**. With video editing, I recommend a laptop that contains a dedicated GPU, rather than an integrated GPU. This is because an integrated GPU does not have its own memory and storage- VRAM (Video Random Access Memory), it shares memory with the CPU on a laptop.
 Whereas, the dedicated GPU has its own memory (VRAM) for image processing, which means that it works faster than an integrated graphics card.
 
-##  
-Kindly note that the minimum GPU memory for video editing is 2GB; if you'll be editing on a software like Davinci Resolve I'll advise you start from 4GB.
+## Kindly note that the minimum GPU memory for video editing is 2GB; if you'll be editing on a software like Davinci Resolve I'll advise you start from 4GB.
 
 
 
 ### RAM (Random Access Memory)
-The RAM is used to temporarily store information. So, when video editors edit and make changes to a video, the RAM is what helps to temporarily store those edits and changes. This means that the more video editing you do, the more RAM you need.
-Take, for instance, you’re editing a 4K video, you’d naturally need about 32GB. Notwithstanding, bear in mind that the minimum RAM for video editing is 8GB.
+
+### The RAM is used to temporarily store information. So, when video editors edit and make changes to a video, the RAM is what helps to temporarily store those edits and changes. This means that the more video editing you do, the more RAM you need.
+Take, for instance, you’re editing a 4K video, you’ll need about 16GB. Notwithstanding, bear in mind that your video editing laptop can do a lot with a minimum RAM of 8GB. You can always bulk up on RAM in future. 
 Kindly remember that when buying your laptop.
 
-STORAGE
-The storage factor is, most times, the least talked about when it comes to choosing a laptop for video editing. It is, however, just as important as the CPU, GPU, and RAM.
+#### STORAGE
+
+### The storage factor is most times the least talked about when it comes to choosing a laptop for video editing. It is, however, just as important as the CPU, GPU, and RAM.
 There are two kinds of storage to consider for video editing: HDD and SDD. While there are many options to choose from as far as external storage is concerned, it is best to stick with one that ensures sufficiency.
 The SDD (Solid State Drive) is a newer and faster version of the HDD (Hard Disk Drive), so it is highly recommended because it makes video editing smoother and faster.
 However, because it is quite expensive and can be a bit of a challenge, especially where budget is a concern, it is okay to work with the HDD instead. It might not be the fastest, but it functions well enough. 
 
-CONCLUSION
-Contrary to what most people think, the brand of a laptop does not determine whether or not it is good enough for video editing. Whether it is HP or Dell, if they do not contain the above specifications, then you might not enjoy film editing while using them.
-Likewise, you won’t enjoy film editing if you decide to get any kind of laptop without asking questions. It could be because you’re working with a particular price range, however, it is best to know these specifications, then factor them into your budget.
+### Contrary to what most people think, the brand of a laptop does not determine whether or not it is good enough for video editing. Whether it is HP or Dell, if they do not contain the above specifications in the right measure, then you might not enjoy editing while using them. There's always a budget constraint so its okay to be working with a particular price range, however, it is best to know these specifications, then factor them into your budget.
