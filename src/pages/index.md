@@ -18,8 +18,6 @@ services:
     text: Film Editing
   - image: /img/10424989031555931400.svg
     text: Colour Grading
-  - image: /img/17983649771595501283.svg
-    text: Sound Editing
   - image: /img/9466153201595156178.svg
     text: Post-Production Consulting
   - image: /img/14288320751582885796.svg
@@ -41,19 +39,14 @@ offerings:
 testimonials:
   - author: Segun Ajose, Segun Ajose Photography
     quote: Martini is my go-to guy when it comes to video editing and coloring.
-      Martini and I have been working together for about two years, and it’s
+      Martini and I have been working together for about three years, and it’s
       been a very great partnership. He has helped improve how I shoot and how I
       tell stories through videography. He has also edited over 30 individual
-      videos for me, each coming with their own unique creative touch. He is
-      enjoyable to work with and delivers on time.   I think one of his greatest
-      attributes is listening to what you want in your edits and then giving you
-      a perfect result. I recommend Martini 100 times over, you can trust that
-      whatever work you give him; big or small, he would put his whole heart in
-      making sure it’s the best it could ever be.
+      videos for me, each coming with their own unique creative touch.
   - author: "Taiwo Egunjobi, Founder: Filmkaku, ContentDocks"
     quote: "Martini is a quick learner and has quickly become one of the fastest
-      rising film editors and production consultants. He's an important resource
-      to have on your team. "
+      rising film editors and post production consultants. He's an important
+      resource to have on your team. "
 meta_title: Home | Martini Akande
 meta_description: >-
   I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post
@@ -62,7 +55,7 @@ meta_description: >-
 
   Post Production Nollywood Davinci Resolve Blackmagic Film Editing Premiere Pro Colour Grading
 ---
-Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post Production Consultant.
+Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, and Post Production Consultant.
 
 I have over 5 years post production experience creating commercials, TVs, films, music videos, documentaries, web series etc. 
 
