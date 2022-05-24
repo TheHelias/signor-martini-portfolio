@@ -6,7 +6,7 @@ heroImages:
   - image: /img/untitled_3.47.1.jpg
   - image: /img/crushed-roses_1.1.1.jpg
   - image: /img/untitled_3.15.1.jpg
-  - image: /img/nneka.jpg
+  - image: /img/gg_1.75.1.jpg
 mobileHeroImages:
   - image: /img/roses.jpg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25.jpeg
