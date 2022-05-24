@@ -10,8 +10,7 @@ heroImages:
 mobileHeroImages:
   - image: /img/roses.jpg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25.jpeg
-  - image: /img/whatsapp-image-2020-12-22-at-18.18.25-1-.jpeg
-  - image: /img/tdela-de.jpg
+  - image: /img/glamour-girls_1.75.1-3-.png
 summary: I'm a Mechanic, a Collaborator and an Artist
 services:
   - image: /img/13140849211595452843.svg
