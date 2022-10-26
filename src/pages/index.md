@@ -35,6 +35,9 @@ offerings:
     - video: 659626627
       image: /img/faultlines_3.1.jpg
       text: FAULTLINES - Feature film edited by me
+    - image: /img/873b934f-41c5-4d69-843b-fc74447fd3c8.jpeg
+      text: Brotherhood - Feature film and trailer edited by me
+      video: 743365197
 testimonials:
   - author: Segun Ajose, Segun Ajose Photography
     quote: Martini is my go-to guy when it comes to video editing and coloring.
