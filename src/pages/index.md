@@ -66,7 +66,7 @@ meta_description: >-
 ---
 Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, and Post Production Consultant.
 
-Film Editor of 9 feature films, a video editor, a colourist, a digital image technician, and a post-production consultant with over six years of experience. Edited feature films, short films, documentaries, Commercials, and TV Shows.
+Film Editor of 9 feature films, a video editor, a colourist, a digital image technician, and a post-production consultant with over seven years of experience. Edited feature films, short films, documentaries, Commercials, and TV Shows.
 
 I'm a Mechanic: I join cuts together to make them work as a unit. 
 
