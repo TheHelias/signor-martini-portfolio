@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: MARTINI AKANDE
-subtitle: EDITOR | PRODUCER | FILMMAKER |
+subtitle: EDITOR | PRODUCER | FILMMAKER
 heroImages:
   - image: /img/untitled_3.47.1.jpg
   - image: /img/crushed-roses_1.1.1.jpg
