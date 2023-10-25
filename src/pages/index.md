@@ -1,10 +1,10 @@
 ---
 templateKey: home-page
 title: MARTINI AKANDE
-subtitle: EDITOR | POST SUPERVISOR | FILMMAKER
+subtitle: EDITOR | PRODUCER | FILMMAKER
 heroImages:
   - image: /img/img_0296.png
-  - image: /img/whatsapp-image-2022-11-23-at-18.25.48.jpeg
+  - image: /img/glamour-girls_1.263.1.png
   - image: /img/untitled_3.15.1.jpg
   - image: /img/img_0291.png
   - image: /img/glamour-girls_1.817.1.png
@@ -12,7 +12,7 @@ mobileHeroImages:
   - image: /img/roses.jpg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25.jpeg
   - image: /img/glamour-girls_1.75.1-2-.png
-summary: I'm a Mechanic, a Collaborator and an Artist
+summary: "Transforming post-production and improving post-production workflows. "
 services:
   - image: /img/13140849211595452843.svg
     text: Film Editing
