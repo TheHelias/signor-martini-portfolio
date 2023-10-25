@@ -65,16 +65,10 @@ meta_description: >-
 
   Post Production Nollywood Davinci Resolve Blackmagic Film Editing Premiere Pro Colour Grading
 ---
-Hi, I'm Martini Akande. Yes, Martini is my real name (inserts a long story). I'm a Professional Film and Video Editor, Colorist, and Post Production Consultant.
+Martini is a professional Film and Video Editor, Colorist, and Post-Production Manager.
 
-Film Editor of 9 feature films, a video editor, a colourist, a digital image technician, and a post-production consultant with over seven years of experience. Edited feature films, short films, documentaries, Commercials, and TV Shows.
+Editor of 11 feature films including Gangs of Lagos (2023), Brotherhood (2022), and Glamour Girls (2022). He was nominated in the Best Picture Editor category for Brotherhood (2022) at the 9th edition of Africa Magic Viewers' Choice Awards (AMVCA). 
 
-I'm a Mechanic: I join cuts together to make them work as a unit. 
+As the Editor and post-production supervisor on critically acclaimed films like Gangs of Lagos, Brotherhood, Venge(TV Series) and with over 8 years of experience in editing and post-production management - he brings a unique perspective to every project.
 
-I'm a Collaborator: I work with other professionals like cinematographers and sound composers. 
-
-I'm an Artist: I bring the director's or client's vision to life. 
-
-I love telling stories. I believe every visual content must tell a story and I put this in every cut, every frame, every note.
-
-Thanks for visiting my website. Please, take a look at some of my work and do not hesitate to contact me if you have any questions or wish to get in touch with me.
+Martini is an all-around post-production professional and has facilitated various projects over the years. From setting up post-production teams to post-production workflows to delivering exciting and groundbreaking films and shows.
