@@ -65,10 +65,10 @@ meta_description: >-
 
   Post Production Nollywood Davinci Resolve Blackmagic Film Editing Premiere Pro Colour Grading
 ---
-Martini is a professional Film and Video Editor, Colorist, and Post-Production Manager.
+I'm a professional Film and Video Editor, Colorist, and Post-Production Manager.
 
-Editor of 11 feature films including Gangs of Lagos (2023), Brotherhood (2022), and Glamour Girls (2022). He was nominated in the Best Picture Editor category for Brotherhood (2022) at the 9th edition of Africa Magic Viewers' Choice Awards (AMVCA). 
+Editor of 11 feature films including Gangs of Lagos (2023), Brotherhood (2022), and Glamour Girls (2022). Nominated in the Best Picture Editor category for Brotherhood (2022) at the 9th edition of Africa Magic Viewers' Choice Awards (AMVCA).
 
-As the Editor and post-production supervisor on critically acclaimed films like Gangs of Lagos, Brotherhood, Venge(TV Series) and with over 8 years of experience in editing and post-production management - he brings a unique perspective to every project.
+As the Editor and Post-Production Supervisor on critically acclaimed films like Gangs of Lagos, Brotherhood, Venge(TV Series) and with over 8 years of experience in editing and post-production management - I bring a unique perspective to every project.
 
-Martini is an all-around post-production professional and has facilitated various projects over the years. From setting up post-production teams to post-production workflows to delivering exciting and groundbreaking films and shows.
+I'm an all-around post-production professional and I have facilitated various projects over the years, from setting up post-production teams to post-production workflows to delivering exciting and groundbreaking films(shows).
