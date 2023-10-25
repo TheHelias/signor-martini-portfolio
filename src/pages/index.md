@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: MARTINI AKANDE
-subtitle: EDITOR | PRODUCER | FILMMAKER
+subtitle: EDITOR | POST-PRODUCTION MANAGER | FILMMAKER
 heroImages:
   - image: /img/img_0296.png
   - image: /img/glamour-girls_1.263.1.png
