@@ -3,10 +3,11 @@ templateKey: home-page
 title: MARTINI AKANDE
 subtitle: EDITOR | PRODUCER | FILMMAKER
 heroImages:
+  - image: /img/img_0296.png
   - image: /img/untitled_3.47.1.jpg
-  - image: /img/crushed-roses_1.1.1.jpg
   - image: /img/untitled_3.15.1.jpg
-  - image: /img/gg_1.75.1r.jpg
+  - image: /img/whatsapp-image-2022-11-23-at-18.25.48.jpeg
+  - image: /img/img_0291.png
 mobileHeroImages:
   - image: /img/roses.jpg
   - image: /img/whatsapp-image-2020-12-22-at-18.18.25.jpeg
