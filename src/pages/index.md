@@ -43,7 +43,7 @@ offerings:
     - image: /img/5eb43b45-00a3-485c-b31c-77b512729ba1.jpg
       text: FUPA - A short film edited and produced by me.
       video: 451425217
-    - image: /img/untitled_3.47.1.jpg
+    - image: /img/gangs-of-lagos-still-1.png
       video: 888900679
       text: Gangs of Lagos
 testimonials: []
