@@ -43,20 +43,10 @@ offerings:
     - image: /img/5eb43b45-00a3-485c-b31c-77b512729ba1.jpg
       text: FUPA - A short film edited and produced by me.
       video: 451425217
-    - video: 659626627
-      image: /img/faultlines_3.1.jpg
-      text: FAULTLINES - Feature film edited by me. Now streaming on Showmax
-testimonials:
-  - author: Segun Ajose, Segun Ajose Photography
-    quote: Martini is my go-to guy when it comes to video editing and coloring.
-      Martini and I have been working together for about three years, and it’s
-      been a very great partnership. He has helped improve how I shoot and how I
-      tell stories through videography. He has also edited over 30 individual
-      videos for me, each coming with their own unique creative touch.
-  - author: "Taiwo Egunjobi, Founder: Filmkaku, ContentDocks"
-    quote: "Martini is a quick learner and has quickly become one of the fastest
-      rising film editors and post production consultants. He's an important
-      resource to have on your team. "
+    - image: /img/gangs-of-lagos-still-1.png
+      video: 95280234
+      text: Gangs of Lagos
+testimonials: []
 meta_title: Home | Martini Akande
 meta_description: >-
   I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post
