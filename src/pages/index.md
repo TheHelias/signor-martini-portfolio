@@ -46,7 +46,9 @@ offerings:
     - image: /img/gangs-of-lagos-still-1.png
       video: 888900679
       text: Gangs of Lagos
-testimonials: []
+testimonials:
+  - quote: dummy content
+    author: dummy comtent
 meta_title: Home | Martini Akande
 meta_description: >-
   I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post
