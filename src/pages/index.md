@@ -11,7 +11,7 @@ heroImages:
 mobileHeroImages:
   - image: /img/img_0293-2.jpg
   - image: /img/glamour-girls_1.263.1.jpg
-  - image: /img/glamour-girls_1.817.1.jpg
+  - image: /img/d4a4449b-3569-4d5c-b486-fc86fef07d04.jpeg
 summary: "Transforming post-production and improving post-production workflows. "
 services:
   - image: /img/13140849211595452843.svg
