@@ -25,27 +25,23 @@ services:
 offerings:
   blurbs:
     - image: /img/873b934f-41c5-4d69-843b-fc74447fd3c8.jpeg
-      text: Brotherhood - Feature film and trailer edited by me
+      text: "Brotherhood: Now streaming on prime video"
       video: 743365197
     - image: /img/whatsapp-image-2022-11-23-at-18.25.48-1-.jpeg
-      text: "Glamour Girls: Feature film edited by me. Now streaming on Netflix"
-      video: 659626627
+      text: "Glamour Girls: Now streaming on Netflix"
+      video: 774347751
     - image: /img/whatsapp-image-2022-11-23-at-18.36.31.jpeg
-      text: Crushed Roses is a short film edited by me
+      text: Crushed Roses
       video: 708314491
+    - image: /img/gangs-of-lagos-still-1.png
+      video: 888900679
+      text: Gangs of Lagos
     - image: /img/nneka11.jpg
-      text: Nneka The Pretty Serpent - Feature film edited by me. Now streaming on
-        Netflix
+      text: Nneka The Pretty Serpent - Now streaming on Netflix
       video: 657088300
     - image: /img/untitled_2.21.1.jpg
       video: 656939317
       text: Feature documentary film edited by me.
-    - image: /img/5eb43b45-00a3-485c-b31c-77b512729ba1.jpg
-      text: FUPA - A short film edited and produced by me.
-      video: 451425217
-    - image: /img/gangs-of-lagos-still-1.png
-      video: 888900679
-      text: Gangs of Lagos
 testimonials:
   - quote: dummy content
     author: dummy comtent
