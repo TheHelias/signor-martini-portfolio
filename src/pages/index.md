@@ -24,18 +24,15 @@ services:
     text: Editorial Training
 offerings:
   blurbs:
+    - image: /img/gangs-of-lagos-still-1.png
+      video: 888900679
+      text: Gangs of Lagos
     - image: /img/873b934f-41c5-4d69-843b-fc74447fd3c8.jpeg
       text: "Brotherhood: Now streaming on prime video"
       video: 743365197
     - image: /img/whatsapp-image-2022-11-23-at-18.25.48-1-.jpeg
       text: "Glamour Girls: Now streaming on Netflix"
       video: 774347751
-    - image: /img/whatsapp-image-2022-11-23-at-18.36.31.jpeg
-      text: Crushed Roses
-      video: 708314491
-    - image: /img/gangs-of-lagos-still-1.png
-      video: 888900679
-      text: Gangs of Lagos
     - image: /img/nneka11.jpg
       text: Nneka The Pretty Serpent - Now streaming on Netflix
       video: 657088300
