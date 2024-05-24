@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: MARTINI AKANDE
-subtitle: EDITOR | POST-PRODUCTION MANAGER | FILMMAKER
+subtitle: EDITOR | POST-PRODUCTION PRODUCER | FILMMAKER
 heroImages:
   - image: /img/img_0296.png
   - image: /img/glamour-girls_1.263.1.png
@@ -40,8 +40,13 @@ offerings:
       video: 656939317
       text: Feature documentary film edited by me.
 testimonials:
-  - quote: dummy content
-    author: dummy comtent
+  - quote: Martini possesses a unique ability to understand the director's vision
+      and seamlessly translate it onto the screen. His attention to detail is
+      exceptional, ensuring that every frame is polished to perfection. What
+      truly sets him apart is his creative flair and innovative approach to
+      storytelling. He is receptive to feedback and willing to go above and
+      beyond to exceed expectations.
+    author: Jade Osiberu(Director, Writer - Gangs of Lagos)
 meta_title: Home | Martini Akande
 meta_description: >-
   I'm a Professional Film and Video Editor, Colorist, Sound Editor, and Post
@@ -50,7 +55,7 @@ meta_description: >-
 
   Post Production Nollywood Davinci Resolve Blackmagic Film Editing Premiere Pro Colour Grading
 ---
-I'm a professional Film and Video Editor, Colorist, and Post-Production Manager.
+I'm a professional Film and Video Editor, Colorist, and Post-Production Producer
 
 Editor of 11 feature films including Gangs of Lagos (2023), Brotherhood (2022), and Glamour Girls (2022). Nominated in the Best Picture Editor category for Brotherhood (2022) at the 9th edition of Africa Magic Viewers' Choice Awards (AMVCA).
 
