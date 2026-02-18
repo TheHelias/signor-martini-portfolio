@@ -111,28 +111,6 @@ const HomePageTemplate = ({
           </button>
         </div>
       </section>
-      {/* <section
-        className='hero '
-        // style={{
-        //   background: `rgba(0, 0, 0, 0) url(${heroImage}) no-repeat scroll center top`,
-        //   backgroundSize: '100%'
-        // }}
-      >
-        <div className='section'>
-          <h1 className='title  is-size-2-mobile has-text-weight-bold'>
-            {title}
-          </h1>
-          <p className='subtitle'>{subtitle}</p>
-          <p className='hero--summary'>{summary}</p>
-          <button
-            onClick={aboutLink}
-            className='button is-large is-primary hero--button'
-          >
-            <span>Know More</span>
-            <FaChevronDown className='hero--button__icon' />
-          </button>
-        </div>
-      </section> */}
       <AboutPageTemplate
         content={aboutContent}
         contentComponent={aboutContentComponent}

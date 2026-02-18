@@ -31,9 +31,6 @@ function Offerings ({ gridItems }) {
             className='portfolio--item__video-modal'
           >
             <div className='portfolio--item__video-modal__content'>
-              {/* <iframe
-                src={`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&playlist=${videoID}&loop=1`}
-              /> */}
               <iframe
                 src={`https://player.vimeo.com/video/${videoID}`}
                 frameBorder='0'
