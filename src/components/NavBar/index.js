@@ -58,7 +58,7 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
           >
             <div className='navbar-end'>
               <SearchBox searchIndex={data.siteSearchIndex.index} />
-              <a
+              <button
                 className='navbar-item navbar--right--items'
                 onClick={() => {
                   aboutLink()
@@ -66,8 +66,8 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
                 }}
               >
                 About
-              </a>
-              <a
+              </button>
+              <button
                 className='navbar-item navbar--right--items'
                 onClick={() => {
                   servicesLink()
@@ -75,8 +75,8 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
                 }}
               >
                 Services
-              </a>
-              <a
+              </button>
+              <button
                 className='navbar-item navbar--right--items'
                 onClick={() => {
                   portfolioLink()
@@ -84,7 +84,7 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
                 }}
               >
                 Portfolio
-              </a>
+              </button>
               <Link
                 activeClassName='navbar-item--active'
                 className='navbar-item navbar--right--items'

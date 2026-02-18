@@ -12,9 +12,17 @@ function Offerings ({ gridItems }) {
         <div key={item.image} className='column is-6 portfolio--item'>
           <section
             className='section'
+            role='button'
+            tabIndex={0}
             onClick={() => {
               setVideoID(item.video)
               setIsOpen(true)
+            }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                setVideoID(item.video)
+                setIsOpen(true)
+              }
             }}
           >
             <div className='portfolio--item__image'>
@@ -33,6 +41,7 @@ function Offerings ({ gridItems }) {
             <div className='portfolio--item__video-modal__content'>
               <div className='video-embed-wrapper'>
                 <iframe
+                  title={`Vimeo video player`}
                   src={`https://player.vimeo.com/video/${videoID}`}
                   frameBorder='0'
                   allow='autoplay; fullscreen'
