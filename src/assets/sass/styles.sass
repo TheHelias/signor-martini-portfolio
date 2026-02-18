@@ -37,9 +37,17 @@ p, li, strong
 #content-wrapper
   flex: 1
 
-iframe
-  height: 600px !important 
-  width: 1067px !important
+.video-embed-wrapper
+  position: relative
+  width: 100%
+  padding-top: 56.25%
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100% !important
+    height: 100% !important
+    border: 0
 
 nav
   background-color: $primary !important
@@ -272,9 +280,6 @@ footer
       grid-template-columns: auto
 
 @media screen and (max-width: 500px)
-  iframe
-    height: 400px !important
-
   h1.title.is-size-2
     font-size: 2rem !important
 

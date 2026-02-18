@@ -31,12 +31,14 @@ function Offerings ({ gridItems }) {
             className='portfolio--item__video-modal'
           >
             <div className='portfolio--item__video-modal__content'>
-              <iframe
-                src={`https://player.vimeo.com/video/${videoID}`}
-                frameBorder='0'
-                allow='autoplay; fullscreen'
-                allowFullScreen
-              />
+              <div className='video-embed-wrapper'>
+                <iframe
+                  src={`https://player.vimeo.com/video/${videoID}`}
+                  frameBorder='0'
+                  allow='autoplay; fullscreen'
+                  allowFullScreen
+                />
+              </div>
             </div>
           </Overlay>
         </div>
