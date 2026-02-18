@@ -1,56 +1,53 @@
-import React, { Component } from 'react'
+import React, { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Index } from 'elasticlunr'
 
-export default class SearchBox extends Component {
-  static propTypes = {
-    searchIndex: PropTypes.object.isRequired
-  }
-  constructor (props) {
-    super(props)
-    this.state = {
-      query: ``,
-      results: [],
-      isActive: false,
+const SearchBox = ({ searchIndex }) => {
+  const [query, setQuery] = useState('')
+  const [results, setResults] = useState([])
+  const [isActive, setIsActive] = useState(false)
+  const indexRef = useRef(null)
+
+  const getOrCreateIndex = () => {
+    if (!indexRef.current) {
+      indexRef.current = Index.load(searchIndex)
     }
+    return indexRef.current
   }
 
-  render () {
-    return (
-      <div className={`navbar-item ${this.state.isActive ? 'is-active' : ''}`}>
-        <input
-          className='input  is-rounded is-primary'
-          type='text'
-          value={this.state.query}
-          onChange={this.search}
-          placeholder='Search'
-        />
-        <div className='navbar-dropdown'>
-          {this.state.results.map(page => (
-            <Link className='navbar-item' key={page.id} to={page.slug}>{page.title}</Link>
-          ))}
-        </div>
-      </div>
+  const search = (evt) => {
+    const q = evt.target.value
+    const idx = getOrCreateIndex()
+    setQuery(q)
+    setIsActive(!!q)
+    setResults(
+      idx
+        .search(q, { expand: true })
+        .map(({ ref }) => idx.documentStore.getDoc(ref))
     )
   }
 
-  getOrCreateIndex = () =>
-    this.index
-      ? this.index
-      : Index.load(this.props.searchIndex);
-
-  search = evt => {
-    const query = evt.target.value
-    this.index = this.getOrCreateIndex()
-    this.setState({
-      query,
-      // Query the index with search string to get an [] of IDs
-      results: this.index
-        .search(query, { expand: true }) // Accept partial matches
-        // Map over each ID and return the full document
-        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
-      isActive: !!query,
-    })
-  };
+  return (
+    <div className={`navbar-item ${isActive ? 'is-active' : ''}`}>
+      <input
+        className='input  is-rounded is-primary'
+        type='text'
+        value={query}
+        onChange={search}
+        placeholder='Search'
+      />
+      <div className='navbar-dropdown'>
+        {results.map(page => (
+          <Link className='navbar-item' key={page.id} to={page.slug}>{page.title}</Link>
+        ))}
+      </div>
+    </div>
+  )
 }
+
+SearchBox.propTypes = {
+  searchIndex: PropTypes.object.isRequired
+}
+
+export default SearchBox

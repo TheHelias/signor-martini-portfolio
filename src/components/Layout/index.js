@@ -1,36 +1,29 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import '../../assets/sass/styles.sass'
 import NavBar from '../NavBar'
 import Footer from '../Footer'
 
-class Layout extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { isActive: false }
-    this.toggleNavbar = this.toggleNavbar.bind(this)
-    this.closeNavbar = this.closeNavbar.bind(this)
-  }
+const Layout = ({ children }) => {
+  const [isActive, setIsActive] = useState(false)
 
-  toggleNavbar () {
-    this.setState({ isActive: !this.state.isActive })
-  }
+  const toggleNavbar = () => setIsActive(prev => !prev)
+  const closeNavbar = () => setIsActive(false)
 
-  closeNavbar () {
-    this.setState({ isActive: false })
-  }
-
-  render () {
-    return (
-      <div id='layout-wrapper'>
-        <NavBar isActive={this.state.isActive} closeNavbar={this.closeNavbar} toggleNavbar={this.toggleNavbar} />
-        <div id='content-wrapper'>
-          {this.props.children}
-        </div>
-        <Footer />
+  return (
+    <div id='layout-wrapper'>
+      <NavBar isActive={isActive} closeNavbar={closeNavbar} toggleNavbar={toggleNavbar} />
+      <div id='content-wrapper'>
+        {children}
       </div>
-    )
-  }
+      <Footer />
+    </div>
+  )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default Layout
