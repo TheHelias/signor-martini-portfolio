@@ -16,5 +16,6 @@ module.exports = {
   userDescription: 'I\'m a Mechanic, a Collaborator and an Artist',
   copyright: 'Copyright © Martini Akande 2020. All Rights Reserved.',
   themeColor: '#D86c70',
-  backgroundColor: '#fff7ef'
+  backgroundColor: '#fff7ef',
+  postsPerPage: 6
 }

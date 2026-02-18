@@ -2,6 +2,7 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const createPaginatedPages = require('gatsby-paginate')
+const config = require('./config')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -48,7 +49,7 @@ exports.createPages = ({ actions, graphql }) => {
       edges: posts,
       createPage: createPage,
       pageTemplate: 'src/templates/blog.js',
-      pageLength: 6, // This is optional and defaults to 10 if not used
+      pageLength: config.postsPerPage,
       pathPrefix: 'blog', // This is optional and defaults to an empty string if not used
       context: {} // This is optional and defaults to an empty object if not used
     })
