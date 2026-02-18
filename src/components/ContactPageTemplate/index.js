@@ -38,7 +38,7 @@ ContactPageTemplate.propTypes = {
   subtitle: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
-  services: PropTypes.string
+  services: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default ContactPageTemplate

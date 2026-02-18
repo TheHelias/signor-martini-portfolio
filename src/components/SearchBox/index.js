@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Index } from 'elasticlunr'
 
 export default class SearchBox extends Component {
+  static propTypes = {
+    searchIndex: PropTypes.object.isRequired
+  }
   constructor (props) {
     super(props)
     this.state = {

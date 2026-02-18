@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { navigate } from '@reach/router'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import SearchBox from '../SearchBox'
@@ -106,6 +107,12 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
       )}
     />
   )
+}
+
+NavBar.propTypes = {
+  closeNavbar: PropTypes.func.isRequired,
+  toggleNavbar: PropTypes.func.isRequired,
+  isActive: PropTypes.bool.isRequired
 }
 
 export default NavBar
