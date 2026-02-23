@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik, Field } from 'formik'
-import { navigate } from 'gatsby-link'
+import { navigate } from 'gatsby'
 import * as Yup from 'yup'
 
 const encode = (data) => {
@@ -45,7 +45,8 @@ const ContactForm = ({ services }) => {
             setSubmitting(false)
           })
       }}
-      render={({
+    >
+      {({
         errors,
         touched,
         isSubmitting,
@@ -144,7 +145,7 @@ const ContactForm = ({ services }) => {
           </div>
         </form>
       )}
-    />
+    </Formik>
   )
 }
 

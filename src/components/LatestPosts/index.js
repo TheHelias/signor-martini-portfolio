@@ -1,8 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link, StaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
-function LatestPosts ({ data, count }) {
+function LatestPosts ({ count }) {
+  const data = useStaticQuery(graphql`
+    query LatestPostsQuery {
+      allMarkdownRemark(
+        sort: { frontmatter: { date: DESC } }
+        filter: { frontmatter: { templateKey: { eq: "article-page" } } }
+      ) {
+        edges {
+          node {
+            excerpt(pruneLength: 250)
+            id
+            fields { slug }
+            frontmatter {
+              cover
+              title
+              templateKey
+              date(formatString: "MMMM DD, YYYY")
+            }
+          }
+        }
+      }
+    }
+  `)
+
   let { edges: posts } = data.allMarkdownRemark
   if (count) {
     posts = posts.slice(0, count)
@@ -35,38 +58,7 @@ function LatestPosts ({ data, count }) {
 }
 
 LatestPosts.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  }),
   count: PropTypes.number
 }
 
-export default ({ count }) => (
-  <StaticQuery
-    query={graphql`
-        query LatestPostsQuery {
-          allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "article-page" } } }
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 250)
-                id
-                fields { slug }
-                frontmatter {
-                  cover
-                  title
-                  templateKey
-                  date(formatString: "MMMM DD, YYYY")
-                }
-              }
-            }
-          }
-        }
-      `}
-    render={(data) => <LatestPosts data={data} count={count} />}
-  />
-)
+export default LatestPosts

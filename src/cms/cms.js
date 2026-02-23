@@ -1,4 +1,4 @@
-import CMS from 'netlify-cms-app'
+import CMS from 'decap-cms-app'
 import '../assets/sass/styles.sass'
 import HomePagePreview from './preview-templates/HomePagePreview'
 import ArticlePreview from './preview-templates/ArticlePreview'

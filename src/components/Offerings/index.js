@@ -1,7 +1,22 @@
 import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import { FaPlay } from 'react-icons/fa'
-import { Overlay } from 'react-portal-overlay'
+
+const Overlay = ({ open, onClose, closeOnClick, className, children }) => {
+  if (!open || typeof document === 'undefined') return null
+  return ReactDOM.createPortal(
+    <div
+      className={className}
+      onClick={closeOnClick ? onClose : undefined}
+    >
+      <div onClick={(e) => e.stopPropagation()}>
+        {children}
+      </div>
+    </div>,
+    document.body
+  )
+}
 
 function Offerings ({ gridItems }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,26 +47,26 @@ function Offerings ({ gridItems }) {
             </div>
             <p>{item.text}</p>
           </section>
-          <Overlay
-            open={isOpen}
-            onClose={() => setIsOpen(false)}
-            closeOnClick
-            className='portfolio--item__video-modal'
-          >
-            <div className='portfolio--item__video-modal__content'>
-              <div className='video-embed-wrapper'>
-                <iframe
-                  title={`Vimeo video player`}
-                  src={`https://player.vimeo.com/video/${videoID}`}
-                  frameBorder='0'
-                  allow='autoplay; fullscreen'
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </Overlay>
         </div>
       ))}
+      <Overlay
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        closeOnClick
+        className='portfolio--item__video-modal'
+      >
+        <div className='portfolio--item__video-modal__content'>
+          <div className='video-embed-wrapper'>
+            <iframe
+              title='Vimeo video player'
+              src={`https://player.vimeo.com/video/${videoID}`}
+              frameBorder='0'
+              allow='autoplay; fullscreen'
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </Overlay>
     </div>
   )
 }

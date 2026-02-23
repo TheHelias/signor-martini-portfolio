@@ -57,7 +57,7 @@ export const tagPageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { navigate } from '@reach/router'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import SearchBox from '../SearchBox'
 
 const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
@@ -18,94 +17,83 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
   }
 
   return (
-    <StaticQuery
-      query={graphql`
-        query SearchIndexQuery {
-          siteSearchIndex {
-            index
-          }
-        }
-      `}
-      render={(data) => (
-        <nav
-          className='navbar is-transparent is-fixed-top'
-          aria-label='main navigation'
+    <nav
+      className='navbar is-transparent is-fixed-top'
+      aria-label='main navigation'
+    >
+      <div className='navbar-brand'>
+        <Link
+          to='/'
+          activeClassName='navbar-item--active'
+          className='navbar-item'
         >
-          <div className='navbar-brand'>
-            <Link
-              to='/'
-              activeClassName='navbar-item--active'
-              className='navbar-item'
-            >
-              <img alt='logo' src='/img/logo.png' />
-            </Link>
-            <button
-              className={`button is-primary navbar-burger ${
-                isActive ? 'is-active' : ''
-              }`}
-              data-target='navMenu'
-              aria-label='menu button'
-              onClick={toggleNavbar}
-            >
-              <span />
-              <span />
-              <span />
-            </button>
-          </div>
-          <div
-            className={`navbar-menu ${isActive ? 'is-active' : ''}`}
-            id='navMenu'
+          <img alt='logo' src='/img/logo.png' />
+        </Link>
+        <button
+          className={`button is-primary navbar-burger ${
+            isActive ? 'is-active' : ''
+          }`}
+          data-target='navMenu'
+          aria-label='menu button'
+          onClick={toggleNavbar}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+      <div
+        className={`navbar-menu ${isActive ? 'is-active' : ''}`}
+        id='navMenu'
+      >
+        <div className='navbar-end'>
+          <SearchBox />
+          <button
+            className='navbar-item navbar--right--items'
+            onClick={() => {
+              aboutLink()
+              closeNavbar()
+            }}
           >
-            <div className='navbar-end'>
-              <SearchBox searchIndex={data.siteSearchIndex.index} />
-              <button
-                className='navbar-item navbar--right--items'
-                onClick={() => {
-                  aboutLink()
-                  closeNavbar()
-                }}
-              >
-                About
-              </button>
-              <button
-                className='navbar-item navbar--right--items'
-                onClick={() => {
-                  servicesLink()
-                  closeNavbar()
-                }}
-              >
-                Services
-              </button>
-              <button
-                className='navbar-item navbar--right--items'
-                onClick={() => {
-                  portfolioLink()
-                  closeNavbar()
-                }}
-              >
-                Portfolio
-              </button>
-              <Link
-                activeClassName='navbar-item--active'
-                className='navbar-item navbar--right--items'
-                to='/blog'
-                onClick={closeNavbar}
-              >
-                Blog
-              </Link>
-              <Link
-                activeClassName='navbar-item--active'
-                className='navbar-item navbar--right--items'
-                to='/contact'
-                onClick={closeNavbar}
-              >
-                Contact Me
-              </Link>
-            </div>
-          </div>
-        </nav>
-      )}
-    />
+            About
+          </button>
+          <button
+            className='navbar-item navbar--right--items'
+            onClick={() => {
+              servicesLink()
+              closeNavbar()
+            }}
+          >
+            Services
+          </button>
+          <button
+            className='navbar-item navbar--right--items'
+            onClick={() => {
+              portfolioLink()
+              closeNavbar()
+            }}
+          >
+            Portfolio
+          </button>
+          <Link
+            activeClassName='navbar-item--active'
+            className='navbar-item navbar--right--items'
+            to='/blog'
+            onClick={closeNavbar}
+          >
+            Blog
+          </Link>
+          <Link
+            activeClassName='navbar-item--active'
+            className='navbar-item navbar--right--items'
+            to='/contact'
+            onClick={closeNavbar}
+          >
+            Contact Me
+          </Link>
+        </div>
+      </div>
+    </nav>
   )
 }
 

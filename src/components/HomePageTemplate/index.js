@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
-import { navigate } from '@reach/router'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import { FaChevronDown } from 'react-icons/fa'
 
 import AboutPageTemplate from '../AboutPageTemplate'

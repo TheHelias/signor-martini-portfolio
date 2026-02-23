@@ -1,7 +1,6 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const createPaginatedPages = require('gatsby-paginate')
 const config = require('./config')
 
 exports.createPages = ({ actions, graphql }) => {
@@ -9,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000, sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(limit: 1000, sort: { frontmatter: { date: DESC } }) {
         edges {
           node {
             excerpt(pruneLength: 250)
@@ -45,14 +44,23 @@ exports.createPages = ({ actions, graphql }) => {
       }
     })
 
-    createPaginatedPages({
-      edges: posts,
-      createPage: createPage,
-      pageTemplate: 'src/templates/blog.js',
-      pageLength: config.postsPerPage,
-      pathPrefix: 'blog', // This is optional and defaults to an empty string if not used
-      context: {} // This is optional and defaults to an empty object if not used
+    // Custom pagination replacing gatsby-paginate
+    const postsPerPage = config.postsPerPage
+    const numPages = Math.ceil(posts.length / postsPerPage)
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? '/blog' : `/blog/${i + 1}`,
+        component: path.resolve('src/templates/blog.js'),
+        context: {
+          group: posts.slice(i * postsPerPage, (i + 1) * postsPerPage),
+          index: i + 1,
+          first: i === 0,
+          last: i === numPages - 1,
+          pageCount: numPages
+        }
+      })
     })
+
     postsAndPages.forEach(edge => {
       const id = edge.node.id
       createPage({
@@ -91,6 +99,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       })
     })
+
   })
 }
 

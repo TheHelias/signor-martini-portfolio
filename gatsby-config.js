@@ -21,7 +21,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        indentedSyntax: true
+        sassOptions: {
+          indentedSyntax: true
+        }
       }
     },
     'gatsby-plugin-sharp',
@@ -65,12 +67,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads'
-            }
-          },
-          {
             resolve: 'gatsby-remark-images',
             options: {
               // It's important to specify the maxWidth (in pixels) of
@@ -83,7 +79,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: 'gatsby-plugin-decap-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
@@ -189,7 +185,7 @@ module.exports = {
                     {
                       allMarkdownRemark(
                         limit: 1000,
-                        sort: { order: DESC, fields: [frontmatter___date] },
+                        sort: { frontmatter: { date: DESC } },
                       ) {
                         edges {
                           node {
@@ -213,22 +209,6 @@ module.exports = {
             title: config.siteTitle
           }
         ]
-      }
-    },
-    {
-      resolve: '@gatsby-contrib/gatsby-plugin-elasticlunr-search',
-      options: {
-        // Fields to index
-        fields: ['title', 'tags'],
-        // How to resolve each field`s value for a supported node type
-        resolvers: {
-          // For any node of type MarkdownRemark, list how to resolve the fields` values
-          MarkdownRemark: {
-            title: (node) => node.frontmatter.title,
-            tags: (node) => node.frontmatter.tags,
-            slug: (node) => node.fields.slug
-          }
-        }
       }
     },
     'gatsby-plugin-netlify'
