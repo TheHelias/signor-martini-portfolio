@@ -78,15 +78,8 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: 'gatsby-plugin-decap-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-        manualInit: true,
-        enableIdentityWidget: true,
-        htmlTitle: 'Martini Akande Content Manager'
-      }
-    },
+    // Decap CMS served via static/admin/index.html (CDN) to avoid
+    // React version conflicts with gatsby-plugin-decap-cms webpack bundling
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
