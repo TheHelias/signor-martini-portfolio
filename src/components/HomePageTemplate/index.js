@@ -137,17 +137,6 @@ const HomePageTemplate = ({
                 >
                   See More
                 </a>
-                <div style={{ margin: '160px auto' }}>
-                  <h1 className='title is-size-2'>Testimonials</h1>
-                  <Testimonials testimonials={testimonials} />
-                </div>
-                <div>
-                  <h1 className='title is-size-2'>Latest Posts</h1>
-                  <LatestPosts count={2} />
-                  <Link className='button is-primary is-large' to='/blog'>
-                    See More
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
@@ -184,6 +173,27 @@ const HomePageTemplate = ({
                 <Link className='button is-primary is-large' to='/contact'>
                   Get A Service
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div style={{ marginBottom: '160px' }}>
+                  <h1 className='title is-size-2'>Testimonials</h1>
+                  <Testimonials testimonials={testimonials} />
+                </div>
+                <div>
+                  <h1 className='title is-size-2'>Latest Posts</h1>
+                  <LatestPosts count={2} />
+                  <Link className='button is-primary is-large' to='/blog'>
+                    See More
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
