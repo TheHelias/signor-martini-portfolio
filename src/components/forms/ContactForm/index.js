@@ -94,17 +94,18 @@ const ContactForm = ({ services }) => {
           <div className='field'>
             <label className='label'>What Service Do You Want?</label>
             <div className='control'>
-              <Field
-                name='service'
-                id='service'
-                className='input'
-                component='select'
-              >
-                <option />
-                {services.map((service) => (
-                  <option key={service} value={service}>{service}</option>
-                ))}
-              </Field>
+              <div className='select is-fullwidth'>
+                <Field
+                  name='service'
+                  id='service'
+                  component='select'
+                >
+                  <option value='' />
+                  {services.map((service) => (
+                    <option key={service} value={service}>{service}</option>
+                  ))}
+                </Field>
+              </div>
             </div>
             {touched.service && errors.service && (
               <small className='has-text-danger'>{errors.service}</small>
