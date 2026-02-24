@@ -115,42 +115,6 @@ const HomePageTemplate = ({
         contentComponent={aboutContentComponent}
       />
       <section
-        id='services'
-        className='section section--gradient'
-      >
-        <div className='container'>
-          <div className='section'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='content'>
-                  <div>
-                    <h1 className='title is-size-2'> Services</h1>
-                    <div className='columns is-multiline services--section'>
-                      {services.map((service) => (
-                        <div
-                          key={service}
-                          className='column is-4'
-                        >
-                          <section className='section services--section__item'>
-                            <img alt='service' src={service.image} />
-                            <p className='is-size-3 is-size-4-mobile'>
-                              {service.text}
-                            </p>
-                          </section>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <Link className='button is-primary is-large' to='/contact'>
-                  Get A Service
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
         id='portfolio'
         className='section section--gradient portfolio--section'
       >
@@ -184,6 +148,42 @@ const HomePageTemplate = ({
                     See More
                   </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id='services'
+        className='section section--gradient'
+      >
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='content'>
+                  <div>
+                    <h1 className='title is-size-2'> Services</h1>
+                    <div className='columns is-multiline services--section'>
+                      {services.map((service) => (
+                        <div
+                          key={service}
+                          className='column is-4'
+                        >
+                          <section className='section services--section__item'>
+                            <img alt='service' src={service.image} />
+                            <p className='is-size-3 is-size-4-mobile'>
+                              {service.text}
+                            </p>
+                          </section>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <Link className='button is-primary is-large' to='/contact'>
+                  Get A Service
+                </Link>
               </div>
             </div>
           </div>

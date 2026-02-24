@@ -60,20 +60,20 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
           <button
             className='navbar-item navbar--right--items'
             onClick={() => {
-              servicesLink()
-              closeNavbar()
-            }}
-          >
-            Services
-          </button>
-          <button
-            className='navbar-item navbar--right--items'
-            onClick={() => {
               portfolioLink()
               closeNavbar()
             }}
           >
             Portfolio
+          </button>
+          <button
+            className='navbar-item navbar--right--items'
+            onClick={() => {
+              servicesLink()
+              closeNavbar()
+            }}
+          >
+            Services
           </button>
           <Link
             activeClassName='navbar-item--active'
