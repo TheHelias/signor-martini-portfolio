@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version && npm --version 2>&1)",
+      "Bash(head:*)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && rm -f package-lock.json && npm install 2>&1)",
+      "Bash(tail:*)",
+      "Bash(npm show:*)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm install 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm install --legacy-peer-deps 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm run develop 2>&1)",
+      "Bash(grep graphql@15:*)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm run clean 2>&1 && npm run develop 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm install --legacy-peer-deps 2>&1 | tail -5 && npm run develop 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm install --legacy-peer-deps 2>&1 | tail -5 && node -e \"console.log\\(require\\('ajv/package.json'\\).version\\); console.log\\(require\\('ajv-keywords/package.json'\\).version\\);\" 2>&1)",
+      "Bash(netstat:*)",
+      "Bash(tasklist:*)",
+      "Bash(taskkill:*)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm run develop -- -p 8001 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm run develop -- -p 8002 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm install --legacy-peer-deps 2>&1 | tail -3 && npm run develop -- -p 8002 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio\" && npm run develop -- -p 8003 2>&1)",
+      "Bash(cd:*)",
+      "Bash(cd C:\\\\Users\\\\akand\\\\OneDrive\\\\Desktop\\\\Balablu\\\\signor-martini-portfolio:*)",
+      "Bash(ls DIR:*)",
+      "Bash(grep:*)",
+      "Bash(echo not up yet:*)",
+      "Bash(echo checking older range:*)"
+    ]
+  }
+}
