@@ -156,7 +156,7 @@ const HomePageTemplate = ({
                     <div className='columns is-multiline services--section'>
                       {services.map((service) => (
                         <div
-                          key={service}
+                          key={service.text}
                           className='column is-4'
                         >
                           <section className='section services--section__item'>

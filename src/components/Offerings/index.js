@@ -59,10 +59,11 @@ function Offerings ({ gridItems }) {
           <div className='video-embed-wrapper'>
             <iframe
               title='Vimeo video player'
-              src={`https://player.vimeo.com/video/${videoID}`}
+              src={`https://player.vimeo.com/video/${videoID}?app_id=58479`}
               frameBorder='0'
-              allow='autoplay; fullscreen'
+              allow='autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media'
               allowFullScreen
+              referrerPolicy='strict-origin-when-cross-origin'
             />
           </div>
         </div>
