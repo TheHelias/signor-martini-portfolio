@@ -28,4 +28,4 @@ https://martiniakande.com
 * Run `npm start` to start the local development server.
 
 ## :bearded_person: Author
-[Toluwalase Akande](https://thelias.netlify.app/)
+[Toluwalase Akande](https://thelias.vercel.app/)
