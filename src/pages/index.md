@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: MARTINI AKANDE
-subtitle: EDITOR | POST-PRODUCTION PRODUCER | FILMMAKER
+subtitle: FILM EDITOR | POST-PRODUCTION PRODUCER | FILMMAKER
 heroImages:
   - image: /img/img_0296.png
   - image: /img/glamour-girls_1.263.1.png
@@ -41,6 +41,9 @@ offerings:
     - image: /img/untitled_2.21.1.jpg
       video: 656939317
       text: Feature documentary film edited by me.
+    - video: 1043316042
+      image: /img/whatsapp-image-2026-06-13-at-14.15.58.jpeg
+      text: Christman in Lagos
 testimonials:
   - quote: Martini possesses a unique ability to understand the director's vision
       and seamlessly translate it onto the screen. His attention to detail is
