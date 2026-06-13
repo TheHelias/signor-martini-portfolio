@@ -5,9 +5,11 @@ subtitle: EDITOR | POST-PRODUCTION PRODUCER | FILMMAKER
 heroImages:
   - image: /img/img_0296.png
   - image: /img/glamour-girls_1.263.1.png
-  - image: /img/untitled_3.15.1.jpg
+  - image: /img/whatsapp-image-2026-06-13-at-14.15.58.jpeg
   - image: /img/img_0291.png
   - image: /img/glamour-girls_1.817.1.png
+  - image: /img/whatsapp-image-2026-06-13-at-14.15.58-1-.jpeg
+  - image: /img/whatsapp-image-2026-06-13-at-14.15.58-3-.jpeg
 mobileHeroImages:
   - image: /img/whatsapp-image-2024-01-11-at-23.52.12.jpeg
   - image: /img/img_0293-2.jpg
