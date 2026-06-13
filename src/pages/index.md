@@ -55,10 +55,12 @@ meta_description: >-
 
   Post Production Nollywood Davinci Resolve Blackmagic Film Editing Premiere Pro Colour Grading
 ---
-I'm a professional Film and Video Editor, Colorist, and Post-Production Producer
+I'm a professional Film Editor and Post-Production Producer
 
-Editor of 11 feature films including Gangs of Lagos (2023), Brotherhood (2022), and Glamour Girls (2022). Nominated in the Best Picture Editor category for Brotherhood (2022) at the 9th edition of Africa Magic Viewers' Choice Awards (AMVCA).
+Editor of 15 feature films, including Gangs of Lagos (2023), Brotherhood (2022), Adire (2024), and Aba Blues (2026). Nominated twice in the Best Picture Editor category for Brotherhood (2022) and Christmas in Lagos (2025) at the 9th and 11th editions of Africa Magic Viewers' Choice Awards (AMVCA).
 
-As the Editor and Post-Production Supervisor on critically acclaimed films like Gangs of Lagos, Brotherhood, Venge(TV Series) and with over 8 years of experience in editing and post-production management - I bring a unique perspective to every project.
+As the Editor and Post-Production Supervisor on critically acclaimed films like Gangs of Lagos, Brotherhood, Venge(TV Series), and with over 8 years of experience in editing and post-production management, I bring a unique perspective to every project.
 
-I'm an all-around post-production professional and I have facilitated various projects over the years, from setting up post-production teams to post-production workflows to delivering exciting and groundbreaking films(shows).
+I'm an all-around post-production professional, and I have facilitated various projects over the years, from setting up post-production teams to post-production workflows to delivering exciting and groundbreaking films(shows).
+
+I love telling stories, I believe storytelling is the most important skill an editor can possess, and I put this in every cut, every frame, every note.
