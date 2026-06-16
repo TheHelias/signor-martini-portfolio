@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "bulma": "^0.9.4",
     "decap-cms-app": "3.3.3",
     "formik": "^2.4.6",
     "gatsby": "^5.14.0",

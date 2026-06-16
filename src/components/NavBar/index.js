@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, navigate } from 'gatsby'
 import SearchBox from '../SearchBox'
+import ThemeToggle from '../ThemeToggle'
 
 const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
   const aboutLink = () => {
@@ -30,9 +31,7 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
           <img alt='logo' src='/img/logo.png' />
         </Link>
         <button
-          className={`button is-primary navbar-burger ${
-            isActive ? 'is-active' : ''
-          }`}
+          className={`navbar-burger ${isActive ? 'is-active' : ''}`}
           data-target='navMenu'
           aria-label='menu button'
           onClick={toggleNavbar}
@@ -91,6 +90,7 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
           >
             Contact Me
           </Link>
+          <ThemeToggle />
         </div>
       </div>
     </nav>

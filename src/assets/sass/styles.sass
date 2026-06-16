@@ -1,33 +1,114 @@
-$primary: #663300
-$primary-invert: #fff7ef
-$primary-font-size: 24px
-$primary-font-size-mobile: 1rem
-$title-font-size-mobile: 2rem
-$primary-border-radius: 12px
-$primary-border-color: 1px solid rgba(0,0,0,.08)
-$navbar-dropdown-background-color: $primary
-$title-color: #D86c70
-$column-gap: 2rem
-$family-secondary: 'GT Walsheim Pro', GT Walsheim Pro Ultra, GT Walsheim Pro Cond Ultra, GT Walsheim Pro Condensed, GTWalsheimPro-CondensedULightIt, GT Walsheim Pro Cond, -apple-system, BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,Ubuntu,roboto,noto,segoe ui,arial,sans-serif
-$family-primary: 'GT Walsheim Pro', GT Walsheim Pro Ultra, GT Walsheim Pro Cond Ultra, GT Walsheim Pro Condensed, GTWalsheimPro-CondensedULightIt, GT Walsheim Pro Cond, -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,Ubuntu,roboto,noto,segoe ui,arial,sans-serif
+// =============================================================
+//  Martini Akande — modern theme system (Bulma-free)
+//  Colors are driven by CSS custom properties so light/dark
+//  switching is instant and flash-free.
+// =============================================================
 
-@import "~bulma"
+$font: 'GT Walsheim Pro', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, Ubuntu, roboto, noto, 'segoe ui', arial, sans-serif
+$radius: 14px
+$radius-sm: 10px
+$maxw: 1200px
+$ease: 0.25s cubic-bezier(0.4, 0, 0.2, 1)
+
+// ---- Dark token set (re-used for explicit toggle + system pref) ----
+=theme-dark
+  --bg: #0e0e10
+  --bg-elev: #161619
+  --bg-subtle: #1d1d22
+  --text: #f4f1ec
+  --text-muted: #a39d94
+  --border: rgba(255, 255, 255, 0.10)
+  --border-strong: rgba(255, 255, 255, 0.18)
+  --accent: #c9a35e
+  --accent-strong: #d8b677
+  --on-accent: #15110a
+  --nav-bg: rgba(14, 14, 16, 0.72)
+  --overlay: linear-gradient(180deg, rgba(8,8,10,0.35) 0%, rgba(8,8,10,0.55) 55%, rgba(8,8,10,0.85) 100%)
+  --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 32px rgba(0,0,0,0.45)
+  --shadow-lg: 0 30px 70px rgba(0,0,0,0.6)
+  --logo-filter: none
+
+\:root
+  --bg: #faf9f7
+  --bg-elev: #ffffff
+  --bg-subtle: #f1efea
+  --text: #1a1714
+  --text-muted: #6b6259
+  --border: rgba(0, 0, 0, 0.09)
+  --border-strong: rgba(0, 0, 0, 0.16)
+  --accent: #b5894a
+  --accent-strong: #9c7335
+  --on-accent: #fffaf2
+  --nav-bg: rgba(250, 249, 247, 0.72)
+  --overlay: linear-gradient(180deg, rgba(10,10,12,0.25) 0%, rgba(10,10,12,0.45) 55%, rgba(10,10,12,0.78) 100%)
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 10px 28px rgba(0,0,0,0.07)
+  --shadow-lg: 0 24px 60px rgba(0,0,0,0.13)
+  --logo-filter: invert(1) brightness(0.18)
+
+\:root[data-theme="dark"]
+  +theme-dark
+
+// No-JS / pre-hydration fallback when no explicit choice has been stored
+@media (prefers-color-scheme: dark)
+  \:root:not([data-theme="light"])
+    +theme-dark
+
+// =============================================================
+//  Reset & base
+// =============================================================
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+  -webkit-text-size-adjust: 100%
 
 html,
 body,
 #___gatsby,
 #gatsby-focus-wrapper,
 #layout-wrapper
-  scroll-behavior: smooth
-  // height: 100%  
-  background: $primary-invert !important
+  background: var(--bg)
 
-h1, h2, h3, h4, h5, h6
-  color: $title-color !important
+body
+  margin: 0
+  font-family: $font
+  font-size: 1.0625rem
+  line-height: 1.7
+  color: var(--text)
+  background: var(--bg)
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
-p, li, strong
-  font-size: $primary-font-size
-  color: $primary
+img
+  max-width: 100%
+  height: auto
+  display: block
+
+a
+  color: var(--accent-strong)
+  text-decoration: none
+  transition: color $ease
+  &:hover
+    color: var(--accent)
+
+p, li
+  color: var(--text)
+
+strong
+  color: var(--text)
+  font-weight: 600
+
+hr
+  border: none
+  border-top: 1px solid var(--border)
+  margin: 2.5rem 0
+
+::selection
+  background: var(--accent)
+  color: var(--on-accent)
 
 #layout-wrapper
   width: 100%
@@ -37,6 +118,592 @@ p, li, strong
 
 #content-wrapper
   flex: 1
+  margin-top: 72px
+
+// =============================================================
+//  Typography
+// =============================================================
+h1, h2, h3, h4, h5, h6
+  color: var(--text)
+  font-weight: 700
+  line-height: 1.15
+  letter-spacing: -0.02em
+  margin: 0 0 0.6em
+
+.title
+  color: var(--text)
+  font-weight: 700
+  letter-spacing: -0.025em
+  line-height: 1.1
+  margin: 0 0 1.25rem
+  position: relative
+
+.subtitle
+  color: var(--text-muted)
+  font-weight: 400
+  font-size: 1.25rem
+  margin: 0 0 1.5rem
+
+.is-size-1
+  font-size: clamp(2.75rem, 6vw, 4.25rem)
+.is-size-2
+  font-size: clamp(2rem, 4.5vw, 3rem)
+.is-size-3
+  font-size: clamp(1.5rem, 3vw, 2rem)
+.is-size-4
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem)
+
+.has-text-weight-bold
+  font-weight: 700 !important
+.has-text-centered
+  text-align: center
+.has-text-primary
+  color: var(--accent-strong) !important
+.has-text-danger
+  color: #e05a5a !important
+
+// Eyebrow / kicker label above section titles
+.kicker
+  display: inline-block
+  font-size: 0.78rem
+  font-weight: 600
+  letter-spacing: 0.2em
+  text-transform: uppercase
+  color: var(--accent-strong)
+  margin-bottom: 1rem
+
+.section-head
+  max-width: 760px
+  margin-bottom: clamp(2.25rem, 4vw, 3.5rem)
+  .title
+    margin-bottom: 0
+  &.is-centered
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+
+.section-cta
+  margin-top: 2.75rem
+
+// Scroll-reveal (toggled by IntersectionObserver via Reveal component)
+.reveal
+  opacity: 0
+  transform: translateY(28px)
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1)
+  &.is-visible
+    opacity: 1
+    transform: none
+
+@media (prefers-reduced-motion: reduce)
+  .reveal
+    opacity: 1
+    transform: none
+    transition: none
+
+// =============================================================
+//  Layout primitives (Bulma-compatible class names)
+// =============================================================
+.container
+  width: 100%
+  max-width: $maxw
+  margin-left: auto
+  margin-right: auto
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+
+.section
+  padding: clamp(4rem, 8vw, 7rem) 1.5rem
+
+.section--alt
+  background: var(--bg-subtle)
+
+.columns
+  display: flex
+  flex-wrap: wrap
+  margin: -0.75rem
+
+.column
+  flex: 1
+  padding: 0.75rem
+  min-width: 0
+
+.is-multiline
+  flex-wrap: wrap
+
+// 12-column widths actually used in the markup
+.column.is-4
+  flex: none
+  width: 33.3333%
+.column.is-6
+  flex: none
+  width: 50%
+.column.is-10
+  flex: none
+  width: 83.3333%
+.column.is-offset-1
+  margin-left: 8.3333%
+
+// =============================================================
+//  Buttons
+// =============================================================
+.button
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  gap: 0.5rem
+  font-family: $font
+  font-size: 1rem
+  font-weight: 600
+  line-height: 1
+  padding: 0.85rem 1.6rem
+  border-radius: 999px
+  border: 1px solid var(--border-strong)
+  background: var(--bg-elev)
+  color: var(--text)
+  cursor: pointer
+  text-align: center
+  transition: transform $ease, box-shadow $ease, background-color $ease, color $ease, border-color $ease
+  &:hover
+    transform: translateY(-2px)
+    box-shadow: var(--shadow)
+    color: var(--text)
+  &:active
+    transform: translateY(0)
+
+.button.is-primary
+  background: var(--accent)
+  border-color: var(--accent)
+  color: var(--on-accent)
+  &:hover
+    background: var(--accent-strong)
+    border-color: var(--accent-strong)
+    color: var(--on-accent)
+
+.button.is-large
+  font-size: 1.05rem
+  padding: 1rem 2rem
+.button.is-medium
+  font-size: 1rem
+  padding: 0.9rem 1.7rem
+.button.is-rounded
+  border-radius: 999px
+.button.is-fullwidth
+  width: 100%
+
+.buttons
+  display: flex
+  flex-wrap: wrap
+  gap: 0.75rem
+  &.is-centered
+    justify-content: center
+
+// =============================================================
+//  Navbar — sticky glass bar
+// =============================================================
+.navbar
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 30
+  display: flex
+  align-items: center
+  justify-content: space-between
+  min-height: 72px
+  padding: 0 clamp(1rem, 4vw, 2.5rem)
+  background: var(--nav-bg)
+  border-bottom: 1px solid var(--border)
+  backdrop-filter: saturate(180%) blur(14px)
+  -webkit-backdrop-filter: saturate(180%) blur(14px)
+
+.navbar-brand
+  display: flex
+  align-items: center
+  .navbar-item
+    padding: 0.25rem 0
+  img
+    height: 40px
+    width: auto
+    max-height: none
+    filter: var(--logo-filter)
+    transition: filter $ease
+
+.navbar-menu
+  display: flex
+  align-items: center
+
+.navbar-end
+  display: flex
+  align-items: center
+  gap: 0.25rem
+
+a.navbar-item,
+button.navbar-item
+  display: inline-flex
+  align-items: center
+  font-family: $font
+  font-size: 0.98rem
+  font-weight: 500
+  color: var(--text-muted)
+  background: transparent
+  border: none
+  cursor: pointer
+  padding: 0.5rem 0.9rem
+  border-radius: $radius-sm
+  transition: color $ease, background-color $ease
+  &:hover
+    color: var(--text)
+    background: var(--bg-subtle)
+
+.navbar-item--active
+  color: var(--accent-strong) !important
+
+// Burger (mobile)
+.navbar-burger
+  display: none
+  flex-direction: column
+  justify-content: center
+  gap: 5px
+  width: 44px
+  height: 44px
+  padding: 0
+  border: 1px solid var(--border-strong)
+  border-radius: $radius-sm
+  background: var(--bg-elev)
+  cursor: pointer
+  span
+    display: block
+    width: 20px
+    height: 2px
+    margin: 0 auto
+    background: var(--text)
+    border-radius: 2px
+    transition: transform $ease, opacity $ease
+  &.is-active
+    span:nth-child(1)
+      transform: translateY(7px) rotate(45deg)
+    span:nth-child(2)
+      opacity: 0
+    span:nth-child(3)
+      transform: translateY(-7px) rotate(-45deg)
+
+// =============================================================
+//  Search box (lives in navbar)
+// =============================================================
+.input,
+.textarea,
+.select select
+  width: 100%
+  font-family: $font
+  font-size: 1rem
+  color: var(--text)
+  background: var(--bg-elev)
+  border: 1px solid var(--border-strong)
+  border-radius: $radius-sm
+  padding: 0.65rem 1rem
+  transition: border-color $ease, box-shadow $ease
+  &::placeholder
+    color: var(--text-muted)
+  &:focus
+    outline: none
+    border-color: var(--accent)
+    box-shadow: 0 0 0 3px rgba(201, 163, 94, 0.22)
+
+.input.is-rounded
+  border-radius: 999px
+
+.navbar-end .navbar-item:has(.input)
+  position: relative
+
+.navbar-dropdown
+  position: absolute
+  top: calc(100% + 6px)
+  right: 0
+  min-width: 260px
+  background: var(--bg-elev)
+  border: 1px solid var(--border)
+  border-radius: $radius-sm
+  box-shadow: var(--shadow)
+  overflow: hidden
+  z-index: 40
+  display: flex
+  flex-direction: column
+  &:empty
+    display: none
+  .navbar-item
+    border-radius: 0
+    width: 100%
+    color: var(--text)
+
+// =============================================================
+//  Theme toggle
+// =============================================================
+.theme-toggle
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  width: 42px
+  height: 42px
+  margin-left: 0.4rem
+  border-radius: 999px
+  border: 1px solid var(--border-strong)
+  background: var(--bg-elev)
+  color: var(--text)
+  cursor: pointer
+  font-size: 1.05rem
+  transition: color $ease, background-color $ease, transform $ease, border-color $ease
+  &:hover
+    color: var(--accent-strong)
+    border-color: var(--accent)
+    transform: translateY(-1px)
+
+// =============================================================
+//  Hero
+// =============================================================
+.hero
+  position: relative
+  background: var(--bg)
+
+.hero.is-fullheight
+  min-height: 100vh
+  display: flex
+  align-items: center
+
+.hero-body
+  padding: 7rem 1.5rem 4rem
+  width: 100%
+
+.hero--image
+  position: absolute
+  inset: 0
+  overflow: hidden
+  background: #000
+  img
+    position: absolute
+    inset: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    opacity: 0
+    transition: opacity 1.4s ease
+    &.is-active
+      opacity: 1
+
+.overlay
+  position: absolute
+  inset: 0
+  z-index: 1
+  background: var(--overlay)
+
+.hero__content
+  position: relative
+  z-index: 2
+  width: 100%
+  max-width: 820px
+  margin: 0 auto
+  padding: 0 1.5rem
+  text-align: center
+  h1, p
+    color: #fff !important
+  .kicker
+    color: #e3c184
+    margin-bottom: 1.25rem
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4)
+  .title
+    letter-spacing: -0.02em
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.35)
+  .subtitle
+    color: rgba(255, 255, 255, 0.86) !important
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem)
+    letter-spacing: 0.01em
+
+.hero--summary
+  margin: 0 auto 2rem
+  max-width: 620px
+  color: rgba(255, 255, 255, 0.82) !important
+
+.hero--button__icon
+  transition: transform $ease
+.hero--button:hover .hero--button__icon
+  transform: translateY(3px)
+
+.hero--scroll
+  position: absolute
+  left: 50%
+  bottom: 30px
+  z-index: 2
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  width: 40px
+  height: 40px
+  padding: 0
+  border: none
+  background: transparent
+  color: rgba(255, 255, 255, 0.85)
+  font-size: 1.5rem
+  cursor: pointer
+  animation: heroBounce 2.2s ease-in-out infinite
+  &:hover
+    color: #fff
+
+@keyframes heroBounce
+  0%, 100%
+    transform: translateX(-50%) translateY(0)
+  50%
+    transform: translateX(-50%) translateY(10px)
+
+// Simple hero (blog / contact / 404 — no image)
+.hero.is-bold,
+.hero.is-primary
+  background: var(--bg)
+  .title
+    color: var(--text)
+  .subtitle
+    color: var(--text-muted)
+
+// =============================================================
+//  About section
+// =============================================================
+.about--section
+  .about--card
+    max-width: 940px
+    margin: 0 auto
+    background: var(--bg-elev)
+    border: 1px solid var(--border)
+    border-radius: $radius
+    box-shadow: var(--shadow)
+    padding: clamp(2rem, 5vw, 4rem)
+  h1, h2, h3, h4, h5
+    color: var(--text)
+  p, strong, li
+    color: var(--text)
+
+// =============================================================
+//  Services
+// =============================================================
+.services--section
+  width: 100%
+  margin: 0
+  .services--section__item
+    height: 100%
+    padding: 2.5rem 1.5rem
+    border: 1px solid var(--border)
+    border-radius: $radius
+    background: var(--bg-elev)
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    transition: transform $ease, box-shadow $ease, border-color $ease
+    img
+      // Icons are dark-baked PNGs — seat them on a fixed light badge so they
+      // stay legible in both light and dark themes.
+      width: 60px
+      height: 60px
+      object-fit: contain
+      padding: 20px
+      box-sizing: content-box
+      background: #f3efe7
+      border-radius: 18px
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06)
+      margin: 0 auto 1.5rem
+    p
+      color: var(--text)
+      font-weight: 600
+    &:hover
+      transform: translateY(-4px)
+      box-shadow: var(--shadow-lg)
+      border-color: var(--accent)
+
+// =============================================================
+//  Portfolio
+// =============================================================
+.portfolio--item > section
+  height: 100%
+  padding: 0.85rem
+  cursor: pointer
+  background: var(--bg-elev)
+  border: 1px solid var(--border)
+  border-radius: $radius
+  box-shadow: var(--shadow)
+  transition: transform $ease, box-shadow $ease, border-color $ease
+  p
+    margin: 1rem 0.25rem 0.35rem
+    font-weight: 600
+  &:hover
+    transform: translateY(-4px)
+    box-shadow: var(--shadow-lg)
+    border-color: var(--accent)
+
+.portfolio--item__image
+  position: relative
+  border-radius: $radius-sm
+  overflow: hidden
+  aspect-ratio: 16 / 9
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    transition: transform 0.5s ease
+
+.portfolio--item > section:hover .portfolio--item__image img
+  transform: scale(1.05)
+
+.portfolio--item__image--overlay
+  position: absolute
+  inset: 0
+  background: rgba(0, 0, 0, 0.35)
+  opacity: 0
+  transition: opacity $ease
+
+.portfolio--item > section:hover .portfolio--item__image--overlay
+  opacity: 1
+
+.portfolio--item__image--play-icon
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%) scale(0.9)
+  z-index: 2
+  width: 64px
+  height: 64px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 999px
+  background: rgba(255, 255, 255, 0.16)
+  backdrop-filter: blur(6px)
+  border: 1px solid rgba(255, 255, 255, 0.5)
+  color: #fff
+  font-size: 24px
+  opacity: 0
+  transition: opacity $ease, transform $ease
+
+.portfolio--item > section:hover .portfolio--item__image--play-icon
+  opacity: 1
+  transform: translate(-50%, -50%) scale(1)
+
+.portfolio--item__video-modal
+  position: fixed
+  inset: 0
+  z-index: 9999
+  background: rgba(0, 0, 0, 0.72)
+  backdrop-filter: blur(6px)
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 1.5rem
+
+.portfolio--item__video-modal__content
+  width: 90vw
+  max-width: 1000px
+  line-height: 0
+  background: #000
+  border-radius: $radius
+  overflow: hidden
+  box-shadow: var(--shadow-lg)
 
 .video-embed-wrapper
   position: relative
@@ -44,323 +711,275 @@ p, li, strong
   padding-top: 56.25%
   iframe
     position: absolute
-    top: 0
-    left: 0
+    inset: 0
     width: 100% !important
     height: 100% !important
     border: 0
 
-nav
-  background-color: $primary !important
-  min-height: 80px !important
-  padding-left: 2%
-  padding-right: 2%
-  box-shadow: 0 2px 0 0 rgba(0,0,0,.24)
-  font-size: $primary-font-size
-  max-width: 100%
-  a.navbar-item, button.navbar-item
-    color: #ffe4db !important
-    font-size: $primary-font-size
-    font-weight: 400
-    line-height: 1.5
-    padding: 0.5rem 0.75rem
-    display: flex
-    align-items: center
-    &:hover
-      color: white !important
-      background-color: transparent !important
-  button.navbar-item
-    background: transparent
-    border: none
-    cursor: pointer
-  .navbar--right--items
-    margin-left: 1%
-  .navbar-item--active
-    color: white !important
+// =============================================================
+//  Testimonials
+// =============================================================
+.message
+  background: var(--bg-elev)
+  border: 1px solid var(--border)
+  border-left: 3px solid var(--accent)
+  border-radius: $radius
+  box-shadow: var(--shadow)
+  margin-bottom: 1.25rem
+  transition: box-shadow $ease, transform $ease
+  &:hover
+    box-shadow: var(--shadow-lg)
 
-.navbar-menu.is-active
-  background: $primary !important
-  .navbar--right--items
-    margin-left: 0
-  a.navbar-item, button.navbar-item
-    color: #ffe4db !important
-    font-size: $primary-font-size
-    &:hover
-      color: white !important
-      background-color: transparent !important
-    
-#content-wrapper
-  margin-top: 80px
+.message-body
+  padding: 1.5rem 1.75rem
+  color: var(--text)
+  font-size: 1.1rem
+  line-height: 1.7
+  cite
+    display: block
+    margin-top: 0.85rem
+    font-style: normal
+    font-weight: 600
+    color: var(--accent-strong)
+
+// =============================================================
+//  Posts / cards
+// =============================================================
+.posts
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 1.5rem
+
+.post--card
+  height: 100%
+  border: 1px solid var(--border)
+  border-radius: $radius
+  background: var(--bg-elev)
+  padding: 1.5rem
+  box-shadow: var(--shadow)
+  transition: transform $ease, box-shadow $ease, border-color $ease
+  .post--card__header
+    display: grid
+    grid-template-columns: 96px 1fr
+    gap: 1rem
+    align-items: center
+    margin-bottom: 1rem
+    img
+      width: 96px
+      height: 96px
+      object-fit: cover
+      border-radius: $radius-sm
+    h3
+      margin: 0
+      font-size: 1.15rem
+    small
+      display: inline-block
+      margin-top: 0.25rem
+      color: var(--text-muted)
+  p
+    color: var(--text-muted)
+  &:hover
+    transform: translateY(-4px)
+    box-shadow: var(--shadow-lg)
+    border-color: var(--accent)
+
+// =============================================================
+//  Content / prose
+// =============================================================
+.content
+  h1, h2, h3, h4
+    color: var(--text)
+  h2
+    margin-top: 2rem
+  p, li
+    color: var(--text)
+  ul, ol
+    margin-left: 1.25rem
+  blockquote
+    border-left: 3px solid var(--accent)
+    padding-left: 1.25rem
+    color: var(--text-muted)
+    font-style: italic
+  img
+    border-radius: $radius
 
 .content .taglist
   list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
   display: flex
   flex-wrap: wrap
-  justify-content: left
-  align-items: center
+  gap: 0.75rem
+  margin: 1.5rem 0 0
+  padding: 0
   li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
+    margin: 0
+    padding: 0
 
+// Tag pills
+.taglist li a,
+.tag
+  display: inline-flex
+  align-items: center
+  padding: 0.4rem 0.9rem
+  border-radius: 999px
+  background: var(--bg-subtle)
+  border: 1px solid var(--border)
+  color: var(--text)
+  font-size: 0.92rem
+  font-weight: 500
+  transition: background-color $ease, color $ease, border-color $ease
+  &:hover
+    background: var(--accent)
+    border-color: var(--accent)
+    color: var(--on-accent)
+
+// =============================================================
+//  Forms
+// =============================================================
+.field
+  margin-bottom: 1.25rem
+.label
+  display: block
+  margin-bottom: 0.5rem
+  font-weight: 600
+  color: var(--text)
+.control
+  position: relative
+.select
+  position: relative
+  display: block
+  width: 100%
+  select
+    appearance: none
+    cursor: pointer
+.is-grouped
+  display: flex
+  gap: 0.75rem
+.is-pulled-right
+  justify-content: flex-end
+.contact--form
+  max-width: 640px
+  label, input
+    color: var(--text)
+
+// =============================================================
+//  Footer
+// =============================================================
+footer.footer
+  background: var(--bg-subtle)
+  border-top: 1px solid var(--border)
+  padding: 3rem 1.5rem 2.5rem
+  margin-top: 4rem
+  a, p
+    color: var(--text-muted)
+  .social-links
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 1.25rem
+    margin-bottom: 1.25rem
+    a
+      display: inline-flex
+      color: var(--text-muted)
+      transition: color $ease, transform $ease
+      &:hover
+        color: var(--accent-strong)
+        transform: translateY(-2px)
+
+// =============================================================
+//  Helpers
+// =============================================================
 .margin-top-0
   margin-top: 0 !important
 
-.button
-    border-radius: $primary-border-radius !important
-.hero
-  background-color: $primary-invert
-  position: relative
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23663300' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")
-  .title
-    letter-spacing: 2px
-  .subtitle
-    font-size: 32px
-    letter-spacing: 2px
-
-.hero__content
-  h1, p
-    color: $primary-invert !important
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  z-index: 2
-  width: 100%
-  text-align: center
-
-.hero--summary
-  margin-bottom: 30px 
-
-.hero--button__icon
-  margin: 5px 0 0 20px 
-
-.hero--image
-  position: absolute
-  overflow: hidden
-  width: 100%
-  height: 100%
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
-
-.overlay
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  z-index: 1
-  opacity: 0.5
-  background-color: #3c3a39
-
-.about--section
-  display: flex
-  justify-content: center
-  align-items: center
-  h1, h2, h3, h4, h5
-    color: #ffe4db !important
-  p, strong, li
-    color: $primary-invert !important
-  .about--section__content
-    background: $title-color
-    border-radius: $primary-border-radius
-
-.services--section
-  width: 100%
-  margin: auto auto !important
-  .services--section__item
-    padding-left: 1.5rem !important
-    padding-right: 1.5rem !important
-    img
-      width: 100%
-    p
-      font-size: $primary-font-size !important
-
-.services--section > div
-  &:hover
-    background: $primary-invert
-    box-shadow: 0 0 30px 0 rgba(0,0,0,0.12)
-    border-radius: $primary-border-radius
-
-#portfolio .button
-  margin-top: 30px
-
-.portfolio--item > section
-  padding: 1rem
-  cursor: pointer
-  box-shadow: 0 5px 10px rgba(0,0,0,.05)
-  border-radius: $primary-border-radius
-  transition: box-shadow .3s linear
-  &:hover
-    box-shadow: 0 30px 60px rgba(0,0,0,.1)
- 
-.portfolio--item__image
-  position: relative
-  border-radius: $primary-border-radius
-  img
-    border-radius: $primary-border-radius
-
-.portfolio--item__image--overlay
-  border-radius: $primary-border-radius
-  background-color: rgba(0, 0, 0, 0.5)
-  position: absolute
-  width: 100%
-  height: 98%
-  top: 0
-  left: 0 
-
-.portfolio--item__image--play-icon
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  z-index: 2
-  background: transparent
-  color: #fff
-  font-size: 80px
-
-.portfolio--item__video-modal
-  position: fixed
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  z-index: 9999
-  background: rgba(0, 0, 0, 0.3)
-  display: flex
-  align-items: center
-  justify-content: center
-
-.portfolio--item__video-modal__content
-  width: 80vw
-  max-width: 1000px
-  line-height: 0
-  background: $primary-invert
-  border-radius: $primary-border-radius
-
-.posts
-  display: grid
-  grid-template-columns: auto auto 
-
-.post--card
-  margin-right: 40px
-  border: $primary-border-color
-  border-radius: $primary-border-radius
-  padding: 2em 2em
-  .post--card__header
-    display: grid
-    grid-template-columns: 30% 70%
-    align-items: center
-    div
-      margin-right: 20px
-      img
-        border-radius: $primary-border-radius
-  &:hover
-    box-shadow: 0 30px 60px rgba(0,0,0,.1)
-
-.contact--form  
-  label, input
-    color: $primary !important
-
 .mobile--hero
-  display: none !important 
+  display: none !important
 
-footer
-  padding-bottom: 0 !important
-  a, p
-    color: $primary-invert !important
-  a
-    margin: 0 10px
-
-
+// =============================================================
+//  Responsive
+// =============================================================
 @media screen and (max-width: 1024px)
   body
     overflow-x: hidden
 
-  .desktop--hero
-    display: none !important
-
-  .mobile--hero
-    display: flex !important
-    justify-content: center !important
-    text-align: center
+  // Collapse navbar into burger menu
+  .navbar-burger
+    display: flex
+  .navbar-brand
+    position: relative
+    z-index: 25
+  // Full-screen overlay menu (sits below the nav bar so logo + close stay on top)
+  .navbar-menu
+    display: none
+    position: fixed
+    inset: 0
     height: 100vh
-    .button
-      padding-top: 0
-      padding-bottom: 0
-
-  .hero--image
-    width: 100% !important
-    img
-      width: 100% 
-  
-
-  .posts
-    display: grid
-    grid-template-columns: auto 
-
-  .post--card
-    padding: 1em 1em 
-    margin: 0 0 20px 
-    .post--card__header
-      display: grid
-      grid-template-columns: auto
-
-@media screen and (max-width: 500px)
-  h1.title.is-size-2
-    font-size: 2rem !important
-
-  nav
-    min-height: 10px !important
-    font-size: $primary-font-size-mobile 
-
-  #content-wrapper
-    margin-top: 10px
-
-  .section
-    padding: 3rem 1rem !important   
-
-  .content h2
-    font-size: 1.25rem !important
-
-  p, li, strong, span
-    font-size: $primary-font-size-mobile
-
-  .hero--image
-    img
-      width: auto  
-      height: 100% !important
-      max-width: none !important
-      
-  .hero .subtitle
-    font-size: 1rem
-    margin: -1em 0 2em !important
-
-
-  .about--content, .about--section, .portfolio--section, .services--section 
-    padding-top: 0 !important
-    padding-bottom: 0 !important
-
-  .portfolio--section > .container  > .section
-    padding-top: 1rem !important
-
-  .services--section
-    .services--section__item
-      padding: 0 !important
+    height: 100dvh
+    z-index: 20
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 0.25rem
+    padding: 6rem 1.5rem 2.5rem
+    background: var(--bg)
+    &.is-active
       display: flex
-      flex-direction: column
-      align-items: center
+  .navbar-end
+    flex-direction: column
+    align-items: center
+    width: 100%
+    max-width: 380px
+    gap: 0.4rem
+    .navbar-item
+      width: 100%
       justify-content: center
       text-align: center
-      img
-        width: 50% 
-  #services .button
-    font-size: $primary-font-size-mobile !important
+      font-size: 1.5rem
+      font-weight: 600
+      color: var(--text)
+      padding: 0.55rem
+  .navbar-end > .navbar-item:first-child
+    margin-bottom: 1.25rem
+  .navbar-dropdown
+    position: static
+    box-shadow: none
+    border: none
+    background: transparent
+    width: 100%
+  .theme-toggle
+    width: 52px
+    height: 52px
+    margin: 1.5rem 0 0
+    font-size: 1.2rem
 
-@import "~bulma"
+  .desktop--hero
+    display: none !important
+  .mobile--hero
+    display: flex !important
+
+  .column.is-10,
+  .column.is-6,
+  .column.is-4
+    width: 100%
+  .column.is-offset-1
+    margin-left: 0
+
+  .posts
+    grid-template-columns: 1fr
+
+@media screen and (max-width: 600px)
+  #content-wrapper
+    margin-top: 64px
+  .navbar
+    min-height: 64px
+  .section
+    padding: 3rem 1.25rem
+  .hero-body
+    padding: 6rem 1.25rem 3rem
+  .post--card__header
+    grid-template-columns: 1fr
+    img
+      width: 100%
+      height: 180px
+  .services--section .services--section__item img
+    width: 72px
+    height: 72px

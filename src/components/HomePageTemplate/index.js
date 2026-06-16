@@ -7,6 +7,7 @@ import AboutPageTemplate from '../AboutPageTemplate'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import LatestPosts from '../LatestPosts'
+import Reveal from '../Reveal'
 
 const HomePageTemplate = ({
   aboutContent,
@@ -66,14 +67,20 @@ const HomePageTemplate = ({
     <div>
       <section className='hero is-fullheight desktop--hero'>
         <div className='hero--image'>
-          <img
-            alt='hero section image'
-            src={images[image].image}
-          />
+          {images.map((img, i) => (
+            <img
+              key={i}
+              alt=''
+              aria-hidden='true'
+              src={img.image}
+              className={i === image ? 'is-active' : ''}
+            />
+          ))}
         </div>
         <div className='overlay' />
         <div className='hero__content'>
-          <h1 className='title  is-size-1 has-text-weight-bold'>
+          <span className='kicker'>Film Editor · Post-Production</span>
+          <h1 className='title is-size-1 has-text-weight-bold'>
             {title}
           </h1>
           <p className='subtitle'>{subtitle}</p>
@@ -86,17 +93,30 @@ const HomePageTemplate = ({
             <FaChevronDown className='hero--button__icon' />
           </button>
         </div>
+        <button
+          className='hero--scroll'
+          onClick={aboutLink}
+          aria-label='Scroll to about section'
+        >
+          <FaChevronDown />
+        </button>
       </section>
       <section className='hero is-fullheight mobile--hero'>
         <div className='hero--image'>
-          <img
-            alt='hero section image'
-            src={mobileImages[mobileImage].image}
-          />
+          {mobileImages.map((img, i) => (
+            <img
+              key={i}
+              alt=''
+              aria-hidden='true'
+              src={img.image}
+              className={i === mobileImage ? 'is-active' : ''}
+            />
+          ))}
         </div>
         <div className='overlay' />
         <div className='hero__content'>
-          <h1 className='title  is-size-2 has-text-weight-bold'>
+          <span className='kicker'>Film Editor · Post-Production</span>
+          <h1 className='title is-size-2 has-text-weight-bold'>
             {title}
           </h1>
           <p className='subtitle'>{subtitle}</p>
@@ -114,89 +134,80 @@ const HomePageTemplate = ({
         content={aboutContent}
         contentComponent={aboutContentComponent}
       />
-      <section
-        id='portfolio'
-        className='section section--gradient portfolio--section'
-      >
+      <section id='portfolio' className='section'>
         <div className='container'>
-          <div className='section'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='content'>
-                  <div>
-                    <h1 className='title is-size-2'>Portfolio</h1>
-                    <Offerings gridItems={offerings.blurbs} />
-                  </div>
-                </div>
-                <a
-                  className='button is-primary is-large'
-                  href='https://vimeo.com/user95280234'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label='see more'
-                >
-                  See More
-                </a>
-              </div>
-            </div>
-          </div>
+          <Reveal className='section-head'>
+            <span className='kicker'>Selected Work</span>
+            <h2 className='title is-size-2'>Portfolio</h2>
+          </Reveal>
+          <Reveal>
+            <Offerings gridItems={offerings.blurbs} />
+          </Reveal>
+          <Reveal className='section-cta'>
+            <a
+              className='button is-primary is-large'
+              href='https://vimeo.com/user95280234'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='see more'
+            >
+              See More
+            </a>
+          </Reveal>
         </div>
       </section>
-      <section
-        id='services'
-        className='section section--gradient'
-      >
+      <section id='services' className='section section--alt'>
         <div className='container'>
-          <div className='section'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='content'>
-                  <div>
-                    <h1 className='title is-size-2'> Services</h1>
-                    <div className='columns is-multiline services--section'>
-                      {services.map((service) => (
-                        <div
-                          key={service.text}
-                          className='column is-4'
-                        >
-                          <section className='section services--section__item'>
-                            <img alt='service' src={service.image} />
-                            <p className='is-size-3 is-size-4-mobile'>
-                              {service.text}
-                            </p>
-                          </section>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+          <Reveal className='section-head'>
+            <span className='kicker'>What I Offer</span>
+            <h2 className='title is-size-2'>Services</h2>
+          </Reveal>
+          <Reveal>
+            <div className='columns is-multiline services--section'>
+              {services.map((service) => (
+                <div key={service.text} className='column is-4'>
+                  <section className='services--section__item'>
+                    <img alt='service' src={service.image} />
+                    <p className='is-size-3 is-size-4-mobile'>
+                      {service.text}
+                    </p>
+                  </section>
                 </div>
-                <Link className='button is-primary is-large' to='/contact'>
-                  Get A Service
-                </Link>
-              </div>
+              ))}
             </div>
-          </div>
+          </Reveal>
+          <Reveal className='section-cta'>
+            <Link className='button is-primary is-large' to='/contact'>
+              Get A Service
+            </Link>
+          </Reveal>
         </div>
       </section>
-      <section className='section section--gradient'>
+      <section className='section'>
         <div className='container'>
-          <div className='section'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div style={{ marginBottom: '160px' }}>
-                  <h1 className='title is-size-2'>Testimonials</h1>
-                  <Testimonials testimonials={testimonials} />
-                </div>
-                <div>
-                  <h1 className='title is-size-2'>Latest Posts</h1>
-                  <LatestPosts count={2} />
-                  <Link className='button is-primary is-large' to='/blog'>
-                    See More
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Reveal className='section-head'>
+            <span className='kicker'>Kind Words</span>
+            <h2 className='title is-size-2'>Testimonials</h2>
+          </Reveal>
+          <Reveal>
+            <Testimonials testimonials={testimonials} />
+          </Reveal>
+        </div>
+      </section>
+      <section className='section section--alt'>
+        <div className='container'>
+          <Reveal className='section-head'>
+            <span className='kicker'>From the Journal</span>
+            <h2 className='title is-size-2'>Latest Posts</h2>
+          </Reveal>
+          <Reveal>
+            <LatestPosts count={2} />
+          </Reveal>
+          <Reveal className='section-cta'>
+            <Link className='button is-primary is-large' to='/blog'>
+              See More
+            </Link>
+          </Reveal>
         </div>
       </section>
     </div>
