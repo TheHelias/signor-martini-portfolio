@@ -279,6 +279,15 @@ h1, h2, h3, h4, h5, h6
     border-color: var(--accent-strong)
     color: var(--on-accent)
 
+.button.is-ghost
+  background: transparent
+  border-color: rgba(255, 255, 255, 0.55)
+  color: #fff
+  &:hover
+    background: rgba(255, 255, 255, 0.14)
+    border-color: #fff
+    color: #fff
+
 .button.is-large
   font-size: 1.05rem
   padding: 1rem 2rem
@@ -553,6 +562,137 @@ button.navbar-item
   50%
     transform: translateX(-50%) translateY(10px)
 
+// =============================================================
+//  Showreel hero (full-bleed autoplaying video)
+// =============================================================
+.reel-hero
+  position: relative
+  min-height: 100vh
+  display: flex
+  align-items: center
+  overflow: hidden
+  background: #000
+
+.reel-hero__bg
+  position: absolute
+  inset: 0
+  z-index: 0
+  overflow: hidden
+  img
+    position: absolute
+    inset: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    opacity: 0
+    transform: scale(1.05)
+    transition: opacity 1.6s ease
+    &.is-active
+      opacity: 1
+      animation: kenburns 7s ease-out forwards
+
+.reel-hero__bg--video
+  video
+    position: absolute
+    inset: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+@keyframes kenburns
+  from
+    transform: scale(1.05)
+  to
+    transform: scale(1.14)
+
+.reel-hero__overlay
+  position: absolute
+  inset: 0
+  z-index: 1
+  background: linear-gradient(180deg, rgba(8,8,10,0.55) 0%, rgba(8,8,10,0.35) 42%, rgba(8,8,10,0.88) 100%)
+
+.reel-hero__content
+  position: relative
+  z-index: 2
+  width: 100%
+  max-width: 1180px
+  margin: 0 auto
+  padding: 7rem 1.5rem 0
+  .kicker
+    color: #e3c184
+    margin-bottom: 1.5rem
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5)
+
+.reel-hero__title
+  color: #fff
+  font-size: clamp(3rem, 11vw, 9rem)
+  font-weight: 800
+  line-height: 0.92
+  letter-spacing: -0.035em
+  margin: 0 0 1.75rem
+  text-shadow: 0 4px 40px rgba(0, 0, 0, 0.4)
+
+.reel-hero__role
+  color: rgba(255, 255, 255, 0.78)
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem)
+  font-weight: 500
+  letter-spacing: 0.04em
+  margin: 0 0 2.5rem
+
+.reel-hero__actions
+  display: flex
+  flex-wrap: wrap
+  gap: 1rem
+
+// =============================================================
+//  Showreel modal
+// =============================================================
+.reel-modal
+  position: fixed
+  inset: 0
+  z-index: 9999
+  background: rgba(0, 0, 0, 0.9)
+  backdrop-filter: blur(8px)
+  -webkit-backdrop-filter: blur(8px)
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 1.5rem
+
+.reel-modal__content
+  width: 92vw
+  max-width: 1100px
+  line-height: 0
+  border-radius: $radius
+  overflow: hidden
+  box-shadow: var(--shadow-lg)
+
+.reel-modal__video
+  display: block
+  width: 100%
+  max-height: 82vh
+  background: #000
+
+.reel-modal__close
+  position: absolute
+  top: 1.25rem
+  right: 1.5rem
+  width: 48px
+  height: 48px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 999px
+  border: 1px solid rgba(255, 255, 255, 0.4)
+  background: rgba(255, 255, 255, 0.1)
+  color: #fff
+  font-size: 1.1rem
+  cursor: pointer
+  transition: background-color 0.2s ease, transform 0.2s ease
+  &:hover
+    background: rgba(255, 255, 255, 0.25)
+    transform: scale(1.05)
+
 // Simple hero (blog / contact / 404 — no image)
 .hero.is-bold,
 .hero.is-primary
@@ -620,70 +760,103 @@ button.navbar-item
 // =============================================================
 //  Portfolio
 // =============================================================
-.portfolio--item > section
-  height: 100%
-  padding: 0.85rem
-  cursor: pointer
-  background: var(--bg-elev)
-  border: 1px solid var(--border)
-  border-radius: $radius
-  box-shadow: var(--shadow)
-  transition: transform $ease, box-shadow $ease, border-color $ease
-  p
-    margin: 1rem 0.25rem 0.35rem
-    font-weight: 600
-  &:hover
-    transform: translateY(-4px)
-    box-shadow: var(--shadow-lg)
-    border-color: var(--accent)
+// Cinematic work grid — large hover-to-play tiles with overlaid titles
+.work-grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: clamp(1rem, 2vw, 1.75rem)
 
-.portfolio--item__image
+.work-tile
   position: relative
-  border-radius: $radius-sm
   overflow: hidden
+  border-radius: $radius
   aspect-ratio: 16 / 9
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
-    transition: transform 0.5s ease
+  cursor: pointer
+  background: #000
+  &:focus-visible
+    outline: 2px solid var(--accent)
+    outline-offset: 3px
 
-.portfolio--item > section:hover .portfolio--item__image img
-  transform: scale(1.05)
-
-.portfolio--item__image--overlay
+.work-tile__img
   position: absolute
   inset: 0
-  background: rgba(0, 0, 0, 0.35)
-  opacity: 0
-  transition: opacity $ease
+  width: 100%
+  height: 100%
+  object-fit: cover
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)
 
-.portfolio--item > section:hover .portfolio--item__image--overlay
-  opacity: 1
+.work-tile__shade
+  position: absolute
+  inset: 0
+  background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,0.85) 100%)
 
-.portfolio--item__image--play-icon
+.work-tile__play
   position: absolute
   top: 50%
   left: 50%
-  transform: translate(-50%, -50%) scale(0.9)
+  transform: translate(-50%, -50%) scale(0.85)
   z-index: 2
-  width: 64px
-  height: 64px
+  width: 72px
+  height: 72px
   display: flex
   align-items: center
   justify-content: center
   border-radius: 999px
-  background: rgba(255, 255, 255, 0.16)
+  background: rgba(255, 255, 255, 0.14)
   backdrop-filter: blur(6px)
-  border: 1px solid rgba(255, 255, 255, 0.5)
+  -webkit-backdrop-filter: blur(6px)
+  border: 1px solid rgba(255, 255, 255, 0.55)
   color: #fff
   font-size: 24px
   opacity: 0
-  transition: opacity $ease, transform $ease
+  transition: opacity 0.4s ease, transform 0.4s ease
 
-.portfolio--item > section:hover .portfolio--item__image--play-icon
-  opacity: 1
-  transform: translate(-50%, -50%) scale(1)
+.work-tile__meta
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 2
+  padding: clamp(1.1rem, 2.2vw, 1.75rem)
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  gap: 1rem
+
+.work-tile__title
+  margin: 0
+  color: #fff
+  font-size: clamp(1.05rem, 1.8vw, 1.4rem)
+  font-weight: 700
+  line-height: 1.2
+  letter-spacing: -0.01em
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5)
+
+.work-tile__watch
+  flex-shrink: 0
+  display: inline-flex
+  align-items: center
+  gap: 0.4rem
+  color: #e3c184
+  font-size: 0.8rem
+  font-weight: 600
+  letter-spacing: 0.06em
+  text-transform: uppercase
+  opacity: 0
+  transform: translateY(6px)
+  transition: opacity 0.4s ease, transform 0.4s ease
+  svg
+    font-size: 0.65rem
+
+.work-tile:hover
+  .work-tile__img
+    transform: scale(1.06)
+  .work-tile__play
+    opacity: 1
+    transform: translate(-50%, -50%) scale(1)
+  .work-tile__watch
+    opacity: 1
+    transform: none
 
 .portfolio--item__video-modal
   position: fixed

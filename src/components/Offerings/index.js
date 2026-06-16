@@ -21,32 +21,34 @@ const Overlay = ({ open, onClose, closeOnClick, className, children }) => {
 function Offerings ({ gridItems }) {
   const [isOpen, setIsOpen] = useState(false)
   const [videoID, setVideoID] = useState('')
+
+  const openVideo = (video) => {
+    setVideoID(video)
+    setIsOpen(true)
+  }
+
   return (
-    <div className='columns is-multiline'>
+    <div className='work-grid'>
       {gridItems.map((item) => (
-        <div key={item.image} className='column is-6 portfolio--item'>
-          <section
-            className='section'
-            role='button'
-            tabIndex={0}
-            onClick={() => {
-              setVideoID(item.video)
-              setIsOpen(true)
-            }}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                setVideoID(item.video)
-                setIsOpen(true)
-              }
-            }}
-          >
-            <div className='portfolio--item__image'>
-              <img alt='video thumbnail' src={item.image} />
-              <div className='portfolio--item__image--overlay' />
-              <FaPlay className='portfolio--item__image--play-icon' />
-            </div>
-            <p>{item.text}</p>
-          </section>
+        <div
+          key={item.image}
+          className='work-tile'
+          role='button'
+          tabIndex={0}
+          onClick={() => openVideo(item.video)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') openVideo(item.video)
+          }}
+        >
+          <img className='work-tile__img' alt={item.text} src={item.image} />
+          <div className='work-tile__shade' />
+          <span className='work-tile__play'>
+            <FaPlay />
+          </span>
+          <div className='work-tile__meta'>
+            <h3 className='work-tile__title'>{item.text}</h3>
+            <span className='work-tile__watch'>Watch <FaPlay /></span>
+          </div>
         </div>
       ))}
       <Overlay
@@ -59,7 +61,7 @@ function Offerings ({ gridItems }) {
           <div className='video-embed-wrapper'>
             <iframe
               title='Vimeo video player'
-              src={`https://player.vimeo.com/video/${videoID}?app_id=58479`}
+              src={`https://player.vimeo.com/video/${videoID}?app_id=58479&autoplay=1`}
               frameBorder='0'
               allow='autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media'
               allowFullScreen
