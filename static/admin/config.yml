@@ -23,6 +23,14 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Sub Title, name: subtitle, widget: string }
           - {
+              label: Showreel Vimeo ID,
+              name: showreel,
+              widget: number,
+              value_type: int,
+              required: false,
+              hint: 'Vimeo video ID (the number in the video URL, e.g. 888900679). Used as the silent autoplay hero background and the "Watch Showreel" video. Leave empty to fall back to the hero images.',
+            }
+          - {
               label: Hero Images,
               name: heroImages,
               widget: list,

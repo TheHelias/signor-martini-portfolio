@@ -1,25 +1,23 @@
 import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
+import Reveal from '../Reveal'
 
 const AboutPageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div id='about' className='about--section'>
-      <section className='section section--gradient'>
-        <div className='container about--section__content'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section about--content'>
-                <h1 className='title is-size-2'>About Me</h1>
-                <PageContent className='content' content={content} />
-              </div>
-            </div>
+    <section id='about' className='section about--section'>
+      <div className='container'>
+        <Reveal className='about--card'>
+          <div className='section-head'>
+            <span className='kicker'>About</span>
+            <h2 className='title is-size-2'>About Me</h2>
           </div>
-        </div>
-      </section>
-    </div>
+          <PageContent className='content' content={content} />
+        </Reveal>
+      </div>
+    </section>
   )
 }
 
