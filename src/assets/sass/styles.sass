@@ -217,6 +217,10 @@ h1, h2, h3, h4, h5, h6
 .section--alt
   background: var(--bg-subtle)
 
+// Keep anchored/scrolled-to sections clear of the fixed navbar
+section[id]
+  scroll-margin-top: 88px
+
 .columns
   display: flex
   flex-wrap: wrap
@@ -1080,6 +1084,8 @@ footer.footer
   .navbar-brand
     position: relative
     z-index: 25
+    width: 100%
+    justify-content: space-between
   // Full-screen overlay menu (sits below the nav bar so logo + close stay on top)
   .navbar-menu
     display: none
@@ -1144,8 +1150,12 @@ footer.footer
     margin-top: 64px
   .navbar
     min-height: 64px
+  section[id]
+    scroll-margin-top: 76px
   .section
     padding: 3rem 1.25rem
+  .work-grid
+    grid-template-columns: 1fr
   .hero-body
     padding: 6rem 1.25rem 3rem
   .post--card__header

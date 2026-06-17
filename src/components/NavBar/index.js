@@ -14,7 +14,7 @@ const NavBar = ({ closeNavbar, toggleNavbar, isActive }) => {
   }
 
   const portfolioLink = () => {
-    navigate('/#portfolio')
+    navigate('/#work')
   }
 
   return (
