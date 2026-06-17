@@ -10,31 +10,44 @@ import Testimonials from '../Testimonials'
 import LatestPosts from '../LatestPosts'
 import Reveal from '../Reveal'
 
-// Vimeo ID used for the full-bleed hero showreel + "Watch Showreel" modal.
-// Swap for a dedicated reel whenever one is available.
-const SHOWREEL_ID = 888900679
+const ReelModal = ({ open, onClose, reelId }) => {
+  const closeRef = useRef(null)
 
-const ReelModal = ({ open, onClose, showreel }) => {
-  if (!open || typeof document === 'undefined') return null
+  useEffect(() => {
+    if (!open) return undefined
+    const onKey = (e) => { if (e.key === 'Escape') onClose() }
+    document.addEventListener('keydown', onKey)
+    if (closeRef.current) closeRef.current.focus()
+    return () => document.removeEventListener('keydown', onKey)
+  }, [open, onClose])
+
+  if (!open || !reelId || typeof document === 'undefined') return null
   return ReactDOM.createPortal(
-    <div className='reel-modal' onClick={onClose}>
-      <button className='reel-modal__close' onClick={onClose} aria-label='Close showreel'>
+    <div
+      className='reel-modal'
+      role='dialog'
+      aria-modal='true'
+      aria-label='Showreel'
+      onClick={onClose}
+    >
+      <button
+        ref={closeRef}
+        className='reel-modal__close'
+        onClick={onClose}
+        aria-label='Close showreel'
+      >
         <FaTimes />
       </button>
       <div className='reel-modal__content' onClick={(e) => e.stopPropagation()}>
-        {showreel ? (
-          <video className='reel-modal__video' src={showreel} controls autoPlay playsInline />
-        ) : (
-          <div className='video-embed-wrapper'>
-            <iframe
-              title='Showreel'
-              src={`https://player.vimeo.com/video/${SHOWREEL_ID}?autoplay=1&title=0&byline=0&portrait=0`}
-              frameBorder='0'
-              allow='autoplay; fullscreen; picture-in-picture'
-              allowFullScreen
-            />
-          </div>
-        )}
+        <div className='video-embed-wrapper'>
+          <iframe
+            title='Showreel'
+            src={`https://player.vimeo.com/video/${reelId}?autoplay=1&title=0&byline=0&portrait=0`}
+            frameBorder='0'
+            allow='autoplay; fullscreen; picture-in-picture'
+            allowFullScreen
+          />
+        </div>
       </div>
     </div>,
     document.body
@@ -89,13 +102,13 @@ const HomePageTemplate = ({
       <section className='reel-hero'>
         {showreel ? (
           <div className='reel-hero__bg reel-hero__bg--video desktop--hero'>
-            <video
-              src={showreel}
-              autoPlay
-              muted
-              loop
-              playsInline
-              poster={images[0] && images[0].image}
+            <iframe
+              title='Showreel background'
+              aria-hidden='true'
+              src={`https://player.vimeo.com/video/${showreel}?background=1&autoplay=1&loop=1&muted=1`}
+              frameBorder='0'
+              allow='autoplay; fullscreen'
+              tabIndex={-1}
             />
           </div>
         ) : (
@@ -128,15 +141,17 @@ const HomePageTemplate = ({
           <h1 className='reel-hero__title'>{title}</h1>
           <p className='reel-hero__role'>{subtitle}</p>
           <div className='reel-hero__actions'>
+            {showreel && (
+              <button
+                className='button is-primary is-large'
+                onClick={() => setReelOpen(true)}
+              >
+                <FaPlay />
+                <span>Watch Showreel</span>
+              </button>
+            )}
             <button
-              className='button is-primary is-large'
-              onClick={() => setReelOpen(true)}
-            >
-              <FaPlay />
-              <span>Watch Showreel</span>
-            </button>
-            <button
-              className='button is-ghost is-large'
+              className={`button is-large ${showreel ? 'is-ghost' : 'is-primary'}`}
               onClick={() => scrollTo('work')}
             >
               View Work
@@ -152,7 +167,7 @@ const HomePageTemplate = ({
         </button>
       </section>
 
-      <ReelModal open={reelOpen} onClose={() => setReelOpen(false)} showreel={showreel} />
+      <ReelModal open={reelOpen} onClose={() => setReelOpen(false)} reelId={showreel} />
 
       <section id='work' className='section'>
         <div className='container'>
@@ -251,7 +266,7 @@ HomePageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   services: PropTypes.array,
-  showreel: PropTypes.string,
+  showreel: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   offerings: PropTypes.shape({
     blurbs: PropTypes.array
   }),
