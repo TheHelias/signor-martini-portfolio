@@ -63,7 +63,7 @@ meta_description: >-
 ---
 I'm a professional Film Editor and Post-Production Producer
 
-Editor of 15 feature films, including Gangs of Lagos (2023), Brotherhood (2022), Adire (2024), and Aba Blues (2026). Nominated twice in the Best Picture Editor category for Brotherhood (2022) and Christmas in Lagos (2025) at the 9th and 11th editions of Africa Magic Viewers' Choice Awards (AMVCA).
+Editor of over 20 feature films, including Gangs of Lagos (2023), Brotherhood (2022), Adire (2024), and Aba Blues (2026). Nominated twice in the Best Picture Editor category for Brotherhood (2022) and Christmas in Lagos (2025) at the 9th and 11th editions of Africa Magic Viewers' Choice Awards (AMVCA).
 
 As the Editor and Post-Production Supervisor on critically acclaimed films like Gangs of Lagos, Brotherhood, Venge(TV Series), and with over 8 years of experience in editing and post-production management, I bring a unique perspective to every project.
 
