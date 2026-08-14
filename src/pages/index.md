@@ -33,15 +33,6 @@ offerings:
     - image: /img/gangs-of-lagos-still-1.png
       video: 888900679
       text: Gangs of Lagos
-    - image: /img/whatsapp-image-2022-11-23-at-18.25.48-1-.jpeg
-      text: "Glamour Girls: Now streaming on Netflix"
-      video: 774347751
-    - image: /img/nneka11.jpg
-      text: Nneka The Pretty Serpent - Now streaming on Netflix
-      video: 657088300
-    - image: /img/untitled_2.21.1.jpg
-      video: 656939317
-      text: Feature documentary film edited by me.
     - video: 1043316042
       image: /img/whatsapp-image-2026-06-13-at-14.15.58.jpeg
       text: Christman in Lagos
