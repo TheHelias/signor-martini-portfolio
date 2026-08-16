@@ -39,6 +39,9 @@ offerings:
     - image: /img/st-helena.jpg
       text: Forgotten Shores
       video: 1216505605
+    - image: https://vimeo.com/manage/videos/1034053085
+      text: Enough is Enough
+      video: 1034053085
     - image: /img/tua.jpg
       text: Tipping Uber Alice
       video: 1218252135
@@ -51,9 +54,6 @@ offerings:
     - image: /img/tfam.jpg
       text: The Fire and the Moth
       video: 1218252134
-    - image: https://vimeo.com/manage/videos/1034053085
-      text: Enough is Enough
-      video: 1034053085
 testimonials:
   - quote: Martini possesses a unique ability to understand the director's vision
       and seamlessly translate it onto the screen. His attention to detail is
