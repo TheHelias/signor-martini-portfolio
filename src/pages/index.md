@@ -28,7 +28,7 @@ services:
 offerings:
   blurbs:
     - image: /img/873b934f-41c5-4d69-843b-fc74447fd3c8.jpeg
-      text: "Brotherhood: Now streaming on prime video"
+      text: Brotherhood
       video: 743365197
     - image: /img/gangs-of-lagos-still-1.png
       video: 888900679
@@ -39,6 +39,18 @@ offerings:
     - image: /img/st-helena.jpg
       text: Forgotten Shores
       video: 1216505605
+    - image: /img/tua.jpg
+      text: Tipping Uber Alice
+      video: 1218252135
+    - image: /img/aba-blues.jpg
+      text: Aba Blues
+      video: 1216505608
+    - image: /img/bob.jpg
+      text: BOB
+      video: 1216505609
+    - image: /img/tfam.jpg
+      text: The Fire and the Moth
+      video: 1218252133
 testimonials:
   - quote: Martini possesses a unique ability to understand the director's vision
       and seamlessly translate it onto the screen. His attention to detail is
