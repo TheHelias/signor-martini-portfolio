@@ -2,7 +2,7 @@
 templateKey: home-page
 title: MARTINI AKANDE
 subtitle: FILM EDITOR | POST-PRODUCTION PRODUCER | FILMMAKER
-showreel: 888900679
+showreel: 1216505610
 heroImages:
   - image: /img/img_0296.png
   - image: /img/glamour-girls_1.263.1.png
@@ -39,7 +39,7 @@ offerings:
     - image: /img/st-helena.jpg
       text: Forgotten Shores
       video: 1216505605
-    - image: https://vimeo.com/manage/videos/1034053085
+    - image: /img/enough-is-enough.jpg
       text: Enough is Enough
       video: 1034053085
     - image: /img/tua.jpg
